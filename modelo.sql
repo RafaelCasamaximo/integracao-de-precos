@@ -4,12 +4,22 @@ CREATE DATABASE databaseAdmin WITH OWNER = databaseAdmin ENCodING = UTF8;
 
 CREATE SCHEMA IntegracaoPrecos;
 
+
 CREATE TABLE IntegracaoPrecos.Loja(
     id SERIAL,
     nome CHAR(60) NOT NULL,
-    /* Encher linguiça com dados aqui */
     CONSTRAINT id_loja PRIMARY KEY(id)
 );
+
+
+CREATE TABLE IntegracaoPrecos.Empresa(
+    id INT,
+    descricao_curta CHAR(60),
+    numero_jogos INT,
+    website CHAR(60)
+    CONSTRAINT pk_empresa PRIMARY KEY(id)
+);
+
 
 CREATE TABLE IntegracaoPrecos.Jogo(
     id SERIAL,
@@ -22,7 +32,9 @@ CREATE TABLE IntegracaoPrecos.Jogo(
     idade_requerida INT,
     descricao_curta CHAR(60),
     descricao_longa CHAR(500),
-    CONSTRAINT id_jogo PRIMARY KEY(id) 
+    CONSTRAINT id_jogo PRIMARY KEY(id),
+    CONSTRAINT fk_nome_empresa FOREIGN KEY(nome_empresa)
+        REFERENCES IntegracaoPrecos.Empresa(id),
 );
 
 
@@ -35,16 +47,4 @@ CREATE TABLE IntegracaoPrecos.LojaJogos(
     CONSTRAINT fk_id_jogo FOREIGN KEY(id_jogo)
         REFERENCES IntegracaoPrecos.Jogo(id)
 );
-
-
-CREATE TABLE IntegracaoPrecos.Empresa(
-    id_empresa INT,
-    descricao_curta CHAR(60),
-    numero_jogos INT,
-    website CHAR(60)
-    CONSTRAINT fk_id_empresa FOREIGN KEY(id_empresa)
-        REFERENCES IntegracaoPrecos.Jogo(nome_empresa)
-    CONSTRAINT pk_id_empresa PRIMARY KEY(id_empresa)
-);
-
 
