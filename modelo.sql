@@ -1,10 +1,3 @@
-CREATE USER databaseAdmin LOGIN CREATEDB PASSWORD 'databaseAdmin';
-
-CREATE DATABASE databaseAdmin WITH OWNER = databaseAdmin ENCodING = UTF8;
-
-CREATE SCHEMA IntegracaoPrecos;
-
-
 CREATE TABLE IntegracaoPrecos.Loja(
     id SERIAL,
     nome CHAR(60) NOT NULL,
@@ -13,10 +6,10 @@ CREATE TABLE IntegracaoPrecos.Loja(
 
 
 CREATE TABLE IntegracaoPrecos.Empresa(
-    id INT,
+    id SERIAL,
     descricao_curta CHAR(60),
     numero_jogos INT,
-    website CHAR(60)
+    website CHAR(60),
     CONSTRAINT pk_empresa PRIMARY KEY(id)
 );
 
@@ -32,9 +25,10 @@ CREATE TABLE IntegracaoPrecos.Jogo(
     idade_requerida INT,
     descricao_curta CHAR(60),
     descricao_longa CHAR(500),
+    pk_empresa INT,
     CONSTRAINT id_jogo PRIMARY KEY(id),
-    CONSTRAINT fk_nome_empresa FOREIGN KEY(nome_empresa)
-        REFERENCES IntegracaoPrecos.Empresa(id),
+    CONSTRAINT fk_nome_empresa FOREIGN KEY(pk_empresa)
+        REFERENCES IntegracaoPrecos.Empresa(id)
 );
 
 
