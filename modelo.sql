@@ -10,9 +10,8 @@ CREATE TABLE IntegracaoPrecos.Empresa(
     descricao_curta CHAR(60),
     numero_jogos INT,
     website CHAR(60),
-    CONSTRAINT pk_empresa PRIMARY KEY(id)
+    CONSTRAINT id_empresa PRIMARY KEY(id)
 );
-
 
 CREATE TABLE IntegracaoPrecos.Jogo(
     id SERIAL,
@@ -25,9 +24,9 @@ CREATE TABLE IntegracaoPrecos.Jogo(
     idade_requerida INT,
     descricao_curta CHAR(60),
     descricao_longa CHAR(500),
-    pk_empresa INT,
+    id_empresa INT,
     CONSTRAINT id_jogo PRIMARY KEY(id),
-    CONSTRAINT fk_nome_empresa FOREIGN KEY(pk_empresa)
+    CONSTRAINT fk_nome_empresa FOREIGN KEY(id_empresa)
         REFERENCES IntegracaoPrecos.Empresa(id)
 );
 
@@ -41,4 +40,3 @@ CREATE TABLE IntegracaoPrecos.LojaJogos(
     CONSTRAINT fk_id_jogo FOREIGN KEY(id_jogo)
         REFERENCES IntegracaoPrecos.Jogo(id)
 );
-
