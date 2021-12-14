@@ -1,0 +1,2204 @@
+{
+      "data": [
+            {
+                  "appid": "ac5e43ecfe424d1eb79d12dd25c31a67",
+                  "name": "Among Trees",
+                  "publisher": "FJRD Interactive",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "fb557dcb1bfe4a5791b3a11a83f52e90",
+                  "name": "Flower",
+                  "publisher": "Annapurna Interactive",
+                  "price": 1449,
+                  "initialprice": 1449,
+                  "discount": 0
+            },
+            {
+                  "appid": "09efa4c5d30a411eb012f881802f8453",
+                  "name": "Metro: 2033 Redux",
+                  "publisher": "Koch Media",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "6bad44fc6dd9456081442559c51a577f",
+                  "name": "Metro: Last Light Redux",
+                  "publisher": "Koch Media",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "49abc68c4a364704824736002f065600",
+                  "name": "The Crew 2",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 14999,
+                  "initialprice": 14999,
+                  "discount": 0
+            },
+            {
+                  "appid": "ffeb0b8577a642deb377c0603cad40d7",
+                  "name": "Rainbow Six Siege",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "e5e7b5fcc99c484b85f80dbee446710a",
+                  "name": "Assassin's Creed Origins",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 17999,
+                  "initialprice": 17999,
+                  "discount": 0
+            },
+            {
+                  "appid": "db50f262e26343c394c9a928ca725671",
+                  "name": "Battle Breakers",
+                  "publisher": "Epic Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "d8acdae3565a4c1c94275a9d5c420e2f",
+                  "name": "Star Wars Jedi: Fallen Order",
+                  "publisher": "Electronic Arts",
+                  "price": 19900,
+                  "initialprice": 19900,
+                  "discount": 0
+            },
+            {
+                  "appid": "d7874f1989e3463ca5dc0a5636da84e3",
+                  "name": "South Park: The Stick of Truth",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "d05e587765b94113bde00e6867133100",
+                  "name": "Arise: A Simple Story",
+                  "publisher": "Techland",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c5477bbba0934ec08ebe822c79a55544",
+                  "name": "WHAT THE GOLF?",
+                  "publisher": "Triband",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c46e7726fb6b465f8b1a749618edee64",
+                  "name": "Nuclear Throne",
+                  "publisher": "Vlambeer",
+                  "price": 2489,
+                  "initialprice": 2489,
+                  "discount": 0
+            },
+            {
+                  "appid": "bc68342b35624d5cbdf37ec529cadc43",
+                  "name": "Before We Leave",
+                  "publisher": "Balancing Monkey Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "acb1580495e9479bb7e92dffb2cab7ec",
+                  "name": "Far Cry 3 Blood Dragon",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 4499,
+                  "initialprice": 4499,
+                  "discount": 0
+            },
+            {
+                  "appid": "a1872bb7a6244fd4ae46c57917068b6c",
+                  "name": "Far Cry 5",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 17999,
+                  "initialprice": 17999,
+                  "discount": 0
+            },
+            {
+                  "appid": "70b2be5bbcbd4d90a3f209b8e498255f",
+                  "name": "Cyberpunk 2077",
+                  "publisher": "CD PROJEKT RED",
+                  "price": 19990,
+                  "initialprice": 19990,
+                  "discount": 0
+            },
+            {
+                  "appid": "6f535e05446742a8961d2f231e6e7410",
+                  "name": "Far Cry New Dawn",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 11999,
+                  "initialprice": 11999,
+                  "discount": 0
+            },
+            {
+                  "appid": "6afa79a2c6ed4df88eabe58f26cafbe2",
+                  "name": "Far Cry 3",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "52e1d1095dad49799b3e95cc591d29f6",
+                  "name": "SOMA",
+                  "publisher": "Frictional Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "4e4d6984f3ba4a2e9ca517453291dd00",
+                  "name": "A Knights Quest",
+                  "publisher": "Curve Digital",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "4dfe723e347f43a68084b77e5f747e81",
+                  "name": "Falcon Age",
+                  "publisher": "Outerloop Games LLC",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "4db76762e1364e4b8025584541b7dd1b",
+                  "name": "South Park: The Fractured But Whole",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 14999,
+                  "initialprice": 14999,
+                  "discount": 0
+            },
+            {
+                  "appid": "417e1534b94047f585aa36f887c51eb1",
+                  "name": "Auto Chess",
+                  "publisher": "Dragonest Game",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "35235d9f50a246edbfa670bdcf847d3c",
+                  "name": "Far Cry 4",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "32d80b384c934b89be96dd4c32b54946",
+                  "name": "Mutant Year Zero: Road To Eden",
+                  "publisher": "Funcom",
+                  "price": 8849,
+                  "initialprice": 8849,
+                  "discount": 0
+            },
+            {
+                  "appid": "2652971fb8884d4abb962257892b99ed",
+                  "name": "Manifold Garden",
+                  "publisher": "William Chyr Studio",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "22b0e16f382549c7961d43c67202fbd0",
+                  "name": "Phantom Brigade",
+                  "publisher": "Brace Yourself Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "15355f7b05f34d03833bfc3c886f1364",
+                  "name": "Tom Clancy's Rainbow Six Quarantine",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 16999,
+                  "initialprice": 16999,
+                  "discount": 0
+            },
+            {
+                  "appid": "04ade1b81a304b2d9505897351d46898",
+                  "name": "Assassin's Creed III Remastered",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 12999,
+                  "initialprice": 12999,
+                  "discount": 0
+            },
+            {
+                  "appid": "513fe4b9afb54c18bc88b1b6dd6ca8d8",
+                  "name": "Inside",
+                  "publisher": "Playdead",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "c2f85843620d428f9bdd491f5833c6fd",
+                  "name": "Foregone",
+                  "publisher": "Big Blue Bubble, Inc.",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c219b2235b9b4aa0b926b432d86f316d",
+                  "name": "Surgeon Simulator 2",
+                  "publisher": "Bossa Studios",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "8f237c17ea5941aba9692a544db845c1",
+                  "name": "The Red Lantern",
+                  "publisher": "Timberline Studio",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "8926b72e6da244cb881883b35484d8e0",
+                  "name": "The Telltale Batman Shadows Edition",
+                  "publisher": "LCG Entertainment, Inc.",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "196831040b8e49a7a1dee50b125fdc5d",
+                  "name": "ABZU",
+                  "publisher": "505 Games",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "295c4c70e3914d4691b15821071d8d4c",
+                  "name": "Magic The Gathering Arena",
+                  "publisher": "Wizards of the Coast",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "8ac0c449dda64ac2b098a5d9c6397472",
+                  "name": "ReadySet Heroes",
+                  "publisher": "Sony Interactive Entertainment",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "48436374d8f34a6da982b8aad4334534",
+                  "name": "Wattam",
+                  "publisher": "Annapurna Interactive",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "3f06ceed10004ee5a7db58235449cfb9",
+                  "name": "The Walking Dead: The Telltale Definitive Series",
+                  "publisher": "Skybound Interactive",
+                  "price": 9499,
+                  "initialprice": 9499,
+                  "discount": 0
+            },
+            {
+                  "appid": "f5620c67c34c429b95fb5e1ce5aee82b",
+                  "name": "Alan Wake's American Nightmare",
+                  "publisher": "Remedy Entertainment",
+                  "price": 1699,
+                  "initialprice": 1699,
+                  "discount": 0
+            },
+            {
+                  "appid": "eb081710a4b64e068c8881a138d9de3f",
+                  "name": "Surviving the Aftermath",
+                  "publisher": "Paradox Interactive",
+                  "price": 4749,
+                  "initialprice": 4749,
+                  "discount": 0
+            },
+            {
+                  "appid": "dbab9e3b14fa4c15af8c3d44cf5a63a0",
+                  "name": "Bloodroots",
+                  "publisher": "Paper Cult",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "d073051af330409394d8fd7cc6793bb4",
+                  "name": "Airborne Kingdom",
+                  "publisher": "The Wandering Band LLC",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "ca25cd054b29435c8e6e3794a27acbb2",
+                  "name": "Everything",
+                  "publisher": "David OReilly",
+                  "price": 2799,
+                  "initialprice": 2799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c2b84fbc7ee04617a5daf59e4156e9a2",
+                  "name": "The Jackbox Party Pack 6",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "b50e2754792641ee89a1e9d26cebcd79",
+                  "name": "SuperMash",
+                  "publisher": "Digital Continue",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "ad6b9e6c4cfc4b959ce44ecad7565c7b",
+                  "name": "LEGO\u00ae Batman\u2122 2: DC Super Heroes",
+                  "publisher": "Warner Bros.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "ac3da74961c8413b9a63b4258cbc31f8",
+                  "name": "Batman\u2122 Arkham Asylum Game of the Year Edition",
+                  "publisher": "Warner Bros.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "a9a4ab65b8cb405198e2332795b69be6",
+                  "name": "RUINER",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "9a071cfb3827440ba36cbef6a6042186",
+                  "name": "Death Stranding",
+                  "publisher": "505 Games S.r.l.",
+                  "price": 23900,
+                  "initialprice": 23900,
+                  "discount": 0
+            },
+            {
+                  "appid": "9714d370b31d44c68b80921b7fb994c8",
+                  "name": "Batman\u2122: Arkham Knight",
+                  "publisher": "Warner Bros.",
+                  "price": 4999,
+                  "initialprice": 4999,
+                  "discount": 0
+            },
+            {
+                  "appid": "9602d3adbf28458284215cda7f224b28",
+                  "name": "Batman\u2122: Arkham City - Game of the Year Edition",
+                  "publisher": "Warner Bros.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "7b560e0a45514726bd6f3d1b08e38347",
+                  "name": "No Straight Roads",
+                  "publisher": "Sold Out",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "7259c41b973b44d4af4f3236ba79e75b",
+                  "name": "Cardpocalypse",
+                  "publisher": "Versus Evil",
+                  "price": 6699,
+                  "initialprice": 6699,
+                  "discount": 0
+            },
+            {
+                  "appid": "5d701b13e9fb423aa53553fc94112bce",
+                  "name": "LEGO\u00ae Batman\u2122 3: Beyond Gotham",
+                  "publisher": "Warner Bros.",
+                  "price": 4999,
+                  "initialprice": 4999,
+                  "discount": 0
+            },
+            {
+                  "appid": "559ac60ab99244e1a6c8c80a6194b257",
+                  "name": "LEGO\u00ae Batman\u2122 The Videogame",
+                  "publisher": "Warner Bros.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "511a8c736f3b40159ecf0c5c1e1f5ba1",
+                  "name": "Bee Simulator",
+                  "publisher": "Bigben Interactive",
+                  "price": 13999,
+                  "initialprice": 13999,
+                  "discount": 0
+            },
+            {
+                  "appid": "3164281e654744b0b1c5fa1ed46ec585",
+                  "name": "Superliminal",
+                  "publisher": "Pillow Castle",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "3018c3f67f9b4982b87905293a3f4447",
+                  "name": "Rogue Company",
+                  "publisher": "Hi-Rez Studios",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "1694ca8a330f41e1965087728c02a43f",
+                  "name": "Yaga",
+                  "publisher": "Versus Evil",
+                  "price": 6699,
+                  "initialprice": 6699,
+                  "discount": 0
+            },
+            {
+                  "appid": "124e1b42195949dda096a46a16061f27",
+                  "name": "The Messenger",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "ca4db4d9dfe3409191c65a5ab27f30e1",
+                  "name": "The Settlers",
+                  "publisher": "Epic Dev Test Account",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "75804ef64d96446fb250a691fbd6654d",
+                  "name": "GNOG",
+                  "publisher": "KO_OP",
+                  "price": 1899,
+                  "initialprice": 1899,
+                  "discount": 0
+            },
+            {
+                  "appid": "174e0d86d9e24880b0bf0e1721afa325",
+                  "name": "Tetris\u00ae Effect",
+                  "publisher": "Enhance, Inc.",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "78d8c7226d8b422bb68c00a3f2971acb",
+                  "name": "Mechwarrior 5",
+                  "publisher": "The Piranha Bar",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "7b779d493edc43b7bf12dd5650dabd49",
+                  "name": "Q.U.B.E.2",
+                  "publisher": "Ten Hut Games",
+                  "price": 4699,
+                  "initialprice": 4699,
+                  "discount": 0
+            },
+            {
+                  "appid": "8682f88d596749f1b1902f9f764638c5",
+                  "name": "Moonlighter",
+                  "publisher": "11 Bit Studios",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "589cbda0e6074cb2ae29df601f0407e3",
+                  "name": "This War of Mine",
+                  "publisher": "11 Bit Studios",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "8e1c914755f44623be389ae027813f8c",
+                  "name": "Alan Wake",
+                  "publisher": "Remedy Entertainment",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "1ebfdccc11bd46dabdfc0fbb1490d13a",
+                  "name": "Torchlight",
+                  "publisher": "Perfect World",
+                  "price": 2499,
+                  "initialprice": 2499,
+                  "discount": 0
+            },
+            {
+                  "appid": "4fc9a38a461f4827be53b9a019c0178b",
+                  "name": "Sherlock Holmes The Devil's Daughter",
+                  "publisher": "Bigben Interactive",
+                  "price": 9099,
+                  "initialprice": 9099,
+                  "discount": 0
+            },
+            {
+                  "appid": "4e4e06fa7b1548249f87002dfcb462ae",
+                  "name": "Untitled Goose Game",
+                  "publisher": "Panic",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "e7b9b16e9adb436fb020ae33f4195ce4",
+                  "name": "Solar Ash Kingdom",
+                  "publisher": "Annapurna Interactive",
+                  "price": 7999,
+                  "initialprice": 7999,
+                  "discount": 0
+            },
+            {
+                  "appid": "b6e9a5ee4b5f40cdbd066c9333dcf163",
+                  "name": "The Eternal Cylinder",
+                  "publisher": "Good Shepherd Entertainment",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "31c7d1224c394432993d11e7fac97d6e",
+                  "name": "CastleStorm 2",
+                  "publisher": "Zen Studios",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "d2aee293beac4aa09d34affec5e9dc1b",
+                  "name": "Griftlands",
+                  "publisher": "Klei Entertainment",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c1c055783d524ce19e45959fea8cd791",
+                  "name": "Chivalry 2",
+                  "publisher": "Tripwire Interactive",
+                  "price": 7599,
+                  "initialprice": 7599,
+                  "discount": 0
+            },
+            {
+                  "appid": "da878e491ab7473cbef4a72eae64b3a3",
+                  "name": "Atomicrops",
+                  "publisher": "Raw Fury",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "4045372b7cc449b3bcfbe4af8d31bf10",
+                  "name": "Shenmue III",
+                  "publisher": "Koch Media",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "c98c8c591fdb472e97dc3169b097218a",
+                  "name": "Kingdom New Lands",
+                  "publisher": "Raw Fury",
+                  "price": 2799,
+                  "initialprice": 2799,
+                  "discount": 0
+            },
+            {
+                  "appid": "f77ae52ec98e4c218ca7a0da76c1eb93",
+                  "name": "The End is Nigh",
+                  "publisher": "Edmund McMillen, Tyler Glaiel",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "ba4b7ba700b6432690f78c5cf27f6d4e",
+                  "name": "Tom Clancy's Ghost Recon Breakpoint",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 17900,
+                  "initialprice": 17900,
+                  "discount": 0
+            },
+            {
+                  "appid": "3efc7f6a60bb489fb7572176bd60d2cc",
+                  "name": "Borderlands 3",
+                  "publisher": "2K Games, Inc.",
+                  "price": 11990,
+                  "initialprice": 11990,
+                  "discount": 0
+            },
+            {
+                  "appid": "41bc6f9760b544a6a4907ba001ab41b3",
+                  "name": "Rayman Legends",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "58bd2df659ad40fe969f65c5f858be59",
+                  "name": "Far Cry Primal",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 9999,
+                  "initialprice": 9999,
+                  "discount": 0
+            },
+            {
+                  "appid": "d91e4455d68a4483a4afe530c22f5e6a",
+                  "name": "Rune II",
+                  "publisher": "Ragnarok Game, LLC",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "c20b77583f68422e9940a0ba1bf66686",
+                  "name": "The Division 2",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "f835527adf3e42c489e8606f957f1007",
+                  "name": "Assassin's Creed Odyssey",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 17999,
+                  "initialprice": 17999,
+                  "discount": 0
+            },
+            {
+                  "appid": "b79c0521c5d147598b20f78b8f4918a1",
+                  "name": "Trials Rising",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "987aa5f6632e412eae515b054ea63d19",
+                  "name": "Assassin's Creed Unity",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "1d04edde32fd4871923193c369ba58c2",
+                  "name": "Assassin's Creed Rogue",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "edc039f38f614739bcbc3d6c7a04633e",
+                  "name": "Mount & Blade II: Bannerlord",
+                  "publisher": "TaleWorlds Entertainment",
+                  "price": 14999,
+                  "initialprice": 14999,
+                  "discount": 0
+            },
+            {
+                  "appid": "456b1db2807544d596c6b8b4d415d538",
+                  "name": "Costume Quest",
+                  "publisher": "Double Fine",
+                  "price": 1899,
+                  "initialprice": 1899,
+                  "discount": 0
+            },
+            {
+                  "appid": "1a3d31d61b02483e9a53349f6e52681e",
+                  "name": "Ape Out",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 2799,
+                  "initialprice": 2799,
+                  "discount": 0
+            },
+            {
+                  "appid": "2fd14d0d1f7745639f83597a8bd884f3",
+                  "name": "WRC 8 FIA World Rally Championship",
+                  "publisher": "Bigben Interactive",
+                  "price": 11899,
+                  "initialprice": 11899,
+                  "discount": 0
+            },
+            {
+                  "appid": "b8c9b6788e4b4794b2b537076c2ced9d",
+                  "name": "City of Brass",
+                  "publisher": "Uppercut Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "65dba75e17284af4b30f1402092a1795",
+                  "name": "Watch Dogs: Legion",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 24999,
+                  "initialprice": 24999,
+                  "discount": 0
+            },
+            {
+                  "appid": "33aaf380683a465ea91de7407faa7072",
+                  "name": "The Escapists",
+                  "publisher": "Team17 Digital Ltd",
+                  "price": 4749,
+                  "initialprice": 4749,
+                  "discount": 0
+            },
+            {
+                  "appid": "a5240293bb904531b66abdcc9819dab9",
+                  "name": "The Wolf Among Us",
+                  "publisher": "Athlon Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "833cc1439bec45f79e21b022c4fb5967",
+                  "name": "Journey",
+                  "publisher": "Annapurna Interactive",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "ef66029a1c0d467ea7755f6a88b4088c",
+                  "name": "Super Meat Boy Forever",
+                  "publisher": "Team Meat",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "7681407249fe4a46a32f873bb73f7542",
+                  "name": "Industries of Titan",
+                  "publisher": "Brace Yourself Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "84dd14288c424b5aa251e7ca4dd68183",
+                  "name": "Spellbreak",
+                  "publisher": "Proletariat, Inc.",
+                  "price": 10699,
+                  "initialprice": 10699,
+                  "discount": 0
+            },
+            {
+                  "appid": "927bf0728077496ea33372e6c52b028a",
+                  "name": "RiME",
+                  "publisher": "Six Foot",
+                  "price": 5599,
+                  "initialprice": 5599,
+                  "discount": 0
+            },
+            {
+                  "appid": "f5a19eae75774b398c723dccd9a5c88c",
+                  "name": "Vampire: The Masquerade \u2013 Bloodlines 2",
+                  "publisher": "Paradox Interactive",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "55e88d9d4c864d53ba3a03f58222ed24",
+                  "name": "For The King",
+                  "publisher": "Curve Digital",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "e99c88534b7743198cc93706a32bb57e",
+                  "name": "Just Cause 4",
+                  "publisher": "Frogwares",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "3443dbe85c43483f8205fdff619c4286",
+                  "name": "Wheels of Aurelia",
+                  "publisher": "Santa Ragione",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "86b7682539ec45a8873c560e6b5ed9f4",
+                  "name": "Sherlock Holmes Crimes and Punishments",
+                  "publisher": "Frogwares",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "5354dc63819f416a80ef712d9d410351",
+                  "name": "Close to the Sun",
+                  "publisher": "Wired Productions",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "4d18ff20625e496c8cb20b064cc3bd08",
+                  "name": "Saints Row\u00ae: The Third\u2122 Remastered",
+                  "publisher": "Koch Media",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "984e5e4ed4574586a2f6b4041dd13b4d",
+                  "name": "Hob",
+                  "publisher": "Perfect World",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "35e69386d9fa42d4b7df747ad15b06a1",
+                  "name": "Trackmania Turbo",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 11999,
+                  "initialprice": 11999,
+                  "discount": 0
+            },
+            {
+                  "appid": "a83256b3ec964282b11324a107e446d3",
+                  "name": "Journey To The Savage Planet",
+                  "publisher": "505 Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "4912eaae888848759e857df35ed8f756",
+                  "name": "Gone Home",
+                  "publisher": "The Fullbright Company",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "f3d2286a03c94613b5e7f40fef99837f",
+                  "name": "Saturnalia",
+                  "publisher": "Santa Ragione",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "abc8e74b4bdc4162adb4acd04f9813cd",
+                  "name": "Samurai Shodown",
+                  "publisher": "SNK CORPORATION",
+                  "price": 9499,
+                  "initialprice": 9499,
+                  "discount": 0
+            },
+            {
+                  "appid": "8e73b1f2b6ca4a69bea9dd7c3f4e3b26",
+                  "name": "The Walking Dead: A New Frontier",
+                  "publisher": "Skybound Interactive",
+                  "price": 3199,
+                  "initialprice": 3199,
+                  "discount": 0
+            },
+            {
+                  "appid": "773b856d4239403d915f706787dc0428",
+                  "name": "The Walking Dead: Season Two",
+                  "publisher": "Skybound Interactive",
+                  "price": 3199,
+                  "initialprice": 3199,
+                  "discount": 0
+            },
+            {
+                  "appid": "c016b761488e4845adaa9cfdf5843f44",
+                  "name": "The Walking Dead: Season One",
+                  "publisher": "Skybound Interactive",
+                  "price": 3199,
+                  "initialprice": 3199,
+                  "discount": 0
+            },
+            {
+                  "appid": "32e2f79db2ce4c04a69c91b5c74b320f",
+                  "name": "SMITE",
+                  "publisher": "Hi-Rez Studios",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "308d380d8b5d4141b59d8f1722150475",
+                  "name": "Paladins",
+                  "publisher": "Hi-Rez Studios",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "1b2a01faf9a9435facf65440a392fcf5",
+                  "name": "Ancestors The Humankind Odyssey",
+                  "publisher": "Private Division",
+                  "price": 11899,
+                  "initialprice": 11899,
+                  "discount": 0
+            },
+            {
+                  "appid": "7fc3a11a64ef47fb8d7eb4251481878a",
+                  "name": "Dread Nautical",
+                  "publisher": "Raw Fury",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "29da6edd4d6a44b1bf09b2a711c72cde",
+                  "name": "Tormentor x Punisher",
+                  "publisher": "Raw Fury",
+                  "price": 1599,
+                  "initialprice": 1599,
+                  "discount": 0
+            },
+            {
+                  "appid": "f231865aad934f80abb9de38c4a7be85",
+                  "name": "Figment",
+                  "publisher": "Bedtime Digital Games ApS",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "7cd546797aed4d969037f8055fadf37e",
+                  "name": "The Outer Worlds",
+                  "publisher": "Obsidian Entertainment",
+                  "price": 24990,
+                  "initialprice": 24990,
+                  "discount": 0
+            },
+            {
+                  "appid": "812b3f9ae5064e7fa040132fd60ceddb",
+                  "name": "Kine",
+                  "publisher": "Gwen Frey",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "5cd48735db474ff99af1c6af0f745ad4",
+                  "name": "Levelhead",
+                  "publisher": "Butterscotch Shenanigans",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "93c7c9feaf2e46b3b4ee19abcb569c40",
+                  "name": "Insurgency: Sandstorm - Mod Tools & Editor",
+                  "publisher": "New World Interactive",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "e71b874480e2400b8b4f7b8e3afa77cb",
+                  "name": "Uno",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 2999,
+                  "initialprice": 2999,
+                  "discount": 0
+            },
+            {
+                  "appid": "4848610565cd4563b26b0d7fc40ad307",
+                  "name": "Monopoly PLUS",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 4499,
+                  "initialprice": 4499,
+                  "discount": 0
+            },
+            {
+                  "appid": "73ceed82dc1b484eb526da4fc19dbdfd",
+                  "name": "The Stanley Parable",
+                  "publisher": "Galactic Cafe",
+                  "price": 2499,
+                  "initialprice": 2499,
+                  "discount": 0
+            },
+            {
+                  "appid": "62693d9e6f7745d084810f3d0cb87ce5",
+                  "name": "Watch Dogs",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "f3ffb4578e294383b902536e131841bc",
+                  "name": "A Short Hike",
+                  "publisher": "Adam Robinson-Yu",
+                  "price": 1659,
+                  "initialprice": 1659,
+                  "discount": 0
+            },
+            {
+                  "appid": "cefa7f9e970d4b93b828831d05f4e7ae",
+                  "name": "GoNNER",
+                  "publisher": "Raw Fury",
+                  "price": 1999,
+                  "initialprice": 1999,
+                  "discount": 0
+            },
+            {
+                  "appid": "b95cc446495f49d6a8cb1fced54e721d",
+                  "name": "Anodyne 2: Return to Dust",
+                  "publisher": "Analgesic Productions",
+                  "price": 799,
+                  "initialprice": 799,
+                  "discount": 0
+            },
+            {
+                  "appid": "687c7b47e8984d72a066fbe2354d7122",
+                  "name": "Mutazione",
+                  "publisher": "Akupara Games",
+                  "price": 1399,
+                  "initialprice": 1399,
+                  "discount": 0
+            },
+            {
+                  "appid": "5241501096884ab38b321e3915cd375a",
+                  "name": "Old World",
+                  "publisher": "Mohawk Games",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "4a58f83624244f238f662952ba0b0d83",
+                  "name": "State of Decay 2: Juggernaut Edition",
+                  "publisher": "Microsoft",
+                  "price": 7999,
+                  "initialprice": 7999,
+                  "discount": 0
+            },
+            {
+                  "appid": "617d128aa7ad4233918212d1e9e83eb5",
+                  "name": "Offworld Trading Company",
+                  "publisher": "Mohawk Games",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "262d33debf4642b692885e253d906493",
+                  "name": "Diabotical",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "1e2dec7f41314405bac12eb74c20254f",
+                  "name": "Sludge Life",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 3499,
+                  "initialprice": 3499,
+                  "discount": 0
+            },
+            {
+                  "appid": "4e2072e53390489b8b35ddf6a1e52aa8",
+                  "name": "InnerSpace",
+                  "publisher": "Aspyr Media, Inc.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "b7e03852188247cfa4ad64d4aea475fd",
+                  "name": "SnowRunner",
+                  "publisher": "Focus Home",
+                  "price": 10990,
+                  "initialprice": 10990,
+                  "discount": 0
+            },
+            {
+                  "appid": "70b2243e8ca24d6f98c52b070f6181dc",
+                  "name": "Corruption 2029",
+                  "publisher": "The Bearded Ladies",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "02950ab2195f44dbb665264229b015c7",
+                  "name": "Assassin's Creed Syndicate",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "5e3b900f8d94451da887991be469bcaa",
+                  "name": "Faeria",
+                  "publisher": "Versus Evil",
+                  "price": 5099,
+                  "initialprice": 5099,
+                  "discount": 0
+            },
+            {
+                  "appid": "634a34e6116f4397bee478374708de9b",
+                  "name": "Anno 2205",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 11999,
+                  "initialprice": 11999,
+                  "discount": 0
+            },
+            {
+                  "appid": "fa4731fb6d8049269946113756cc4926",
+                  "name": "Aztez",
+                  "publisher": "Team Colorblind",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "7578096b1bb44f88aea5f317b3d819c7",
+                  "name": "Carcassonne",
+                  "publisher": "Asmodee",
+                  "price": 2069,
+                  "initialprice": 2069,
+                  "discount": 0
+            },
+            {
+                  "appid": "68d62e0ef69f4c3cbea9bf2984cdcf7a",
+                  "name": "Kingdom Come: Deliverance",
+                  "publisher": "Warhorse Studios",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "2d90b2be6c9947b18926a07ddd928410",
+                  "name": "Ticket to Ride",
+                  "publisher": "Asmodee",
+                  "price": 1999,
+                  "initialprice": 1999,
+                  "discount": 0
+            },
+            {
+                  "appid": "6a73486dcac04eca9a1831453e54d286",
+                  "name": "Zombie Army 4: Dead War",
+                  "publisher": "Rebellion",
+                  "price": 9499,
+                  "initialprice": 9499,
+                  "discount": 0
+            },
+            {
+                  "appid": "b90a24a6929a47f5a2cbbd47de73b6d7",
+                  "name": "Days of War Editor",
+                  "publisher": "Driven Arts",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "05c98a2164de4f96b2689824cab4ac34",
+                  "name": "Farming Simulator 19",
+                  "publisher": "Focus Home",
+                  "price": 6990,
+                  "initialprice": 6990,
+                  "discount": 0
+            },
+            {
+                  "appid": "6b228a1ad940496dabc89ec6640107f3",
+                  "name": "The Bridge",
+                  "publisher": "The Quantum Astrophysicists Guild",
+                  "price": 1999,
+                  "initialprice": 1999,
+                  "discount": 0
+            },
+            {
+                  "appid": "1c319cea18464c909b9b0c2ea5e155a0",
+                  "name": "Vampyr",
+                  "publisher": "Focus Home",
+                  "price": 14990,
+                  "initialprice": 14990,
+                  "discount": 0
+            },
+            {
+                  "appid": "1fef3c6fdd694cb98fa7bb79c4709b8b",
+                  "name": "Overpass",
+                  "publisher": "Bigben Interactive",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "0cbd1a647ba945fba3d793b150ee5a7d",
+                  "name": "Horace",
+                  "publisher": "505 Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "a1dc8e1eae69492d8af58ffc87b37fd2",
+                  "name": "Sundered Eldritch Edition",
+                  "publisher": "Thunder Lotus Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "fed082ca65fd45448e45a2e0f3bb22c3",
+                  "name": "Darksiders Warmastered Edition",
+                  "publisher": "THQ Nordic GmbH",
+                  "price": 3499,
+                  "initialprice": 3499,
+                  "discount": 0
+            },
+            {
+                  "appid": "7e486898119b4ed3a57764e4033f77b2",
+                  "name": "Steep",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 8999,
+                  "initialprice": 8999,
+                  "discount": 0
+            },
+            {
+                  "appid": "4530e0cba368471fbee9107df203c2e4",
+                  "name": "Darksiders II Deathinitive Edition",
+                  "publisher": "THQ Nordic GmbH",
+                  "price": 5599,
+                  "initialprice": 5599,
+                  "discount": 0
+            },
+            {
+                  "appid": "7ab1f8e424a044db8f8ee6ae394c2f88",
+                  "name": "Yooka-Laylee and the Impossible Lair",
+                  "publisher": "Team17 Digital Ltd",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "517692ef5d744e1d86b98e71a83903cb",
+                  "name": "Hello Neighbor",
+                  "publisher": "tinyBuild Games",
+                  "price": 1399,
+                  "initialprice": 1399,
+                  "discount": 0
+            },
+            {
+                  "appid": "fd9b1ebe196044828cee90fc29a431f7",
+                  "name": "The Talos Principle",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 6999,
+                  "initialprice": 6999,
+                  "discount": 0
+            },
+            {
+                  "appid": "6711c1797f8a44c3a4307be7e7d52592",
+                  "name": "Shadow Tactics",
+                  "publisher": "Daedalic Entertainment",
+                  "price": 7999,
+                  "initialprice": 7999,
+                  "discount": 0
+            },
+            {
+                  "appid": "0d649bc9d1824294ad0e28fe8e411043",
+                  "name": "Hyper Light Drifter",
+                  "publisher": "Heart Machine",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "18a61bb469a04bf0bceff64e36219e13",
+                  "name": "Faster Than Light",
+                  "publisher": "Subset Games",
+                  "price": 1699,
+                  "initialprice": 1699,
+                  "discount": 0
+            },
+            {
+                  "appid": "19c0e2ad1b0b45819bf20819aeb6d669",
+                  "name": "Totally Accurate Battle Simulator",
+                  "publisher": "Landfall Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "dcc78a59329543168b08b26cc9a65572",
+                  "name": "Metro Exodus",
+                  "publisher": "Koch Media",
+                  "price": 5600,
+                  "initialprice": 5600,
+                  "discount": 0
+            },
+            {
+                  "appid": "21eb73afb3b34940a2f41799f378f6ac",
+                  "name": "Little Inferno",
+                  "publisher": "Tomorrow Corporation",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "be60529b869c4a8dae064311aefdd1bd",
+                  "name": "SUPERHOT",
+                  "publisher": "SUPERHOT Sp. z.o.o",
+                  "price": 3999,
+                  "initialprice": 3999,
+                  "discount": 0
+            },
+            {
+                  "appid": "99c0e480aa634b11be54bd02b018ee1c",
+                  "name": "TowerFall Ascension",
+                  "publisher": "Matt Makes Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "ac46070b9807412daef46a19064f139c",
+                  "name": "Into The Breach",
+                  "publisher": "Subset Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "4f480f675a6c4947b1bbfbc73a7d3a93",
+                  "name": "Totally Reliable Delivery Service",
+                  "publisher": "tinyBuild Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "4dcdadc910184b389b064f0454ee97bd",
+                  "name": "Predator: Hunting Grounds",
+                  "publisher": "Sony Interactive Entertainment",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "73d31ce034024f27917316555efd89de",
+                  "name": "Jotun Valhalla Edition",
+                  "publisher": "Thunder Lotus Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "12e4d50149814b5d8a99ebcc8640a098",
+                  "name": "Rebel Galaxy Outlaw",
+                  "publisher": "Double Damage Games, Inc",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "eadfe2cf37f545a3abb8ac63e961123c",
+                  "name": "Outer Wilds",
+                  "publisher": "Annapurna Interactive",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "47c9019b197d4a9899e95a224bfbaedf",
+                  "name": "Maneater",
+                  "publisher": "Tripwire Interactive",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "ef763c445dc748ada03b5f04de057aa9",
+                  "name": "Bad North",
+                  "publisher": "Raw Fury",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "beb8a791e88c40609f6b99ae59df128b",
+                  "name": "Red Dead Redemption 2",
+                  "publisher": "Rockstar Games",
+                  "price": 23900,
+                  "initialprice": 23900,
+                  "discount": 0
+            },
+            {
+                  "appid": "9446ad21f4c24c9abcdc7f6b7d91b36c",
+                  "name": "Surviving Mars",
+                  "publisher": "Paradox Interactive",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "1d5a23ba86f447b690af427b50df7763",
+                  "name": "Atlas Mod Kit",
+                  "publisher": "StudioWildcard",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "6e5ca8f2abf44fa9a54f2bba8b95b1d3",
+                  "name": "Minit",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 1899,
+                  "initialprice": 1899,
+                  "discount": 0
+            },
+            {
+                  "appid": "3298096e41df45c4a42616542760365d",
+                  "name": "Conarium",
+                  "publisher": "Iceberg Interactive",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "adc33679280142dcb3d66fbf92342fb4",
+                  "name": "Ooblets",
+                  "publisher": "Glumberland",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "9c5bdc7c5dd94d6988d87a7aa98e6ebf",
+                  "name": "Celeste",
+                  "publisher": "Matt Makes Games",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "eb54a612eac94443888d40295b4c6234",
+                  "name": "Fez",
+                  "publisher": "Polytron Corporation, Inc",
+                  "price": 1699,
+                  "initialprice": 1699,
+                  "discount": 0
+            },
+            {
+                  "appid": "1d2d37ffabdf4d97b10577499238b487",
+                  "name": "For Honor",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 15999,
+                  "initialprice": 15999,
+                  "discount": 0
+            },
+            {
+                  "appid": "eed2eaea15864c52a7fe8c122dd6ce03",
+                  "name": "Overcooked",
+                  "publisher": "Team17 Digital Ltd",
+                  "price": 3899,
+                  "initialprice": 3899,
+                  "discount": 0
+            },
+            {
+                  "appid": "78969a1db7724efcbe1ee42fa47af443",
+                  "name": "Limbo",
+                  "publisher": "Playdead",
+                  "price": 1699,
+                  "initialprice": 1699,
+                  "discount": 0
+            },
+            {
+                  "appid": "090f31551275474fa2c70e821ac79493",
+                  "name": "Last Day of June",
+                  "publisher": "505 Games",
+                  "price": 3599,
+                  "initialprice": 3599,
+                  "discount": 0
+            },
+            {
+                  "appid": "4fece93e9da94d6fa312f2a5a454a405",
+                  "name": "Gods & Monsters",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 24990,
+                  "initialprice": 24990,
+                  "discount": 0
+            },
+            {
+                  "appid": "63c8cb6b696f433aa13cc943855cd91a",
+                  "name": "Rebel Galaxy",
+                  "publisher": "Double Damage Games, Inc",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "68471ffa1abb488aaa6d7c04bd5eff85",
+                  "name": "Omen of Sorrow",
+                  "publisher": "AOne Games",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "0a691334b070484a8fdbfd33642a8d80",
+                  "name": "The Sojourn",
+                  "publisher": "Iceberg Interactive",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "22d72beb09144234a1be92df9231e269",
+                  "name": "Enter The Gungeon",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 3199,
+                  "initialprice": 3199,
+                  "discount": 0
+            },
+            {
+                  "appid": "2b99cd1091a040b3b61c9248f7dae54b",
+                  "name": "Anno 1800",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 15999,
+                  "initialprice": 15999,
+                  "discount": 0
+            },
+            {
+                  "appid": "4e2778dd5bae4024a7293518087239ce",
+                  "name": "Ghostbusters: The Video Game Remastered",
+                  "publisher": "Saber Interactive",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "afe30d1ebc664482b74afc7087fab321",
+                  "name": "Layers of Fear",
+                  "publisher": "Aspyr Media, Inc.",
+                  "price": 4199,
+                  "initialprice": 4199,
+                  "discount": 0
+            },
+            {
+                  "appid": "fdf22ba0f79b4cdda26efacdd6da0531",
+                  "name": "Stories Untold",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 2499,
+                  "initialprice": 2499,
+                  "discount": 0
+            },
+            {
+                  "appid": "385b4aa9184048c4bfb7638c18c16c1d",
+                  "name": "Detroit: Become Human",
+                  "publisher": "Quantic Dream",
+                  "price": 9899,
+                  "initialprice": 9899,
+                  "discount": 0
+            },
+            {
+                  "appid": "768ffd16f4ea4b3a96e6b75ad6fbaa64",
+                  "name": "John Wick Hex",
+                  "publisher": "Good Shepherd Entertainment",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "6a76c942e36e46c4ab566a21b5f46461",
+                  "name": "Human Resource Machine",
+                  "publisher": "Tomorrow Corporation",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "2621e3f77bcc4a868ce1ec2b32da6632",
+                  "name": "7 Billion Humans",
+                  "publisher": "Tomorrow Corporation",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "97f147f54d084f75907a47a2108c5d66",
+                  "name": "The Pathless",
+                  "publisher": "Annapurna Interactive",
+                  "price": 7599,
+                  "initialprice": 7599,
+                  "discount": 0
+            },
+            {
+                  "appid": "a144bb7b55cf4265933a26e287723418",
+                  "name": "Diesel Brothers Truck Building Simulator Editor",
+                  "publisher": "Code Horizon",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "674c5786721a4f24a99d89199948acc3",
+                  "name": ">observer_",
+                  "publisher": "Aspyr Media, Inc.",
+                  "price": 5599,
+                  "initialprice": 5599,
+                  "discount": 0
+            },
+            {
+                  "appid": "5c36e7edaa91442496d9223bccce9e66",
+                  "name": "World of Goo",
+                  "publisher": "2D Boy",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "6f37f05b306b48cdbab3db5e50633ebe",
+                  "name": "Dauntless",
+                  "publisher": "Phoenix Labs",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "21da750de4f448eb981a43b2cd216c4d",
+                  "name": "Drawful 2",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 1899,
+                  "initialprice": 1899,
+                  "discount": 0
+            },
+            {
+                  "appid": "c1a3dd40945943049efa05ccd3f8a10c",
+                  "name": "The Jackbox Party Pack 5",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "03138d67b0ef4ae1947d1656fa38160d",
+                  "name": "The Jackbox Party Pack 4",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 4599,
+                  "initialprice": 4599,
+                  "discount": 0
+            },
+            {
+                  "appid": "d3a19ed2f6254f11864aa925b7350dd5",
+                  "name": "The Jackbox Party Pack 3",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 4599,
+                  "initialprice": 4599,
+                  "discount": 0
+            },
+            {
+                  "appid": "7031c37e06db4c6f8f15717faba47c12",
+                  "name": "The Jackbox Party Pack 2",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 4599,
+                  "initialprice": 4599,
+                  "discount": 0
+            },
+            {
+                  "appid": "97cc2fd7d63446b8a97d04eac3fa6481",
+                  "name": "Shakedown Hawaii",
+                  "publisher": "Vblank Entertainment",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "0e3a524afe7043c39148c1c3c35dd6c7",
+                  "name": "Transistor",
+                  "publisher": "Supergiant Games LLC",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "9dd87f45b11b40cbabf382a6dd1f71fd",
+                  "name": "Heavy Rain",
+                  "publisher": "Quantic Dream",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "9a4ca0176da9484abb58636616aec0c3",
+                  "name": "Beyond: Two Souls",
+                  "publisher": "Quantic Dream",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "f687b9ca6725409494d7ffba82d5abaf",
+                  "name": "The Cycle",
+                  "publisher": "YAGER",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "c3e670da245f47cdae2d91c9ea7774ff",
+                  "name": "Trover Saves the Universe",
+                  "publisher": "Squanch Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "0b81a29f7d1f4a9f9705a672db6ce172",
+                  "name": "Observation",
+                  "publisher": "Devolver Digital, Inc.",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "5622f1e982b94b5281fd252a45947016",
+                  "name": "Control",
+                  "publisher": "505 Games",
+                  "price": 11399,
+                  "initialprice": 11399,
+                  "discount": 0
+            },
+            {
+                  "appid": "b0f9a5f3159743cea8a750ea11f58685",
+                  "name": "The Walking Dead: Michonne",
+                  "publisher": "Skybound Interactive",
+                  "price": 3199,
+                  "initialprice": 3199,
+                  "discount": 0
+            },
+            {
+                  "appid": "1d5b634b8e8c4b96b9083fc6efb986be",
+                  "name": "The Witness",
+                  "publisher": "Thekla, Inc.",
+                  "price": 7299,
+                  "initialprice": 7299,
+                  "discount": 0
+            },
+            {
+                  "appid": "6765784108c7432b84f4d5265cb42506",
+                  "name": "The Sinking City",
+                  "publisher": "Bigben Interactive",
+                  "price": 11399,
+                  "initialprice": 11399,
+                  "discount": 0
+            },
+            {
+                  "appid": "d9abe2371ab64987906aff81a0ee0e61",
+                  "name": "Watch Dogs 2",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 12999,
+                  "initialprice": 12999,
+                  "discount": 0
+            },
+            {
+                  "appid": "1ce540ccb5dc413780931468235ac813",
+                  "name": "Tom Clancy's Ghost Recon Wildlands",
+                  "publisher": "Ubisoft Entertainment",
+                  "price": 14999,
+                  "initialprice": 14999,
+                  "discount": 0
+            },
+            {
+                  "appid": "2fac548ec91647e5a77b8a922bda68c7",
+                  "name": "Afterparty",
+                  "publisher": "Night School Studio, LLC",
+                  "price": 3799,
+                  "initialprice": 3799,
+                  "discount": 0
+            },
+            {
+                  "appid": "6fec76da0f6a46daa2d5a408b59a7836",
+                  "name": "Phoenix Point",
+                  "publisher": "Snapshot Games",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "be188e672dde452d9e517e5782e93f97",
+                  "name": "Operencia: The Stolen Sun",
+                  "publisher": "Zen Studios",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "ef91dfe239c34d6982962b8ed7575ff8",
+                  "name": "RollerCoaster Tycoon Adventures",
+                  "publisher": "Atari",
+                  "price": 6299,
+                  "initialprice": 6299,
+                  "discount": 0
+            },
+            {
+                  "appid": "383be34c943b457889e956a9e8a88142",
+                  "name": "Oxenfree",
+                  "publisher": "Night School Studio, LLC",
+                  "price": 1899,
+                  "initialprice": 1899,
+                  "discount": 0
+            },
+            {
+                  "appid": "26788f6304b749639f1797b56de09a2e",
+                  "name": "Satisfactory",
+                  "publisher": "Coffee Stain Studios",
+                  "price": 5999,
+                  "initialprice": 5999,
+                  "discount": 0
+            },
+            {
+                  "appid": "8806877c1c0d426ba71cb2a7a5e836ec",
+                  "name": "Outward",
+                  "publisher": "Koch Media",
+                  "price": 9000,
+                  "initialprice": 9000,
+                  "discount": 0
+            },
+            {
+                  "appid": "135c95a7a0404471b5f895fbd116f794",
+                  "name": "Dangerous Driving",
+                  "publisher": "Three Fields Entertainment",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "39024e02833e4c6a932de4debd064f25",
+                  "name": "Helium Rain Mod Kit",
+                  "publisher": "Deimos Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "847e61b98a844df193979f6dcad6cfa2",
+                  "name": "Slime Rancher",
+                  "publisher": "Monomi Park",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "fc0961b1743c40f39447c6a27c3f0dd3",
+                  "name": "World War Z",
+                  "publisher": "Saber Interactive",
+                  "price": 4799,
+                  "initialprice": 4799,
+                  "discount": 0
+            },
+            {
+                  "appid": "3a1b4add3f1942d39ff54fa7d136e6e0",
+                  "name": "Thimbleweed Park",
+                  "publisher": "Terrible Toybox, Inc.",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "15a6c7220ba045448aeaed7e7c2f9a1f",
+                  "name": "Axiom Verge",
+                  "publisher": "Thomas Happ Games LLC",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "d2a9dabba02942d8a76bee6f4b6b4fdd",
+                  "name": "Subnautica Below Zero",
+                  "publisher": "Unknown Worlds Entertainment",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "bec351206ba240a19773d4f9b707abd2",
+                  "name": "Genesis Alpha One",
+                  "publisher": "Team17 Digital Ltd",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "3782ca6fec0a46b5a9042d11657c77f2",
+                  "name": "The Jackbox Party Pack",
+                  "publisher": "Jackbox Games, Inc.",
+                  "price": 4599,
+                  "initialprice": 4599,
+                  "discount": 0
+            },
+            {
+                  "appid": "fb95dc6d2c8f43479322bcef0826561c",
+                  "name": "Donut County",
+                  "publisher": "Annapurna Interactive",
+                  "price": 2689,
+                  "initialprice": 2689,
+                  "discount": 0
+            },
+            {
+                  "appid": "a1f38f2d5dc64777a84cd44b7d8e7f64",
+                  "name": "Gorogoa",
+                  "publisher": "Annapurna Interactive",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "864a0f5716984379a1714cce3769e212",
+                  "name": "What Remains of Edith Finch",
+                  "publisher": "Annapurna Interactive",
+                  "price": 3699,
+                  "initialprice": 3699,
+                  "discount": 0
+            },
+            {
+                  "appid": "6abd5c7aa1154b7ba6bd08159b52c1bd",
+                  "name": "My Time at Portia",
+                  "publisher": "Team17 Digital Ltd",
+                  "price": 7999,
+                  "initialprice": 7999,
+                  "discount": 0
+            },
+            {
+                  "appid": "13434c6d49b742c7b195201573c146c9",
+                  "name": "Super Meat Boy",
+                  "publisher": "Team Meat",
+                  "price": 2499,
+                  "initialprice": 2499,
+                  "discount": 0
+            },
+            {
+                  "appid": "b5849b3701964fc0ac014af72d088769",
+                  "name": "The Walking Dead: The Final Season",
+                  "publisher": "Skybound Interactive",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "a6d73af1b7de4ae086e61f462a351272",
+                  "name": "Subnautica",
+                  "publisher": "Unknown Worlds Entertainment",
+                  "price": 5799,
+                  "initialprice": 5799,
+                  "discount": 0
+            },
+            {
+                  "appid": "87241f1b98db4919bba45c48e4fdba2e",
+                  "name": "Darksiders III",
+                  "publisher": "THQ Nordic GmbH",
+                  "price": 18999,
+                  "initialprice": 18999,
+                  "discount": 0
+            },
+            {
+                  "appid": "5a61584bafd1403d852a0cd721742c71",
+                  "name": "Unreal Tournament Editor",
+                  "publisher": "Epic Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "2b6df25d595546f58275daf655932704",
+                  "name": "Ashen",
+                  "publisher": "Annapurna Interactive",
+                  "price": 7499,
+                  "initialprice": 7499,
+                  "discount": 0
+            },
+            {
+                  "appid": "1c2dbeafac91424ab2dfa73c44a70b51",
+                  "name": "Hades",
+                  "publisher": "Supergiant Games LLC",
+                  "price": 4749,
+                  "initialprice": 4749,
+                  "discount": 0
+            },
+            {
+                  "appid": "32f8dbf36e6641798b7da58e0fc0a482",
+                  "name": "Hello Neighbor Hide & Seek",
+                  "publisher": "tinyBuild Games",
+                  "price": 5699,
+                  "initialprice": 5699,
+                  "discount": 0
+            },
+            {
+                  "appid": "48c7f0bf6258425192032e42bbf56ae5",
+                  "name": "ARK Editor",
+                  "publisher": "StudioWildcard",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "7a9251d74a8144a9807e5e1fb42a65b5",
+                  "name": "Robo Recall Mod Kit",
+                  "publisher": "Epic Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "6bc597864eb642efa74b527354a93b84",
+                  "name": "Showmaker Dev Kit",
+                  "publisher": "Preapp Partners",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "0e9f89ca0e4a44e78fb78a631ca1acef",
+                  "name": "Battalion Dev Kit",
+                  "publisher": "Bulkhead Interactive",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "965be9bde7e84cceafb91386d260c2eb",
+                  "name": "PixArk",
+                  "publisher": "Snail Games USA",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "866602da89894aa89a0726adf5aa6d6a",
+                  "name": "Conan Exiles Dev Kit",
+                  "publisher": "Funcom",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "e8b82970f42b47bbad08ede2085ceb15",
+                  "name": "Bus Simulator 18",
+                  "publisher": "Astragon Entertainment GmbH",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "18c9b3932ed14c16b916782b88bd7711",
+                  "name": "Dark and Light Editor",
+                  "publisher": "Snail Games USA",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "fcb50aae3fde406f8c50ca13396a559e",
+                  "name": "Mars 2030 Editor",
+                  "publisher": "Fusion Media Group",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "175d27fd26794bf590e5cf0d35ef4986",
+                  "name": "VR Funhouse Editor",
+                  "publisher": "NVIDIA Lightspeed Studios",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "cb167762a6b9490493748a0f641f01e9",
+                  "name": "Squad Editor",
+                  "publisher": "Offworld Industries",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "6da77092c2c54f2788b43b82d9537e8d",
+                  "name": "Hello Neighbor Mod Kit",
+                  "publisher": "tinyBuild Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "d18ef6f0804f4e0dbc7586df9965fb18",
+                  "name": "Shadow Complex Remastered",
+                  "publisher": "Epic Games",
+                  "price": 2899,
+                  "initialprice": 2899,
+                  "discount": 0
+            },
+            {
+                  "appid": "5e9b31ab1afa40c5a21d7ed3c1e4e49d",
+                  "name": "Fortnite",
+                  "publisher": "Epic Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            },
+            {
+                  "appid": "633632da85674f4fbf2201d4750abb4b",
+                  "name": "Unreal Tournament",
+                  "publisher": "Epic Games",
+                  "price": 0,
+                  "initialprice": 0,
+                  "discount": 0
+            }
+      ]
+}
