@@ -1,4 +1,3 @@
-import csv
 from ctypes import Array
 from datetime import datetime
 import json
@@ -63,41 +62,48 @@ class SteamCrawling:
         self.options.use_chromium = True
         self.options.add_argument("headless")
         self.options.add_argument("disable-gpu")
+        self.options.add_argument('log-level=3')
         self.driver = Edge(options=self.options)
 
         # Parâmetros da Query
         self.ids = []
         self.gamesInfo = []
-        self.quantityCap = 500
+        self.quantityCap = 10
 
         # Parâmetros do JSON
-        self.jsonName = 'steamCrawler-' + datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        self.jsonName = 'steamCrawler-' + datetime.now().strftime("%d-%m-%Y %H-%M-%S")
         pass
 
+    """Concatena uma categoria com a URL base"""
     def getCategoryURL(self, category: str) -> str:
         return self.baseCategoryURL + category
 
+    """Faz uma requisição para retornar os detalhes do jogo com o id"""
     def getIdInfo(self, id: int) -> str:
         response = requests.get(f'https://steamspy.com/api.php?request=appdetails&appid={id}')
         if response.status_code != 200:
             response.raise_for_status()
         return response.text
 
+    """Converte a informação de um jogo de string para um objeto e adiciona no gamesInfo"""
     def addGameInfo(self, idInfoText: str) -> None:
         self.gamesInfo.append(json.loads(idInfoText))
         pass
 
+    """Realiza o processo para todos os IDs de jogos"""
     def getIdsInfo(self) -> Array:
         for id in tqdm(self.ids):
             idInfoText = self.getIdInfo(id)
             self.addGameInfo(idInfoText)
         return self.gamesInfo
 
+    """Salva as informações adquiridas num JSON"""
     def saveGamesInfoInJSON(self) -> None:
         gamesInfoFile = open(f'{self.jsonName}.json', 'w')
         json.dump(self.gamesInfo, gamesInfoFile, indent=6)
         gamesInfoFile.close()
     
+    """Crawling para selecionar os IDs das diferentes categorias"""
     def getIds(self) -> Array:
         for category in tqdm(self.categories):
             self.driver.get(self.getCategoryURL(category))
@@ -108,16 +114,19 @@ class SteamCrawling:
                     self.ids.append(result['data-ds-appid'])
         pass
 
+    """Aplica um limite de jogos"""
     def applyCap(self) -> None:
         if self.quantityCap != -1:
             random.shuffle(self.ids)
             self.ids = random.sample(self.ids, self.quantityCap)
 
+    """Função que realiza todo o processo do começo ao fim"""
     def start(self) -> None:
         print('-Iniciando Steam Crawling')
         print('-Crawling dos IDs dos Jogos')
         self.getIds()
         print(f'-Aplicando limite de {self.quantityCap} itens')
+        self.applyCap()
         print('-Extraindo Informações dos IDs')
         self.getIdsInfo()
         print(f'-Exportando arquivo: <{self.jsonName}.json>')
