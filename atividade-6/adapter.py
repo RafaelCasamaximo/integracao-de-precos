@@ -1,7 +1,8 @@
 from ctypes import Array
 import json
-from typing import Dict
+from typing import Any, Dict
 from datetime import datetime
+import re
 
 """
 Formato padrão de exportação
@@ -41,46 +42,77 @@ class Adapter:
     def handleSteamCollection(self, collection: Array) -> Array:
         steamCollection = []
         for item in collection:
-            steamCollection.append(self.handleSteamItem(item))
+            steamItem = self.handleSteamItem(item)
+            if steamItem != None and self.checkProductIntegrity(steamItem):
+                steamCollection.append(steamItem)
 
         self.steamCollection = steamCollection
         return steamCollection
 
     def handleSteamItem(self, item: Dict) -> Dict:
-        steamItem = {
+        try:
+            steamItem = {
             'id': str(item['appid']),
             'name': item['name'],
             'genre': item['genre'],
             'languages': item['languages'],
             'publisher': item['publisher'],
-            'isFree': True if int(item['initialprice']) == 0 else False,
+            'isFree': True if item['initialprice'] == '0' else False,
             'originalPrice': int(item['initialprice']),
             'dicountPrice': int(item['price']),
-            'dicount': int(item['discount'])
-        }
-        return steamItem
+            'dicount': int(item['discount']),
+            'currency': item['currency']
+            }
+            return steamItem
+        except:
+            pass
+        return None
 
 
 
     def handlePlaystationCollection(self, collection: Array) -> Array:
         playstationCollection = []
         for item in collection:
-            playstationCollection.append(self.handlePlaystationItem(item))
+            playstationItem = self.handlePlaystationItem(item)
+            if playstationItem != None and self.checkProductIntegrity(playstationItem):
+                playstationCollection.append(playstationItem)
 
         self.playstationCollection = playstationCollection
         return playstationCollection
 
+    def checkIfProductIsFree(self, item: Dict) -> bool:
+        if item['originalPrice'] == 'Gratuito':
+            return True
+        return False
+
+    def priceToNumber(self, price: Any) -> int:
+        value = re.sub('[^0-9]', '', str(price))
+        return value
+
+    def tryConvertToNumber(self, value):
+        result = 0
+        try:
+            result = int(value)
+        except:
+            result = value
+        return value
+
     def handlePlaystationItem(self, item: Dict) -> Dict:
+
+        if item == None:
+            return
+
         playstationItem = {
             'id': item['id'],
             'name': item['name'],
             'genre': item['genre'],
             'languages': item['textLanguages'],
             'publisher': item['publisher'],
-            'isFree': True if int(item['originalPrice']) == 'Gratuito' else False,
-            'originalPrice': int(item['originalPrice']),
-            'dicountPrice': int(item['discountPrice']) if int(item['discountPrice']) != 'Gratuito' else 0,
-            'dicount': int(item['discount'])
+            'isFree': True if item['originalPrice'] == 'Gratuito' else False,
+            'originalPrice': self.tryConvertToNumber(self.priceToNumber(item['originalPrice'])),
+            'dicountPrice': self.tryConvertToNumber(self.priceToNumber(item['discountPrice'])) if item['discountPrice'] != 'Gratuito' else 0,
+            'dicount': self.tryConvertToNumber(self.priceToNumber(item['discount'])),
+            'currency': 'BRL'
         }
         return playstationItem
         
@@ -90,7 +122,10 @@ class Adapter:
     def handleEpicCollection(self, collection: Array) -> Array:
         epicCollection = []
         for item in collection:
-            epicCollection.append(self.handleEpicItem(item))
+            epicItem = self.handleEpicItem(item)
+            if epicItem != None and self.checkProductIntegrity(epicItem):
+                epicCollection.append(epicItem)
+
 
         self.epicCollection = epicCollection
         return epicCollection
@@ -105,10 +140,16 @@ class Adapter:
             'isFree': True if int(item['price']['totalPrice']['originalPrice']) == 0 else False,
             'originalPrice': int(item['price']['totalPrice']['originalPrice']),
             'dicountPrice': int(item['price']['totalPrice']['discountPrice']),
-            'dicount': int(item['price']['totalPrice']['discount'])
+            'dicount': int(item['price']['totalPrice']['discount']),
+            'currency': 'BRL'
         }
         return epicItem
 
+    def checkProductIntegrity(self, product: Dict) -> bool:
+        for field in product:
+            if product[field] == '':
+                return False
+        return True
 
     def handleCollection(self) -> None:
         

@@ -1,3 +1,4 @@
+from email.policy import default
 import click
 
 from adapter import Adapter
@@ -10,15 +11,26 @@ from crawlingEpic import EpicCrawling
 @click.option('--steam', '-s', is_flag=True, help='Execute Steam Store General Crawling.')
 @click.option('--playstation', '-p', is_flag=True, help='Execute Playstation Store General Crawling.')
 @click.option('--epic', '-e', is_flag=True, help='Execute Epic Games General Crawling.')
-def cli(steam, playstation, epic):
+@click.option('--steamItemCap', '-sic', default=100, help='Cap the maximum item quantity from Steam.')
+@click.option('--playstationPageCap', '-ppc', default=5, help='Cap the page quantity from playstation store.')
+@click.option('--epicItemCap', '-eic', default=100, help='Cap the maximum item quantity from Epic.')
+@click.option('--epicItemOffset', '-eio', default=0, help='Offset from the start item on Epic.')
+def cli(steam, playstation, epic, steamitemcap, playstationpagecap, epicitemcap, epicitemoffset):
     
     adapter = Adapter()
     steamData = None
     playstationData = None
     epicData = None
 
+    steamCrawling = SteamCrawling()
+    steamCrawling.quantityCap = steamitemcap
+    playstationCrawling = PlaystationCrawling()
+    playstationCrawling.pageQuantity = playstationpagecap
+    epicCrawling = EpicCrawling()
+    epicCrawling.quantityCap = epicitemcap
+    epicCrawling.quantityOffset = epicitemoffset
+
     if steam:
-        steamCrawling = SteamCrawling()
         print('-Iniciando Steam Crawling')
         print('-Crawling dos IDs dos Jogos')
         steamCrawling.getIds()
@@ -31,7 +43,6 @@ def cli(steam, playstation, epic):
         pass
 
     if playstation:
-        playstationCrawling = PlaystationCrawling()
         print('-Iniciando Playstation Store Crawling')
         print('-Crawling dos IDs dos Jogos')
         print(f'-Extraindo IDs das primeiras {playstationCrawling.pageQuantity} páginas')
@@ -43,7 +54,6 @@ def cli(steam, playstation, epic):
         pass
 
     if epic:
-        epicCrawling = EpicCrawling()
         print('-Iniciando Epic Crawling')
         print(f'-Limite de {epicCrawling.quantityCap} itens')
         print('-Extraindo Informações dos IDs')

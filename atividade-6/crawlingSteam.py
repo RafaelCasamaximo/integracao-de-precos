@@ -85,16 +85,36 @@ class SteamCrawling:
             response.raise_for_status()
         return response.text
 
+    def getGamePrice(self, id: int):
+        response = requests.get(f'https://store.steampowered.com/api/appdetails?appids={id}')
+        if response.status_code != 200:
+            response.raise_for_status()
+        responseObject = json.loads(response.text)
+        try:
+            price = responseObject[list(responseObject.keys())[0]]['data']['price_overview']
+        except:
+            price = ''
+        return price
+
     """Converte a informação de um jogo de string para um objeto e adiciona no gamesInfo"""
-    def addGameInfo(self, idInfoText: str) -> None:
-        self.gamesInfo.append(json.loads(idInfoText))
+    def addGameInfo(self, idInfoText: str, price) -> None:
+        gameItem = json.loads(idInfoText)
+        if price != '':
+            gameItem['initialprice'] = price['initial']
+            gameItem['price'] = price['final']
+            gameItem['discount'] = price['initial'] - price['final']
+            gameItem['currency'] = 'BRL'
+        else:
+            gameItem['currency'] = 'USD'
+        self.gamesInfo.append(gameItem)
         pass
 
     """Realiza o processo para todos os IDs de jogos"""
     def getIdsInfo(self) -> Array:
         for id in tqdm(self.ids):
             idInfoText = self.getIdInfo(id)
-            self.addGameInfo(idInfoText)
+            price = self.getGamePrice(id)
+            self.addGameInfo(idInfoText, price)
         return self.gamesInfo
 
     """Salva as informações adquiridas num JSON"""

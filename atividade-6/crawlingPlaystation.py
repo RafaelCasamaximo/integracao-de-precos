@@ -23,7 +23,7 @@ class PlaystationCrawling:
         self.driver = Edge(options=self.options)
 
         # Parâmetros da Query
-        self.pageQuantity = 5
+        self.pageQuantity = 1
         self.ids = []
         self.gamesInfo = []
 
