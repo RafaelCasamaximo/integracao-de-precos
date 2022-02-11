@@ -77,10 +77,10 @@ public abstract class DAOFactory implements AutoCloseable {
         }
     }
 
+    public abstract LojaDAO getLojaDAO();
+
     @Override
     public void close() throws SQLException {
         closeConnection();
     }
-
-    public abstract LojaDAO getLojaDAO();
 }
