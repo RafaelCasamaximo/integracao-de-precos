@@ -8,8 +8,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- *
- * @author dskaster
  * @param <T>
  */
 public interface DAO<T> {
