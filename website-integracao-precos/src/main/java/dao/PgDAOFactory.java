@@ -18,6 +18,11 @@ public class PgDAOFactory extends DAOFactory {
     }
 
     @Override
+    public EmpresaDAO getEmpresaDAO() {
+        return new PgEmpresaDAO(this.connection);
+    }
+
+    @Override
     public JogoDAO getJogoDAO() {
         return new PgJogoDAO(this.connection);
     }
