@@ -18,9 +18,9 @@ public class PgLojaDAO implements LojaDAO {
         this.connection = connection;
     }
 
-    private static String READ_QUERY =
+    private static final String READ_QUERY =
             "SELECT id, nome " +
-                    "FROM integracao_precos.loja " +
+                    "FROM loja " +
                     "WHERE id = ?;";
 
     private static final String ALL_QUERY =

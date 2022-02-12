@@ -3,6 +3,16 @@ package model;
 public class Jogo {
     private Integer id;
     private String nome;
+    private String genero;
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
     private String linguagens_suportadas;
     private Boolean suporte_a_controle;
     private String nome_empresa;

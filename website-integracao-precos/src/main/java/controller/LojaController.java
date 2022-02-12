@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(name = "LojaController", urlPatterns = { "/loja" })
+@WebServlet(name = "LojaController", urlPatterns = { "" })
 public class LojaController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class LojaController extends HttpServlet {
         RequestDispatcher dispatcher;
 
         switch (request.getServletPath()) {
-            case "/loja":
+            case "":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()) {
                     dao = daoFactory.getLojaDAO();
 
