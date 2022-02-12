@@ -18,19 +18,45 @@ public class PgLojaDAO implements LojaDAO {
         this.connection = connection;
     }
 
+    private static final String CREATE_QUERY =
+            "INSERT INTO loja " +
+                    "(nome) " +
+                    "VALUES (?);";
+
     private static final String READ_QUERY =
             "SELECT id, nome " +
                     "FROM loja " +
                     "WHERE id = ?;";
 
+    private static final String UPDATE_QUERY =
+            "UPDATE loja " +
+                    "SET nome=? " +
+                    "WHERE id=?;";
+
+    private static final String DELETE_QUERY =
+            "DELETE FROM loja " +
+                    "WHERE id=?;";
+
     private static final String ALL_QUERY =
-            "SELECT id, nome " +
+            "SELECT * " +
                     "FROM loja " +
                     "ORDER BY id;";
 
     @Override
     public void create(Loja loja) throws SQLException {
+        try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY)) {
+            statement.setString(1, loja.getNome());
 
+            statement.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().contains("not-null")) {
+                throw new SQLException("Erro ao criar loja: pelo menos um campo está em branco.");
+            } else {
+                throw new SQLException("Erro ao criar loja.");
+            }
+        }
     }
 
     @Override
@@ -62,12 +88,39 @@ public class PgLojaDAO implements LojaDAO {
 
     @Override
     public void update(Loja loja) throws SQLException {
+        try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
+            statement.setString(1, loja.getNome());
+            statement.setInt(2, loja.getId());
 
+            statement.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().contains("not-null")) {
+                throw new SQLException("Erro ao editar loja: pelo menos um campo está em branco.");
+            } else {
+                throw new SQLException("Erro ao editar loja.");
+            }
+        }
     }
 
     @Override
     public void delete(Integer id) throws SQLException {
+        try (PreparedStatement statement = connection.prepareStatement(DELETE_QUERY)) {
+            statement.setInt(1, id);
 
+            if (statement.executeUpdate() < 1) {
+                throw new SQLException("Erro ao excluir: loja não encontrada.");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().equals("Erro ao excluir: loja não encontrada.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao excluir loja.");
+            }
+        }
     }
 
     @Override

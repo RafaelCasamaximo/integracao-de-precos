@@ -1,7 +1,6 @@
 package dao;
 
 import model.Empresa;
-import model.Jogo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
