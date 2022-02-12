@@ -19,13 +19,13 @@ public class PgLojaDAO implements LojaDAO {
     }
 
     private static String READ_QUERY =
-            "SELECT id, nome" +
-                    "FROM j2ee.loja" +
+            "SELECT id, nome " +
+                    "FROM integracao_precos.loja " +
                     "WHERE id = ?;";
 
     private static final String ALL_QUERY =
-            "SELECT id, nome" +
-                    "FROM j2ee.loja" +
+            "SELECT id, nome " +
+                    "FROM loja " +
                     "ORDER BY id;";
 
     @Override
