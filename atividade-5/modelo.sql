@@ -35,6 +35,8 @@ CREATE TABLE IntegracaoPrecos.LojaJogos(
     id_loja INT,
     id_jogo INT,
     preco_jogo NUMERIC(6, 2),
+    loja_crawl CHAR(10),
+    data_crawl DATE,
     CONSTRAINT fk_id_loja FOREIGN KEY(id_loja)
         REFERENCES IntegracaoPrecos.Loja(id),
     CONSTRAINT fk_id_jogo FOREIGN KEY(id_jogo)
