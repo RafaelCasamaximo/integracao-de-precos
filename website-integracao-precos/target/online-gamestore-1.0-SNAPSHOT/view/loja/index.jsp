@@ -10,14 +10,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <%@include file="/view/include/header.jsp"  %>
     <title>[Loja App] Lojas</title>
 </head>
 <body>
+    <%@include file="/view/include/navbar.jsp" %>
     <div class="container">
-        <table>
+        <table class="table mt-5">
             <thead>
                 <tr>
                     <th>Nome</th>
+                    <th>Jogos</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,10 +30,16 @@
                         <td>
                             <span><c:out value="${loja.nome}"/></span>
                         </td>
+                        <td>
+                            <a type="button" class="btn btn-primary" href="${pageContext.servletContext.contextPath}/ListaJogos/${loja.nome}" >
+                                Visualizar
+                            </a>
+                        </td>
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
     </div>
+    <%@include file="/view/include/scripts.jsp"%>
 </body>
 </html>
