@@ -1,5 +1,6 @@
 package dao;
 
+import model.Jogo;
 import model.LojaJogos;
 
 import java.sql.*;
@@ -35,6 +36,15 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
     private static final String ALL_QUERY =
             "SELECT * " +
                     "FROM lojajogos;";
+
+    private static final String CRAWL_ENTRY_QUERY =
+            "SELECT t1.id_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa " +
+                    "t2.id_empresa " +
+                    "FROM lojajogos AS t1 " +
+                    "INNER JOIN jogo AS t2 " +
+                    "ON t1.id_jogo = t2.id " +
+                    "WHERE id_loja=? AND id_jogo=? AND data_crawl=?;";
 
     @Override
     public void create(LojaJogos lojaJogos) throws SQLException {
@@ -157,7 +167,42 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
     }
 
     @Override
-    public LojaJogos getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) {
-        return null;
+    public Jogo getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) throws SQLException {
+        LojaJogos lojaJogos = new LojaJogos();
+        Jogo jogo = new Jogo();
+
+        try (PreparedStatement statement = connection.prepareStatement(CRAWL_ENTRY_QUERY)) {
+            statement.setInt(1, lojaJogos.getId_loja());
+            statement.setInt(2, lojaJogos.getId_jogo());
+            statement.setDate(3, lojaJogos.getData_crawl());
+
+            try (ResultSet result = statement.executeQuery()) {
+                if (result.next()) {
+                    jogo.setId(result.getInt("id"));
+                    jogo.setNome(result.getString("nome"));
+                    jogo.setGenero(result.getString("genero"));
+                    jogo.setLinguagens_suportadas(result.getString("linguagens_suportadas"));
+                    jogo.setSuporte_a_controle(result.getBoolean("suporte_a_controle"));
+                    jogo.setNome_empresa(result.getString("nome_empresa"));
+                    jogo.setGratuito(result.getBoolean("gratuito"));
+                    jogo.setIdade_requerida(result.getInt("idade_requerida"));
+                    jogo.setDescricao_curta(result.getString("descricao_curta"));
+                    jogo.setDescricao_longa(result.getString("descricao_longa"));
+                    jogo.setId_empresa(result.getInt("id_empresa"));
+                } else {
+                    throw new SQLException("Erro ao visualizar: tabela intermediária não encontrada.");
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().equals("Erro ao visualizar: tabela intermediária não encontrada.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao visualizar tabela intermediária.");
+            }
+        }
+
+        return jogo;
     }
 }
