@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="integracao-precos" target="11" />
+      <module name="integracao-precos" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

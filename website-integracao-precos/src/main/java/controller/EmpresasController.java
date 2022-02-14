@@ -3,6 +3,7 @@ package controller;
 import dao.DAO;
 import dao.DAOFactory;
 import model.Empresa;
+import model.Jogo;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -17,18 +18,16 @@ import java.util.List;
 public class EmpresasController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        DAO<Empresa> dao;
-        Empresa empresa;
+        DAO<Empresa> daoEmpresa;
         RequestDispatcher dispatcher;
 
         switch (request.getServletPath()){
             case "/Empresas":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()) {
-                    dao = daoFactory.getEmpresaDAO();
+                    daoEmpresa = daoFactory.getEmpresaDAO();
 
-                    List<Empresa> lista_empresa = dao.all();
+                    List<Empresa> lista_empresa = daoEmpresa.all();
                     request.setAttribute("lista_empresa", lista_empresa);
-
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
                 }
