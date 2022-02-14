@@ -23,7 +23,12 @@
                 <p class="card-text">
                     Os dados foram atualizados em: dd/mm/aa às hh:mm:ss
                 </p>
-                <a href="#" class="btn btn-primary">Solicitar Atualização</a>
+                <form
+                    class="form"
+                    action="${pageContext.servletContext.contextPath}/Dados/Solicitacao"
+                    method="POST">
+                    <button class="btn btn-primary" type="submit">Solicitar Atualização</button>
+                </form>
             </div>
         </div>
     </div>

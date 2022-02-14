@@ -1,6 +1,14 @@
 package model;
 
 public class Loja {
+    public Loja(){
+
+    }
+    public Loja(Integer id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
+
     private Integer id;
     private String nome;
 
