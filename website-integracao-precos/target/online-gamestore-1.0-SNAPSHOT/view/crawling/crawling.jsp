@@ -15,7 +15,7 @@
 <body>
     <%@include file="/view/include/navbar.jsp" %>
     <div class="container">
-        <div class="card text-center">
+        <div class="card text-center mt-5">
             <div class="card-header">
                 Detalhes sobre atualização
             </div>
