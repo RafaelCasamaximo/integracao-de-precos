@@ -92,6 +92,8 @@ public class PgLojaDAO implements LojaDAO {
             statement.setString(1, loja.getNome());
             statement.setInt(2, loja.getId());
 
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, statement + "\n nyah \n" + loja.getNome() + "\n" + loja.getId());
+
             statement.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);

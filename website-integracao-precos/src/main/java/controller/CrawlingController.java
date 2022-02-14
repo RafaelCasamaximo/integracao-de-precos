@@ -99,34 +99,33 @@ public class CrawlingController extends HttpServlet {
             lojaDAO = daoFactory.getLojaDAO();
             empresaDAO = daoFactory.getEmpresaDAO();
             lojaJogosDAO = daoFactory.getLojaJogosDAO();
+
+            //        For steam
+            Loja steamLoja = new Loja(0, "Steam");
+            Loja epicLoja = new Loja(1, "Epic");
+            Loja playstationLoja = new Loja(2, "Playstation");
+
+            //Cria ou dá update nas lojas
+            try {
+                lojaDAO.update(steamLoja);
+            } catch (SQLException ex){
+                lojaDAO.create(steamLoja);
+            }
+
+            try {
+                lojaDAO.update(epicLoja);
+            } catch (SQLException ex){
+                lojaDAO.create(epicLoja);
+            }
+
+            try {
+                lojaDAO.update(playstationLoja);
+            } catch (SQLException ex){
+                lojaDAO.create(playstationLoja);
+            }
         }catch (ClassNotFoundException | IOException | SQLException ex){
             throw new SQLException("Erro ao atualizar database.");
         }
-
-//        //For steam
-//        Loja steamLoja = new Loja(0, "Steam");
-//        Loja epicLoja = new Loja(1, "Epic");
-//        Loja playstationLoja = new Loja(2, "Playstation");
-//
-//
-//        //Cria ou dá update nas lojas
-//        try {
-//            lojaDAO.update(steamLoja);
-//        } catch (SQLException ex){
-//            lojaDAO.create(steamLoja);
-//        }
-//
-//        try {
-//            lojaDAO.update(epicLoja);
-//        } catch (SQLException ex){
-//            lojaDAO.create(epicLoja);
-//        }
-//
-//        try {
-//            lojaDAO.update(playstationLoja);
-//        } catch (SQLException ex){
-//            lojaDAO.create(playstationLoja);
-//        }
 
         ListaEmpresaEntry listaEmpresaEntry = new ListaEmpresaEntry(
                 new JSONArray(steamGamesArray.toString()),
