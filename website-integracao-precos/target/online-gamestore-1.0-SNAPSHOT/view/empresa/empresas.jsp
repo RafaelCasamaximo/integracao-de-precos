@@ -20,6 +20,7 @@
         <thead>
         <tr>
             <th>ID</th>
+            <th>Nome</th>
             <th>Descrição Curta</th>
             <th>Número de Jogos</th>
             <th>Website</th>
@@ -30,6 +31,9 @@
             <tr>
                 <td>
                     <span><c:out value="${empresa.id}"/></span>
+                </td>
+                <td>
+                    <span><c:out value="${empresa.nome}"/></span>
                 </td>
                 <td>
                     <span><c:out value="${empresa.descricao_curta}"/></span>

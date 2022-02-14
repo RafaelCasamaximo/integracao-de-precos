@@ -5,9 +5,7 @@ import JSONHelper.JSONEntry;
 import JSONHelper.JogoEntry;
 import JSONHelper.ListaEmpresaEntry;
 import com.google.gson.*;
-import dao.DAO;
-import dao.DAOFactory;
-import dao.LojaJogosDAO;
+import dao.*;
 import model.Empresa;
 import model.Jogo;
 import model.Loja;
@@ -21,7 +19,9 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -95,59 +95,145 @@ public class CrawlingController extends HttpServlet {
         DAO<LojaJogos> lojaJogosDAO;
 
         try (DAOFactory daoFactory = DAOFactory.getInstance()) {
+            // Instancias DAO
             jogoDAO = daoFactory.getJogoDAO();
             lojaDAO = daoFactory.getLojaDAO();
             empresaDAO = daoFactory.getEmpresaDAO();
             lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-            //        For steam
             Loja steamLoja = new Loja(0, "Steam");
             Loja epicLoja = new Loja(1, "Epic");
             Loja playstationLoja = new Loja(2, "Playstation");
 
-            //Cria ou dá update nas lojas
             try {
-                lojaDAO.update(steamLoja);
-            } catch (SQLException ex){
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Steam");
+            }catch (SQLException ex){
                 lojaDAO.create(steamLoja);
             }
 
             try {
-                lojaDAO.update(epicLoja);
-            } catch (SQLException ex){
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Epic");
+            }catch (SQLException ex){
                 lojaDAO.create(epicLoja);
             }
 
             try {
-                lojaDAO.update(playstationLoja);
-            } catch (SQLException ex){
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Playstation");
+            }catch (SQLException ex){
                 lojaDAO.create(playstationLoja);
             }
+
+            ListaEmpresaEntry listaEmpresaEntry = new ListaEmpresaEntry(
+                    new JSONArray(steamGamesArray.toString()),
+                    new JSONArray(epicGamesArray.toString()),
+                    new JSONArray(playstationGamesArray.toString())
+            );
+
+            for (EmpresaEntry empresaEntryAux : listaEmpresaEntry.empresas) {
+                Empresa empresa = new Empresa();
+                empresa.setNome(empresaEntryAux.nome);
+                empresa.setId(Integer.parseInt(empresaEntryAux.id));
+                empresa.setDescricao_curta("");
+                empresa.setNumero_jogos(0);
+                empresa.setWebsite("");
+
+                try {
+                    Empresa empresaAux = ((EmpresaDAO) empresaDAO).readByName(empresaEntryAux.nome);
+                }catch (SQLException ex){
+                    empresaDAO.create(empresa);
+                }
+            }
+
+
+            int id = 1;
+            for (JogoEntry jogoAux : jsonEntry.steam.jogos) {
+                Jogo jogo = new Jogo();
+                jogo.setId(id);
+                jogo.setNome(jogoAux.nome);
+                jogo.setGenero(jogoAux.genero);
+                jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
+                jogo.setSuporte_a_controle(jogoAux.suporte_a_controle);
+                jogo.setNome_empresa(jogoAux.nome_empresa);
+                jogo.setGratuito(jogoAux.gratuito);
+                jogo.setIdade_requerida(jogoAux.idade_requerida);
+                jogo.setDescricao_curta(jogoAux.descricao_curta);
+                jogo.setDescricao_longa(jogoAux.descricao_longa);
+                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
+                id++;
+                try {
+                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
+                }catch (SQLException ex){
+                    jogoDAO.create(jogo);
+                }
+
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
+                LojaJogos lojaJogos = new LojaJogos();
+                lojaJogos.setId_jogo(jogo.getId());
+                lojaJogos.setLoja_crawl("Steam");
+                lojaJogos.setId_loja(1);
+                lojaJogos.setPreco_jogo((float)jogoAux.preco_disconto);
+                lojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+//                lojaJogosDAO.create(lojaJogos);
+
+
+            }
+
+            for (JogoEntry jogoAux : jsonEntry.epic.jogos) {
+                Jogo jogo = new Jogo();
+                jogo.setId(id);
+                jogo.setNome(jogoAux.nome);
+                jogo.setGenero(jogoAux.genero);
+                jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
+                jogo.setSuporte_a_controle(jogoAux.suporte_a_controle);
+                jogo.setNome_empresa(jogoAux.nome_empresa);
+                jogo.setGratuito(jogoAux.gratuito);
+                jogo.setIdade_requerida(jogoAux.idade_requerida);
+                jogo.setDescricao_curta(jogoAux.descricao_curta);
+                jogo.setDescricao_longa(jogoAux.descricao_longa);
+                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
+                id++;
+                try {
+                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
+                }catch (SQLException ex){
+                    jogoDAO.create(jogo);
+                }
+
+            }
+
+            for (JogoEntry jogoAux : jsonEntry.playstation.jogos) {
+                Jogo jogo = new Jogo();
+                jogo.setId(id);
+                jogo.setNome(jogoAux.nome);
+                jogo.setGenero(jogoAux.genero);
+                jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
+                jogo.setSuporte_a_controle(jogoAux.suporte_a_controle);
+                jogo.setNome_empresa(jogoAux.nome_empresa);
+                jogo.setGratuito(jogoAux.gratuito);
+                jogo.setIdade_requerida(jogoAux.idade_requerida);
+                jogo.setDescricao_curta(jogoAux.descricao_curta);
+                jogo.setDescricao_longa(jogoAux.descricao_longa);
+                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
+                id++;
+                try {
+                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
+                }catch (SQLException ex){
+                    jogoDAO.create(jogo);
+                }
+
+            }
+
         }catch (ClassNotFoundException | IOException | SQLException ex){
             throw new SQLException("Erro ao atualizar database.");
+        } catch (java.text.ParseException e) {
+            e.printStackTrace();
         }
 
-        ListaEmpresaEntry listaEmpresaEntry = new ListaEmpresaEntry(
-                new JSONArray(steamGamesArray.toString()),
-                new JSONArray(epicGamesArray.toString()),
-                new JSONArray(playstationGamesArray.toString())
-        );
 
-        for (EmpresaEntry empresaEntryAux : listaEmpresaEntry.empresas) {
-            Empresa empresa = new Empresa();
-            empresa.setId(Integer.parseInt(empresaEntryAux.id));
-            empresa.setDescricao_curta("");
-            empresa.setNumero_jogos(0);
-            empresa.setWebsite("");
-//            try {
-//                empresaDAO.update(empresa);
-//            }catch (SQLException ex){
-//                empresaDAO.create(empresa);
-//            }
-        }
+
+
 
         /*
-        *
         * Percorrer todos os jogos de X loja
         * - Caso o jogo não exista, insere novo item
         * -- Caso o jogo já exista, insere novo item lojaTabela ou atualiza

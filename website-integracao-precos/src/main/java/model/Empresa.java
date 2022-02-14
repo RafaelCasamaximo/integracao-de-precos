@@ -2,6 +2,10 @@ package model;
 
 public class Empresa {
     private Integer id;
+
+
+
+    private String nome;
     private String descricao_curta;
     private Integer numero_jogos;
     private String website;
@@ -13,7 +17,13 @@ public class Empresa {
     public void setId(Integer id) {
         this.id = id;
     }
+    public String getNome() {
+        return nome;
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     public String getDescricao_curta() {
         return descricao_curta;
     }

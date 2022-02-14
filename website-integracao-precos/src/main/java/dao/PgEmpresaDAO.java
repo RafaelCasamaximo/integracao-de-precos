@@ -18,17 +18,22 @@ public class PgEmpresaDAO implements EmpresaDAO {
 
     private static final String CREATE_QUERY =
             "INSERT INTO empresa " +
-                    "(descricao_curta, numero_jogos, website) " +
-                    "VALUES (?, ?, ?)";
+                    "(descricao_curta, numero_jogos, website, nome) " +
+                    "VALUES (?, ?, ?, ?)";
 
     private static final String READ_QUERY =
             "SELECT * " +
                     "FROM empresa " +
                     "WHERE id=?;";
 
+    private static final String READ_BY_NAME_QUERY =
+            "SELECT * " +
+                    "FROM empresa " +
+                    "WHERE nome=?;";
+
     private static final String UPDATE_QUERY =
             "UPDATE empresa " +
-                    "SET descricao_curta=?, numero_jogos=?, website=? " +
+                    "SET descricao_curta=?, numero_jogos=?, website=?, nome=?" +
                     "WHERE id=?;";
 
     private static final String DELETE_QUERY =
@@ -45,6 +50,7 @@ public class PgEmpresaDAO implements EmpresaDAO {
             statement.setString(1, empresa.getDescricao_curta());
             statement.setInt(2, empresa.getNumero_jogos());
             statement.setString(3, empresa.getWebsite());
+            statement.setString(4, empresa.getNome());
 
             statement.executeUpdate();
         } catch (SQLException ex) {
@@ -70,6 +76,7 @@ public class PgEmpresaDAO implements EmpresaDAO {
                     empresa.setDescricao_curta(result.getString("descricao_curta"));
                     empresa.setNumero_jogos(result.getInt("numero_jogos"));
                     empresa.setWebsite(result.getString("website"));
+                    empresa.setNome(result.getString("nome"));
                 } else {
                     throw new SQLException("Erro ao visualizar: empresa não encontrada.");
                 }
@@ -93,7 +100,8 @@ public class PgEmpresaDAO implements EmpresaDAO {
             statement.setString(1, empresa.getDescricao_curta());
             statement.setInt(2, empresa.getNumero_jogos());
             statement.setString(3, empresa.getWebsite());
-            statement.setInt(4, empresa.getId());
+            statement.setString(4, empresa.getNome());
+            statement.setInt(5, empresa.getId());
 
             statement.executeUpdate();
         } catch (SQLException ex) {
@@ -139,6 +147,7 @@ public class PgEmpresaDAO implements EmpresaDAO {
                 empresa.setDescricao_curta(result.getString("descricao_curta"));
                 empresa.setNumero_jogos(result.getInt("numero_jogos"));
                 empresa.setWebsite(result.getString("website"));
+                empresa.setNome(result.getString("nome"));
 
                 lista_empresas.add(empresa);
             }
@@ -149,5 +158,36 @@ public class PgEmpresaDAO implements EmpresaDAO {
         }
 
         return lista_empresas;
+    }
+
+    @Override
+    public Empresa readByName(String name) throws SQLException, SecurityException
+    {
+        Empresa empresa = new Empresa();
+
+        try (PreparedStatement statement = connection.prepareStatement(READ_BY_NAME_QUERY)) {
+            statement.setString(1, name);
+            try (ResultSet result = statement.executeQuery()) {
+                if (result.next()) {
+                    empresa.setId(result.getInt("id"));
+                    empresa.setDescricao_curta(result.getString("descricao_curta"));
+                    empresa.setNumero_jogos(result.getInt("numero_jogos"));
+                    empresa.setWebsite(result.getString("website"));
+                    empresa.setNome(result.getString("nome"));
+                } else {
+                    throw new SQLException("Erro ao visualizar: empresa não encontrada.");
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().equals("Erro ao visualizar: empresa não encontrada.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao visualizar empresa.");
+            }
+        }
+
+        return empresa;
     }
 }

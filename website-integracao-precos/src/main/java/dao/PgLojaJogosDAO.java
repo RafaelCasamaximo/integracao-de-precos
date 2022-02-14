@@ -46,6 +46,8 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "ON t1.id_jogo = t2.id " +
                     "WHERE id_loja=? AND id_jogo=? AND data_crawl=?;";
 
+
+
     @Override
     public void create(LojaJogos lojaJogos) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY)) {
