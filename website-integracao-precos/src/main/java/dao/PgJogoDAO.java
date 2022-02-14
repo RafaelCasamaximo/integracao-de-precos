@@ -27,6 +27,12 @@ public class PgJogoDAO implements JogoDAO {
                     "FROM jogo " +
                     "WHERE id=?;";
 
+    private static final String READ_BY_NAME_QUERY =
+            "SELECT * " +
+                    "FROM jogo " +
+                    "WHERE nome=?;";
+
+
     private static final String UPDATE_QUERY =
             "UPDATE jogo " +
                     "SET nome=?, genero=?, linguagens_suportadas=?, suporte_a_controle=?, nome_empresa=?, " +
@@ -181,5 +187,41 @@ public class PgJogoDAO implements JogoDAO {
         }
 
         return lista_jogos;
+    }
+
+    public Jogo readByName(String name) throws SQLException, SecurityException
+    {
+        Jogo jogo = new Jogo();
+
+        try (PreparedStatement statement = connection.prepareStatement(READ_BY_NAME_QUERY)) {
+            statement.setString(1, name);
+            try (ResultSet result = statement.executeQuery()) {
+                if (result.next()) {
+                    jogo.setId(result.getInt("id"));
+                    jogo.setNome(result.getString("nome"));
+                    jogo.setGenero(result.getString("genero"));
+                    jogo.setLinguagens_suportadas(result.getString("linguagens_suportadas"));
+                    jogo.setSuporte_a_controle(result.getBoolean("suporte_a_controle"));
+                    jogo.setNome_empresa(result.getString("nome_empresa"));
+                    jogo.setGratuito(result.getBoolean("gratuito"));
+                    jogo.setIdade_requerida(result.getInt("idade_requerida"));
+                    jogo.setDescricao_curta(result.getString("descricao_curta"));
+                    jogo.setDescricao_longa(result.getString("descricao_longa"));
+                    jogo.setId_empresa(result.getInt("id_empresa"));
+                } else {
+                    throw new SQLException("Erro ao visualizar: jogo não encontrado.");
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().equals("Erro ao visualizar: jogo não encontrado.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao visualizar jogo.");
+            }
+        }
+
+        return jogo;
     }
 }

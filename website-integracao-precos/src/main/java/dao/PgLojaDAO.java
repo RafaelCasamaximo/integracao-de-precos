@@ -28,6 +28,11 @@ public class PgLojaDAO implements LojaDAO {
                     "FROM loja " +
                     "WHERE id = ?;";
 
+    private static final String READ_BY_NAME_QUERY =
+            "SELECT id, nome " +
+                    "FROM loja " +
+                    "WHERE nome = ?;";
+
     private static final String UPDATE_QUERY =
             "UPDATE loja " +
                     "SET nome=? " +
@@ -148,5 +153,33 @@ public class PgLojaDAO implements LojaDAO {
     @Override
     public void authenticate(Loja loja) throws SQLException, SecurityException {
 
+    }
+
+    @Override
+    public Loja readByName(String name) throws SQLException {
+        Loja loja = new Loja();
+
+        try (PreparedStatement statement = connection.prepareStatement(READ_BY_NAME_QUERY)) {
+            statement.setString(1, name);
+            try (ResultSet result = statement.executeQuery()) {
+                if (result.next()) {
+                    loja.setNome(name);
+                    loja.setNome(result.getString("nome"));
+                    loja.setId(result.getInt("id"));
+                } else {
+                    throw new SQLException("Erro ao visualizar: loja não encontrada");
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(PgLojaDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+                if (ex.getMessage().equals("Erro ao visualizar: loja não encontrada")) {
+                    throw ex;
+                } else {
+                    throw new SQLException("Erro ao visualizar loja");
+                }
+            }
+        }
+
+        return loja;
     }
 }
