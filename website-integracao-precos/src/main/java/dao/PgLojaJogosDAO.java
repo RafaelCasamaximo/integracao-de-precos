@@ -2,6 +2,7 @@ package dao;
 
 import model.Jogo;
 import model.LojaJogos;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -38,8 +39,8 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "FROM lojajogos;";
 
     private static final String CRAWL_ENTRY_QUERY =
-            "SELECT t1.id_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle " +
-                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa " +
+            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
                     "FROM lojajogos AS t1 " +
                     "INNER JOIN jogo AS t2 " +
@@ -169,14 +170,14 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
     }
 
     @Override
-    public Jogo getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) throws SQLException {
+    public ImmutablePair<Jogo, LojaJogos> getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) throws SQLException {
         LojaJogos lojaJogos = new LojaJogos();
         Jogo jogo = new Jogo();
 
         try (PreparedStatement statement = connection.prepareStatement(CRAWL_ENTRY_QUERY)) {
-            statement.setInt(1, lojaJogos.getId_loja());
-            statement.setInt(2, lojaJogos.getId_jogo());
-            statement.setDate(3, lojaJogos.getData_crawl());
+            statement.setInt(1, id_loja);
+            statement.setInt(2, id_jogo);
+            statement.setDate(3, data_crawl);
 
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
@@ -191,6 +192,8 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     jogo.setDescricao_curta(result.getString("descricao_curta"));
                     jogo.setDescricao_longa(result.getString("descricao_longa"));
                     jogo.setId_empresa(result.getInt("id_empresa"));
+                    lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
+                    lojaJogos.setId_jogo(result.getInt("id_jogo"));
                 } else {
                     throw new SQLException("Erro ao visualizar: tabela intermediária não encontrada.");
                 }
@@ -205,6 +208,6 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             }
         }
 
-        return jogo;
+        return new ImmutablePair<>(jogo, lojaJogos);
     }
 }

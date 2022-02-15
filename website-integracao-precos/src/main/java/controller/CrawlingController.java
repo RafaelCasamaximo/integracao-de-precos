@@ -25,6 +25,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;
 import org.json.JSONArray;
@@ -89,10 +90,10 @@ public class CrawlingController extends HttpServlet {
         jsonEntry.playstation.JsonArrayToList(new JSONArray(playstationGamesArray.toString()));
 
         //Instancia DAOs
-        DAO<Jogo> jogoDAO;
-        DAO<Loja> lojaDAO;
-        DAO<Empresa> empresaDAO;
-        DAO<LojaJogos> lojaJogosDAO;
+        JogoDAO jogoDAO;
+        LojaDAO lojaDAO;
+        EmpresaDAO empresaDAO;
+        LojaJogosDAO lojaJogosDAO;
 
         try (DAOFactory daoFactory = DAOFactory.getInstance()) {
             // Instancias DAO
@@ -106,21 +107,21 @@ public class CrawlingController extends HttpServlet {
             Loja playstationLoja = new Loja(2, "Playstation");
 
             try {
-                Loja loja = ((LojaDAO) lojaDAO).readByName("Steam");
-            }catch (SQLException ex){
                 lojaDAO.create(steamLoja);
+            }catch (SQLException ex){
+
             }
 
             try {
-                Loja loja = ((LojaDAO) lojaDAO).readByName("Epic");
-            }catch (SQLException ex){
                 lojaDAO.create(epicLoja);
+            }catch (SQLException ex){
+
             }
 
             try {
-                Loja loja = ((LojaDAO) lojaDAO).readByName("Playstation");
-            }catch (SQLException ex){
                 lojaDAO.create(playstationLoja);
+            }catch (SQLException ex){
+
             }
 
             ListaEmpresaEntry listaEmpresaEntry = new ListaEmpresaEntry(
@@ -138,17 +139,15 @@ public class CrawlingController extends HttpServlet {
                 empresa.setWebsite("");
 
                 try {
-                    Empresa empresaAux = ((EmpresaDAO) empresaDAO).readByName(empresaEntryAux.nome);
-                }catch (SQLException ex){
                     empresaDAO.create(empresa);
+                }catch (SQLException ex){
+
                 }
             }
 
 
-            int id = 1;
             for (JogoEntry jogoAux : jsonEntry.steam.jogos) {
                 Jogo jogo = new Jogo();
-                jogo.setId(id);
                 jogo.setNome(jogoAux.nome);
                 jogo.setGenero(jogoAux.genero);
                 jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
@@ -158,30 +157,31 @@ public class CrawlingController extends HttpServlet {
                 jogo.setIdade_requerida(jogoAux.idade_requerida);
                 jogo.setDescricao_curta(jogoAux.descricao_curta);
                 jogo.setDescricao_longa(jogoAux.descricao_longa);
-                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
-                id++;
+                jogo.setId_empresa(empresaDAO.readByName(jogoAux.nome_empresa).getId());
                 try {
-                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
-                }catch (SQLException ex){
                     jogoDAO.create(jogo);
+                }catch (SQLException ex){
+
                 }
 
+                Jogo jogoCriado = jogoDAO.readByName(jogoAux.nome);
                 Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
                 LojaJogos lojaJogos = new LojaJogos();
-                lojaJogos.setId_jogo(jogo.getId());
+                lojaJogos.setId_jogo(jogoCriado.getId());
                 lojaJogos.setLoja_crawl("Steam");
-                lojaJogos.setId_loja(1);
+                lojaJogos.setId_loja(lojaDAO.readByName("Steam").getId());
                 lojaJogos.setPreco_jogo((float)jogoAux.preco_disconto);
                 lojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
 
-//                lojaJogosDAO.create(lojaJogos);
+                try {
+                    lojaJogosDAO.create(lojaJogos);
+                }catch (Exception e){
 
-
+                }
             }
 
             for (JogoEntry jogoAux : jsonEntry.epic.jogos) {
                 Jogo jogo = new Jogo();
-                jogo.setId(id);
                 jogo.setNome(jogoAux.nome);
                 jogo.setGenero(jogoAux.genero);
                 jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
@@ -191,19 +191,17 @@ public class CrawlingController extends HttpServlet {
                 jogo.setIdade_requerida(jogoAux.idade_requerida);
                 jogo.setDescricao_curta(jogoAux.descricao_curta);
                 jogo.setDescricao_longa(jogoAux.descricao_longa);
-                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
-                id++;
+                jogo.setId_empresa(empresaDAO.readByName(jogoAux.nome_empresa).getId());
                 try {
-                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
-                }catch (SQLException ex){
                     jogoDAO.create(jogo);
+                }catch (SQLException ex){
+
                 }
 
             }
 
             for (JogoEntry jogoAux : jsonEntry.playstation.jogos) {
                 Jogo jogo = new Jogo();
-                jogo.setId(id);
                 jogo.setNome(jogoAux.nome);
                 jogo.setGenero(jogoAux.genero);
                 jogo.setLinguagens_suportadas(jogoAux.linguagens_suportadas);
@@ -213,12 +211,11 @@ public class CrawlingController extends HttpServlet {
                 jogo.setIdade_requerida(jogoAux.idade_requerida);
                 jogo.setDescricao_curta(jogoAux.descricao_curta);
                 jogo.setDescricao_longa(jogoAux.descricao_longa);
-                jogo.setId_empresa(((EmpresaDAO) empresaDAO).readByName(jogoAux.nome_empresa).getId());
-                id++;
+                jogo.setId_empresa(empresaDAO.readByName(jogoAux.nome_empresa).getId());
                 try {
-                    Jogo jogoAux2 = ((JogoDAO) jogoDAO).readByName(jogoAux.nome);
-                }catch (SQLException ex){
                     jogoDAO.create(jogo);
+                }catch (SQLException ex){
+
                 }
 
             }
