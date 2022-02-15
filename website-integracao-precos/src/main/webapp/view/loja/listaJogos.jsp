@@ -14,44 +14,56 @@
     <%@include file="/view/include/header.jsp"  %>
     <title>[Loja App] Lista</title>
 </head>
-<body>
+<body class="bg-light">
 <%@include file="/view/include/navbar.jsp" %>
-
+<br><br>
 <div class="container">
-    <table class="table mt-5">
-        <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Detalhes</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="jogo" items="${requestScope.lista_jogo}">
-            <tr>
-                <td>
-                    <span><c:out value="${jogo.left.nome}"/></span>
-                </td>
-                <td>
-                    <!-- Button trigger modal -->
-                    <a
-                            type="button"
-                            class="btn btn-primary link_visualizar_jogo"
-                            data-toggle="modal"
-                            data-target="#gameDetailModal"
-                            data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id_jogo=${jogo.right.id_jogo}&id_loja=${jogo.right.id_loja}&data_crawl=${jogo.right.data_crawl}"
-                            href="#"
-                    >
-                        Detalhes
-                    </a>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+    <div class="card mt-5 mb-5">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Loja</th>
+                    <th>Preço</th>
+                    <th>Detalhes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="jogo" items="${requestScope.lista_jogo}">
+                    <tr>
+                        <td>
+                            <span><c:out value="${jogo.left.nome}"/></span>
+                        </td>
+                        <td>
+                            <span><c:out value="${jogo.right.loja_crawl}" /></span>
+                        </td>
+                        <td>
+                            <span>R$<c:out value="${(jogo.right.preco_jogo / 100)}" /></span>
+                        </td>
+                        <td>
+                            <!-- Button trigger modal -->
+                            <a
+                                    type="button"
+                                    class="btn btn-primary link_visualizar_jogo"
+                                    data-toggle="modal"
+                                    data-target="#gameDetailModal"
+                                    data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id_jogo=${jogo.right.id_jogo}&id_loja=${jogo.right.id_loja}&data_crawl=${jogo.right.data_crawl}"
+                                    href="#"
+                            >
+                                Detalhes
+                            </a>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 <!-- Modal -->
 <div class="modal fade modal-visualizar-jogo" id="gameDetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">Descrição de Jogo</h5>
@@ -63,19 +75,34 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="p_id"></p>
-                            <p class="p_nome"></p>
-                            <p class="p_genero"></p>
-                            <p class="p_linguagens"></p>
-                            <p class="p_suporte"></p>
-                            <p class="p_empresa"></p>
-                            <p class="p_gratuito"></p>
-                            <p class="p_idade"></p>
-                            <p class="p_descricaoCurta"></p>
-                            <p class="p_descricaoLonga"></p>
-                            <p class="p_idEmpresa"></p>
-                            <p class="p_lojaCrawl"></p>
-                            <p class="p_preco"></p>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto</h5>
+                                    <p class="p_id"></p>
+                                    <p class="p_nome"></p>
+                                    <p class="p_idEmpresa"></p>
+                                    <p class="p_empresa"></p>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Loja</h5>
+                                    <p class="p_lojaCrawl"></p>
+                                    <p class="p_preco"></p>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Detalhes</h5>
+                                    <p class="p_genero"></p>
+                                    <p class="p_linguagens"></p>
+                                    <p class="p_suporte"></p>
+                                    <p class="p_gratuito"></p>
+                                    <p class="p_idade"></p>
+                                    <p class="p_descricaoCurta"></p>
+                                    <p class="p_descricaoLonga"></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

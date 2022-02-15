@@ -34,6 +34,10 @@ public class ListaEmpresaEntry {
             {
                 this.empresas.add(empresa);
             }
+            if(this.empresas.contains(empresa))
+            {
+                this.empresas.get(empresas.indexOf(empresa)).num_jogos++;
+            }
         }
 
         for (int i = 0; i < playstationJsonArray.length(); i++)

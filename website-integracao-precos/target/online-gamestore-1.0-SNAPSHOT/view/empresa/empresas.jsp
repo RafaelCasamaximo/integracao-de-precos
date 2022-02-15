@@ -13,41 +13,48 @@
     <%@include file="/view/include/header.jsp"  %>
     <title>[Loja App] Empresas</title>
 </head>
-<body>
+<body class="bg-light">
 <%@include file="/view/include/navbar.jsp" %>
+<br><br>
 <div class="container">
-    <table class="table mt-5">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Descrição Curta</th>
-            <th>Número de Jogos</th>
-            <th>Website</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="empresa" items="${requestScope.lista_empresa}">
-            <tr>
-                <td>
-                    <span><c:out value="${empresa.id}"/></span>
-                </td>
-                <td>
-                    <span><c:out value="${empresa.nome}"/></span>
-                </td>
-                <td>
-                    <span><c:out value="${empresa.descricao_curta}"/></span>
-                </td>
-                <td>
-                    <span><c:out value="${empresa.numero_jogos}"/></span>
-                </td>
-                <td>
-                    <span><c:out value="${empresa.website}"/></span>
-                </td>
-            </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+    <div class="card mt-5 mb-5">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição Curta</th>
+                    <th>Número de Jogos</th>
+                    <th>Website</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="empresa" items="${requestScope.lista_empresa}">
+                    <tr>
+                        <td>
+                            <span><c:out value="${empresa.id}"/></span>
+                        </td>
+                        <td>
+                            <span><c:out value="${empresa.nome}"/></span>
+                        </td>
+                        <td>
+                                <%--                    <span><c:out value="${empresa.descricao_curta}"/></span>--%>
+                            <span>Indisponível</span>
+                        </td>
+                        <td>
+                            <span><c:out value="${empresa.numero_jogos}"/></span>
+                        </td>
+                        <td>
+                                <%--                    <span><c:out value="${empresa.website}"/></span>--%>
+                            <span>Indisponível</span>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 <%@include file="/view/include/scripts.jsp"%>
 </body>

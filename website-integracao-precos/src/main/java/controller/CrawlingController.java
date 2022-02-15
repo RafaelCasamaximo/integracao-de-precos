@@ -19,11 +19,10 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.SQLException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.dozer.DozerBeanMapper;
@@ -41,10 +40,23 @@ import org.json.simple.parser.ParseException;
 public class CrawlingController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        LojaJogosDAO lojaJogosDAO;
         RequestDispatcher dispatcher;
         switch (request.getServletPath()){
             case "/Dados":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()) {
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
+                    List<ImmutablePair<Jogo, LojaJogos>> lista_lojaJogos = lojaJogosDAO.getAllEntries();
+                    DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+                    String lastUpdateDate = df.format(getLastUpdateDate(lista_lojaJogos));
+                    if(lastUpdateDate.equals("01/01/2001"))
+                    {
+                        request.setAttribute("lastUpdateDate", "SEM ATUALIZAÇÃO RECENTE!");
+                    }
+                    else
+                    {
+                        request.setAttribute("lastUpdateDate", lastUpdateDate);
+                    }
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
@@ -56,8 +68,60 @@ public class CrawlingController extends HttpServlet {
         }
     }
 
+    public java.sql.Date getLastUpdateDate(List<ImmutablePair<Jogo, LojaJogos>> lista_lojaJogos)
+    {
+        ArrayList<java.sql.Date> lista_date = new ArrayList<java.sql.Date>();
+        for (ImmutablePair<Jogo, LojaJogos> lojaJogo : lista_lojaJogos) {
+            lista_date.add(lojaJogo.right.getData_crawl());
+        }
+        //Date maxDate = list.stream().map(u -> u.date).max(Date::compareTo).get();
+        Collections.sort(lista_date);
+        java.sql.Date maxDate;
+        try{
+            maxDate = lista_date.get(lista_date.size() -1 );
+        }catch (IndexOutOfBoundsException e){
+            Date dateAux = new GregorianCalendar(2001, Calendar.JANUARY, 1).getTime();
+            maxDate = new java.sql.Date(dateAux.getTime());
+        }
+        return maxDate;
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+
+        String servletPath = request.getServletPath();
+        switch (request.getServletPath()){
+            case "/Dados/Solicitacao":
+
+                try {
+                    this.updateDatabase();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+//                Thread updateDBThread = new Thread(() -> {
+//                    //Código que leva tempo aqui
+//
+//                });
+//                updateDBThread.start();
+
+                response.sendRedirect(request.getContextPath() + "/ListaJogos");
+                break;
+
+        }
+    }
+
+
     protected void updateDatabase() throws IOException, InterruptedException, ParseException, ParseException, JSONException, SQLException {
-        InputStream is = getClass().getClassLoader().getResourceAsStream("crawlerOutput-06-02-2022 12-16-06.json");
+        InputStream is = getClass().getClassLoader().getResourceAsStream("crawlerOutput.json");
         String result = IOUtils.toString(is);
 
         // Pega o objetos json de cada coleção
@@ -135,7 +199,7 @@ public class CrawlingController extends HttpServlet {
                 empresa.setNome(empresaEntryAux.nome);
                 empresa.setId(Integer.parseInt(empresaEntryAux.id));
                 empresa.setDescricao_curta("");
-                empresa.setNumero_jogos(0);
+                empresa.setNumero_jogos(empresaEntryAux.num_jogos);
                 empresa.setWebsite("");
 
                 try {
@@ -267,44 +331,13 @@ public class CrawlingController extends HttpServlet {
 
 
         /*
-        * Percorrer todos os jogos de X loja
-        * - Caso o jogo não exista, insere novo item
-        * -- Caso o jogo já exista, insere novo item lojaTabela ou atualiza
-        *
-        * */
+         * Percorrer todos os jogos de X loja
+         * - Caso o jogo não exista, insere novo item
+         * -- Caso o jogo já exista, insere novo item lojaTabela ou atualiza
+         *
+         * */
 
     }
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
 
-        String servletPath = request.getServletPath();
-        switch (request.getServletPath()){
-            case "/Dados/Solicitacao":
-
-                try {
-                    this.updateDatabase();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-//                Thread updateDBThread = new Thread(() -> {
-//                    //Código que leva tempo aqui
-//
-//                });
-//                updateDBThread.start();
-
-                response.sendRedirect(request.getContextPath() + "/ListaJogos");
-                break;
-
-        }
-    }
 }

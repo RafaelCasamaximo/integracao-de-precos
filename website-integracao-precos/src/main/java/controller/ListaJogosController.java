@@ -109,7 +109,6 @@ public class ListaJogosController extends HttpServlet {
                 ImmutablePair<Jogo, LojaJogos> jogoDetail = new ImmutablePair<>(new Jogo(), new LojaJogos());
 
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    System.out.println("chegou 2 eletric boogaloo");
                     lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
                     jogoDetail = lojaJogosDAO.getCrawlEntry(id_loja, id_jogo, null).get(0);

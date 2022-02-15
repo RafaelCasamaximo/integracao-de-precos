@@ -14,31 +14,39 @@
     <%@include file="/view/include/header.jsp"  %>
     <title>[Loja App] Lojas</title>
 </head>
-<body>
+<body class="bg-light">
     <%@include file="/view/include/navbar.jsp" %>
+    <br><br>
     <div class="container">
-        <table class="table mt-5">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Jogos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <c:forEach var="loja" items="${requestScope.lista_loja}">
+        
+        <img src="https://i.ibb.co/h7VMm4Y/removal-ai-tmp-620b986f95d2a.png" class="mx-auto d-block rounded mt-3">
+        
+        <div class="card mt-5 mb-5">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
                     <tr>
-                        <td>
-                            <span><c:out value="${loja.nome}"/></span>
-                        </td>
-                        <td>
-                            <a type="button" class="btn btn-primary" href="${pageContext.servletContext.contextPath}/ListaJogos/${loja.nome}" >
-                                Visualizar
-                            </a>
-                        </td>
+                        <th>Nome</th>
+                        <th>Jogos</th>
                     </tr>
-                </c:forEach>
-            </tbody>
-        </table>
+                    </thead>
+                    <tbody>
+                    <c:forEach var="loja" items="${requestScope.lista_loja}">
+                        <tr>
+                            <td>
+                                <span><c:out value="${loja.nome}"/></span>
+                            </td>
+                            <td>
+                                <a type="button" class="btn btn-primary" href="${pageContext.servletContext.contextPath}/ListaJogos/${loja.nome}" >
+                                    Visualizar
+                                </a>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <%@include file="/view/include/scripts.jsp"%>
 </body>

@@ -6,14 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%@include file="/view/include/header.jsp"  %>
     <title>[Loja App] Dados</title>
 </head>
-<body>
+<body class="bg-light">
     <%@include file="/view/include/navbar.jsp" %>
+    <br><br>
     <div class="container">
         <div class="card text-center mt-5">
             <div class="card-header">
@@ -21,7 +23,7 @@
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    Os dados foram atualizados em: dd/mm/aa às hh:mm:ss
+                    A última atualização dos produtos foi realizada em:<br><strong> <h6><c:out value="${requestScope.lastUpdateDate}"/></h6> </strong>
                 </p>
                 <form
                     class="form"
