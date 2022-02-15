@@ -83,7 +83,7 @@ public class PgJogoDAO implements JogoDAO {
             statement.setInt(1, id);
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
-                    jogo.setId(id);
+                    jogo.setId(result.getInt("id"));
                     jogo.setNome(result.getString("nome"));
                     jogo.setGenero(result.getString("genero"));
                     jogo.setLinguagens_suportadas(result.getString("linguagens_suportadas"));

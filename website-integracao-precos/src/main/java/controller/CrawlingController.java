@@ -105,22 +105,35 @@ public class CrawlingController extends HttpServlet {
             Loja epicLoja = new Loja(1, "Epic");
             Loja playstationLoja = new Loja(2, "Playstation");
 
+            int steamId;
+            int epicId;
+            int playstationId;
+
             try {
                 Loja loja = ((LojaDAO) lojaDAO).readByName("Steam");
+                steamId = loja.getId();
             }catch (SQLException ex){
                 lojaDAO.create(steamLoja);
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Steam");
+                steamId = loja.getId();
             }
 
             try {
                 Loja loja = ((LojaDAO) lojaDAO).readByName("Epic");
+                epicId = loja.getId();
             }catch (SQLException ex){
                 lojaDAO.create(epicLoja);
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Epic");
+                epicId = loja.getId();
             }
 
             try {
                 Loja loja = ((LojaDAO) lojaDAO).readByName("Playstation");
+                playstationId = loja.getId();
             }catch (SQLException ex){
                 lojaDAO.create(playstationLoja);
+                Loja loja = ((LojaDAO) lojaDAO).readByName("Playstation");
+                playstationId = loja.getId();
             }
 
             ListaEmpresaEntry listaEmpresaEntry = new ListaEmpresaEntry(
@@ -129,6 +142,7 @@ public class CrawlingController extends HttpServlet {
                     new JSONArray(playstationGamesArray.toString())
             );
 
+            //Adiciona empresas na tabela caso não existam
             for (EmpresaEntry empresaEntryAux : listaEmpresaEntry.empresas) {
                 Empresa empresa = new Empresa();
                 empresa.setNome(empresaEntryAux.nome);
@@ -166,15 +180,22 @@ public class CrawlingController extends HttpServlet {
                     jogoDAO.create(jogo);
                 }
 
-                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
-                LojaJogos lojaJogos = new LojaJogos();
-                lojaJogos.setId_jogo(jogo.getId());
-                lojaJogos.setLoja_crawl("Steam");
-                lojaJogos.setId_loja(1);
-                lojaJogos.setPreco_jogo((float)jogoAux.preco_disconto);
-                lojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+                Jogo jogoRecemInserido = ((JogoDAO) jogoDAO).readByName(jogo.getNome());
 
-//                lojaJogosDAO.create(lojaJogos);
+                LojaJogos newLojaJogos = new LojaJogos();
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
+                newLojaJogos.setId_jogo(jogoRecemInserido.getId());
+                newLojaJogos.setId_loja(steamId);
+                newLojaJogos.setLoja_crawl("Steam");
+                newLojaJogos.setPreco_jogo((float) jogoAux.preco_disconto);
+                newLojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+                try {
+                    //TODO: Inserir verificação se existe lojaJogo pra (idJogo, idLoja, dataCrawling)
+                    throw new SQLException();
+                }catch (SQLException ex){
+                    lojaJogosDAO.create(newLojaJogos);
+                }
 
 
             }
@@ -199,6 +220,23 @@ public class CrawlingController extends HttpServlet {
                     jogoDAO.create(jogo);
                 }
 
+                Jogo jogoRecemInserido = ((JogoDAO) jogoDAO).readByName(jogo.getNome());
+
+                LojaJogos newLojaJogos = new LojaJogos();
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.epic.date);
+                newLojaJogos.setId_jogo(jogoRecemInserido.getId());
+                newLojaJogos.setId_loja(epicId);
+                newLojaJogos.setLoja_crawl("Epic");
+                newLojaJogos.setPreco_jogo((float) jogoAux.preco_disconto);
+                newLojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+                try {
+                    //TODO: Inserir verificação se existe lojaJogo pra (idJogo, idLoja, dataCrawling)
+                    throw new SQLException();
+                }catch (SQLException ex){
+                    lojaJogosDAO.create(newLojaJogos);
+                }
+
             }
 
             for (JogoEntry jogoAux : jsonEntry.playstation.jogos) {
@@ -221,6 +259,22 @@ public class CrawlingController extends HttpServlet {
                     jogoDAO.create(jogo);
                 }
 
+                Jogo jogoRecemInserido = ((JogoDAO) jogoDAO).readByName(jogo.getNome());
+
+                LojaJogos newLojaJogos = new LojaJogos();
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.playstation.date);
+                newLojaJogos.setId_jogo(jogoRecemInserido.getId());
+                newLojaJogos.setId_loja(playstationId);
+                newLojaJogos.setLoja_crawl("Playstation");
+                newLojaJogos.setPreco_jogo((float) jogoAux.preco_disconto);
+                newLojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+                try {
+                    //TODO: Inserir verificação se existe lojaJogo pra (idJogo, idLoja, dataCrawling)
+                    throw new SQLException();
+                }catch (SQLException ex){
+                    lojaJogosDAO.create(newLojaJogos);
+                }
             }
 
         }catch (ClassNotFoundException | IOException | SQLException ex){
@@ -228,17 +282,6 @@ public class CrawlingController extends HttpServlet {
         } catch (java.text.ParseException e) {
             e.printStackTrace();
         }
-
-
-
-
-
-        /*
-        * Percorrer todos os jogos de X loja
-        * - Caso o jogo não exista, insere novo item
-        * -- Caso o jogo já exista, insere novo item lojaTabela ou atualiza
-        *
-        * */
 
     }
 
