@@ -45,7 +45,25 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "FROM lojajogos AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
-                    "WHERE id_loja=? AND id_jogo=? AND data_crawl=?;";
+                    "WHERE id_loja=? AND data_crawl=? AND id_jogo=?;";
+
+    private static final String NULL_GAME_ID_QUERY =
+            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
+                    "t2.id_empresa " +
+                    "FROM lojajogos AS t1 " +
+                    "INNER JOIN jogo AS t2 " +
+                    "ON t1.id_jogo = t2.id " +
+                    "WHERE id_loja=? AND data_crawl=?;";
+
+    private static final String NULL_GAMEID_DATE_QUERY =
+            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
+                    "t2.id_empresa " +
+                    "FROM lojajogos AS t1 " +
+                    "INNER JOIN jogo AS t2 " +
+                    "ON t1.id_jogo = t2.id " +
+                    "WHERE id_loja=?;";
 
 
 
@@ -170,17 +188,29 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
     }
 
     @Override
-    public ImmutablePair<Jogo, LojaJogos> getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) throws SQLException {
-        LojaJogos lojaJogos = new LojaJogos();
-        Jogo jogo = new Jogo();
+    public List<ImmutablePair<Jogo, LojaJogos>> getCrawlEntry(Integer id_loja, Integer id_jogo, Date data_crawl) throws SQLException {
+        List<ImmutablePair<Jogo, LojaJogos>> resultado = new ArrayList();
+        String query = CRAWL_ENTRY_QUERY;
 
-        try (PreparedStatement statement = connection.prepareStatement(CRAWL_ENTRY_QUERY)) {
+        if (id_jogo == null && data_crawl == null) {
+            query = NULL_GAMEID_DATE_QUERY;
+        } else if (id_jogo == null) {
+            query = NULL_GAME_ID_QUERY;;
+        }
+
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, id_loja);
-            statement.setInt(2, id_jogo);
-            statement.setDate(3, data_crawl);
+            if (data_crawl != null) {
+                statement.setDate(2, data_crawl);
+                if (id_jogo != null) {
+                    statement.setInt(3, id_jogo);
+                }
+            }
 
             try (ResultSet result = statement.executeQuery()) {
-                if (result.next()) {
+                while (result.next()) {
+                    LojaJogos lojaJogos = new LojaJogos();
+                    Jogo jogo = new Jogo();
                     jogo.setId(result.getInt("id"));
                     jogo.setNome(result.getString("nome"));
                     jogo.setGenero(result.getString("genero"));
@@ -194,8 +224,8 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     jogo.setId_empresa(result.getInt("id_empresa"));
                     lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
                     lojaJogos.setId_jogo(result.getInt("id_jogo"));
-                } else {
-                    throw new SQLException("Erro ao visualizar: tabela intermediária não encontrada.");
+
+                    resultado.add(new ImmutablePair<>(jogo, lojaJogos));
                 }
             }
         } catch (SQLException ex) {
@@ -208,6 +238,6 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             }
         }
 
-        return new ImmutablePair<>(jogo, lojaJogos);
+        return resultado;
     }
 }

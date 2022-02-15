@@ -29,7 +29,7 @@
         <c:forEach var="jogo" items="${requestScope.lista_jogo}">
             <tr>
                 <td>
-                    <span><c:out value="${jogo.nome}"/></span>
+                    <span><c:out value="${jogo.left.nome}"/></span>
                 </td>
                 <td>
                     <!-- Button trigger modal -->
@@ -38,7 +38,7 @@
                             class="btn btn-primary link_visualizar_jogo"
                             data-toggle="modal"
                             data-target="#gameDetailModal"
-                            data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id=${jogo.id}"
+                            data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id=${jogo.left.id}"
                             href="#"
                     >
                         Detalhes

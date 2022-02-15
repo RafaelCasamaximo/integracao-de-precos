@@ -1,19 +1,18 @@
 package controller;
 
 import com.google.gson.Gson;
-import dao.DAO;
-import dao.DAOFactory;
+import dao.*;
 import model.Jogo;
+import model.Loja;
+import model.LojaJogos;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 @WebServlet(name = "ListaJogos", urlPatterns = {
         "/ListaJogos",
@@ -25,17 +24,21 @@ import java.util.ListIterator;
 public class ListaJogosController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        DAO<Jogo> dao;
+        LojaDAO lojaDAO;
+        EmpresaDAO empresaDAO;
+        JogoDAO jogoDAO;
+        LojaJogosDAO lojaJogosDAO;
         Jogo jogo;
+        List<ImmutablePair<Jogo, LojaJogos>> resultado = null;
         RequestDispatcher dispatcher;
 
         switch (request.getServletPath()){
             case "/ListaJogos":
-                try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    dao = daoFactory.getJogoDAO();
+                try (DAOFactory daoFactory = DAOFactory.getInstance()) {
+                    jogoDAO = daoFactory.getJogoDAO();
 
-                    List<Jogo> lista_jogo = dao.all();
-                    request.setAttribute("lista_jogo", lista_jogo);
+                    List<Jogo> lista_jogo = jogoDAO.all();
+                    request.setAttribute("lista_jogo", resultado);
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
@@ -47,11 +50,13 @@ public class ListaJogosController extends HttpServlet {
 
             case "/ListaJogos/Steam":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    dao = daoFactory.getJogoDAO();
+                    lojaDAO = daoFactory.getLojaDAO();
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                    List<Jogo> lista_jogo = dao.all();
-                    request.setAttribute("lista_jogo", lista_jogo);
+                    Loja loja = lojaDAO.readByName("Steam");
 
+                    resultado = lojaJogosDAO.getCrawlEntry(loja.getId(), null, null);
+                    request.setAttribute("lista_jogo", resultado);
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
@@ -63,11 +68,13 @@ public class ListaJogosController extends HttpServlet {
 
             case "/ListaJogos/Epic":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    dao = daoFactory.getJogoDAO();
+                    lojaDAO = daoFactory.getLojaDAO();
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                    List<Jogo> lista_jogo = dao.all();
-                    request.setAttribute("lista_jogo", lista_jogo);
+                    Loja loja = lojaDAO.readByName("Epic");
 
+                    resultado = lojaJogosDAO.getCrawlEntry(loja.getId(), null, null);
+                    request.setAttribute("lista_jogo", resultado);
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
@@ -79,11 +86,13 @@ public class ListaJogosController extends HttpServlet {
 
             case "/ListaJogos/Playstation":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    dao = daoFactory.getJogoDAO();
+                    lojaDAO = daoFactory.getLojaDAO();
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                    List<Jogo> lista_jogo = dao.all();
-                    request.setAttribute("lista_jogo", lista_jogo);
+                    Loja loja = lojaDAO.readByName("Playstation");
 
+                    resultado = lojaJogosDAO.getCrawlEntry(loja.getId(), null, null);
+                    request.setAttribute("lista_jogo", resultado);
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());
@@ -98,8 +107,8 @@ public class ListaJogosController extends HttpServlet {
                 Jogo jogoDetail = new Jogo();
 
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    dao = daoFactory.getJogoDAO();
-                    jogoDetail = dao.read(id);
+                    jogoDAO = daoFactory.getJogoDAO();
+                    jogoDetail = jogoDAO.read(id);
 
                 }catch (ClassNotFoundException | IOException | SQLException ex){
                     request.getSession().setAttribute("error", ex.getMessage());

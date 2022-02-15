@@ -175,6 +175,8 @@ public class CrawlingController extends HttpServlet {
 
                 try {
                     lojaJogosDAO.create(lojaJogos);
+                    // O jogo e o preço tão dentro disso aqui!!!
+                    List<ImmutablePair<Jogo, LojaJogos>> res = lojaJogosDAO.getCrawlEntry(lojaJogos.getId_loja(), lojaJogos.getId_jogo(), lojaJogos.getData_crawl());
                 }catch (Exception e){
 
                 }
@@ -198,6 +200,23 @@ public class CrawlingController extends HttpServlet {
 
                 }
 
+                Jogo jogoCriado = jogoDAO.readByName(jogoAux.nome);
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
+                LojaJogos lojaJogos = new LojaJogos();
+                lojaJogos.setId_jogo(jogoCriado.getId());
+                lojaJogos.setLoja_crawl("Epic");
+                lojaJogos.setId_loja(lojaDAO.readByName("Epic").getId());
+                lojaJogos.setPreco_jogo((float)jogoAux.preco_disconto);
+                lojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+                try {
+                    lojaJogosDAO.create(lojaJogos);
+                    // O jogo e o preço tão dentro disso aqui!!!
+                    List<ImmutablePair<Jogo, LojaJogos>> res = lojaJogosDAO.getCrawlEntry(lojaJogos.getId_loja(), lojaJogos.getId_jogo(), lojaJogos.getData_crawl());
+                }catch (Exception e){
+
+                }
+
             }
 
             for (JogoEntry jogoAux : jsonEntry.playstation.jogos) {
@@ -215,6 +234,23 @@ public class CrawlingController extends HttpServlet {
                 try {
                     jogoDAO.create(jogo);
                 }catch (SQLException ex){
+
+                }
+
+                Jogo jogoCriado = jogoDAO.readByName(jogoAux.nome);
+                Date utilDate = new SimpleDateFormat("dd/MM/yyyy").parse(jsonEntry.steam.date);
+                LojaJogos lojaJogos = new LojaJogos();
+                lojaJogos.setId_jogo(jogoCriado.getId());
+                lojaJogos.setLoja_crawl("Playstation");
+                lojaJogos.setId_loja(lojaDAO.readByName("Playstation").getId());
+                lojaJogos.setPreco_jogo((float)jogoAux.preco_disconto);
+                lojaJogos.setData_crawl(new java.sql.Date(utilDate.getTime()));
+
+                try {
+                    lojaJogosDAO.create(lojaJogos);
+                    // O jogo e o preço tão dentro disso aqui!!!
+                    List<ImmutablePair<Jogo, LojaJogos>> res = lojaJogosDAO.getCrawlEntry(lojaJogos.getId_loja(), lojaJogos.getId_jogo(), lojaJogos.getData_crawl());
+                }catch (Exception e){
 
                 }
 
