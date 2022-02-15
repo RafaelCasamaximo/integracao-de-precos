@@ -12,6 +12,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Date;
 import java.util.*;
 
 @WebServlet(name = "ListaJogos", urlPatterns = {
@@ -35,9 +36,9 @@ public class ListaJogosController extends HttpServlet {
         switch (request.getServletPath()){
             case "/ListaJogos":
                 try (DAOFactory daoFactory = DAOFactory.getInstance()) {
-                    jogoDAO = daoFactory.getJogoDAO();
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                    List<Jogo> lista_jogo = jogoDAO.all();
+                    resultado = lojaJogosDAO.getAllEntries();
                     request.setAttribute("lista_jogo", resultado);
 
                 } catch (ClassNotFoundException | IOException | SQLException ex){
@@ -103,14 +104,18 @@ public class ListaJogosController extends HttpServlet {
                 break;
 
             case "/ListaJogos/read":
-                int id = Integer.parseInt(request.getParameter("id"));
-                Jogo jogoDetail = new Jogo();
+                int id_jogo = Integer.parseInt(request.getParameter("id_jogo"));
+                int id_loja = Integer.parseInt(request.getParameter("id_loja"));
+                ImmutablePair<Jogo, LojaJogos> jogoDetail = new ImmutablePair<>(new Jogo(), new LojaJogos());
 
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
-                    jogoDAO = daoFactory.getJogoDAO();
-                    jogoDetail = jogoDAO.read(id);
+                    System.out.println("chegou 2 eletric boogaloo");
+                    lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                }catch (ClassNotFoundException | IOException | SQLException ex){
+                    jogoDetail = lojaJogosDAO.getCrawlEntry(id_loja, id_jogo, null).get(0);
+
+
+                } catch (ClassNotFoundException | IOException | SQLException ex) {
                     request.getSession().setAttribute("error", ex.getMessage());
                 }
 

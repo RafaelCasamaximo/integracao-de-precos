@@ -39,31 +39,53 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "FROM lojajogos;";
 
     private static final String CRAWL_ENTRY_QUERY =
-            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+            "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
                     "FROM lojajogos AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
-                    "WHERE id_loja=? AND data_crawl=? AND id_jogo=?;";
+                    "WHERE id_loja=? AND data_crawl=? AND id_jogo=? " +
+                    "ORDER BY t2.nome ASC;";
 
     private static final String NULL_GAME_ID_QUERY =
-            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+            "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
                     "FROM lojajogos AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
-                    "WHERE id_loja=? AND data_crawl=?;";
+                    "WHERE id_loja=? AND data_crawl=? " +
+                    "ORDER BY t2.nome ASC;";
 
     private static final String NULL_GAMEID_DATE_QUERY =
-            "SELECT t1.id_jogo, t1.preco_jogo, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+            "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
                     "FROM lojajogos AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
-                    "WHERE id_loja=?;";
+                    "WHERE id_loja=? " +
+                    "ORDER BY t2.nome ASC;";
+
+    private static final String ALL_ENTRIES_QUERY =
+            "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
+                    "t2.id_empresa " +
+                    "FROM lojajogos AS t1 " +
+                    "INNER JOIN jogo AS t2 " +
+                    "ON t1.id_jogo = t2.id " +
+                    "ORDER BY t2.nome ASC;";
+
+    private static final String NULL_DATE_QUERY =
+            "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
+                    "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
+                    "t2.id_empresa " +
+                    "FROM lojajogos AS t1 " +
+                    "INNER JOIN jogo AS t2 " +
+                    "ON t1.id_jogo = t2.id " +
+                    "WHERE id_loja=? AND id_jogo=? " +
+                    "ORDER BY t2.nome ASC;";
 
 
 
@@ -195,7 +217,9 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
         if (id_jogo == null && data_crawl == null) {
             query = NULL_GAMEID_DATE_QUERY;
         } else if (id_jogo == null) {
-            query = NULL_GAME_ID_QUERY;;
+            query = NULL_GAME_ID_QUERY;
+        } else if (data_crawl == null) {
+            query = NULL_DATE_QUERY;
         }
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
@@ -205,6 +229,8 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                 if (id_jogo != null) {
                     statement.setInt(3, id_jogo);
                 }
+            } else if (id_jogo != null) {
+                statement.setInt(2, id_jogo);
             }
 
             try (ResultSet result = statement.executeQuery()) {
@@ -222,8 +248,11 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     jogo.setDescricao_curta(result.getString("descricao_curta"));
                     jogo.setDescricao_longa(result.getString("descricao_longa"));
                     jogo.setId_empresa(result.getInt("id_empresa"));
-                    lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
+                    lojaJogos.setId_loja(result.getInt("id_loja"));
                     lojaJogos.setId_jogo(result.getInt("id_jogo"));
+                    lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
+                    lojaJogos.setLoja_crawl(result.getString("loja_crawl"));
+                    lojaJogos.setData_crawl(result.getDate("data_crawl"));
 
                     resultado.add(new ImmutablePair<>(jogo, lojaJogos));
                 }
@@ -235,6 +264,47 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                 throw ex;
             } else {
                 throw new SQLException("Erro ao visualizar tabela intermediária.");
+            }
+        }
+
+        return resultado;
+    }
+
+    public List<ImmutablePair<Jogo, LojaJogos>> getAllEntries() throws SQLException {
+        List<ImmutablePair<Jogo, LojaJogos>> resultado = new ArrayList();
+
+        try (PreparedStatement statement = connection.prepareStatement(ALL_ENTRIES_QUERY)) {
+            try (ResultSet result = statement.executeQuery()) {
+                while (result.next()) {
+                    LojaJogos lojaJogos = new LojaJogos();
+                    Jogo jogo = new Jogo();
+                    jogo.setId(result.getInt("id"));
+                    jogo.setNome(result.getString("nome"));
+                    jogo.setGenero(result.getString("genero"));
+                    jogo.setLinguagens_suportadas(result.getString("linguagens_suportadas"));
+                    jogo.setSuporte_a_controle(result.getBoolean("suporte_a_controle"));
+                    jogo.setNome_empresa(result.getString("nome_empresa"));
+                    jogo.setGratuito(result.getBoolean("gratuito"));
+                    jogo.setIdade_requerida(result.getInt("idade_requerida"));
+                    jogo.setDescricao_curta(result.getString("descricao_curta"));
+                    jogo.setDescricao_longa(result.getString("descricao_longa"));
+                    jogo.setId_empresa(result.getInt("id_empresa"));
+                    lojaJogos.setId_loja(result.getInt("id_loja"));
+                    lojaJogos.setId_jogo(result.getInt("id_jogo"));
+                    lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
+                    lojaJogos.setLoja_crawl(result.getString("loja_crawl"));
+                    lojaJogos.setData_crawl(result.getDate("data_crawl"));
+
+                    resultado.add(new ImmutablePair<>(jogo, lojaJogos));
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+                if (ex.getMessage().equals("Erro ao visualizar: tabela intermediária não encontrada.")) {
+                    throw ex;
+                } else {
+                    throw new SQLException("Erro ao visualizar tabela intermediária.");
+                }
             }
         }
 

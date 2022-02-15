@@ -38,7 +38,7 @@
                             class="btn btn-primary link_visualizar_jogo"
                             data-toggle="modal"
                             data-target="#gameDetailModal"
-                            data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id=${jogo.left.id}"
+                            data-href="${pageContext.servletContext.contextPath}/ListaJogos/read?id_jogo=${jogo.right.id_jogo}&id_loja=${jogo.right.id_loja}&data_crawl=${jogo.right.data_crawl}"
                             href="#"
                     >
                         Detalhes
@@ -74,6 +74,8 @@
                             <p class="p_descricaoCurta"></p>
                             <p class="p_descricaoLonga"></p>
                             <p class="p_idEmpresa"></p>
+                            <p class="p_lojaCrawl"></p>
+                            <p class="p_preco"></p>
                         </div>
                     </div>
                 </div>
