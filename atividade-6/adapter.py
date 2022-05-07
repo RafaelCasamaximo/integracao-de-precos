@@ -4,6 +4,8 @@ from typing import Any, Dict
 from datetime import datetime
 import re
 
+from stringNormalizer import StringNormalizer
+
 """
 Formato padrão de exportação
 Loja
@@ -179,8 +181,53 @@ class Adapter:
 
         return self.collection
         
-    def handleExport(self) -> None:
-        outputFile = open(f'{self.jsonName}.json', 'w')
+    def handleExport(self, simpleExportName) -> None:
+        outputFile = None
+        if simpleExportName:
+            outputFile = open(f'crawlerOutput.json', 'w')
+        else:
+            outputFile = open(f'{self.jsonName}.json', 'w')
         json.dump(self.collection, outputFile, indent=6)
         outputFile.close()
         pass
+
+    def handleFilter(self) -> None:
+        #
+        #   FOR ITEM
+        #       for item posterior daquele
+        #           caracteres repetidos
+        #           se frequencia de caracteres > 70%
+        #               merge dados
+        #
+
+        # Organiza os dados de maneira que o método possa iterar sobre todos os elementos comparando o nome
+        totalCollection = []
+        steamCollectionSize = len(self.steamCollection)
+        epicCollectionSize = len(self.epicCollection)
+        playstationCollectionSize = len(self.playstationCollection)
+        
+        if steamCollectionSize != 0:
+            totalCollection.extend(self.steamCollection)
+        if epicCollectionSize != 0:
+            totalCollection.extend(self.epicCollection)
+        if playstationCollectionSize != 0:
+            totalCollection.extend(self.playstationCollection)
+
+        # Itera sobre todos os elementos comparando o nome. Caso o nome normalizado coincida o método substitui o nome, a publisher e o genero do jogo
+        for outerIdx, outerItem in enumerate(totalCollection):
+            for innerIdx, innerItem in enumerate(totalCollection[outerIdx:]):
+                if outerIdx == innerIdx + outerIdx:
+                    continue
+                # Compare attributes to make sure that it isnt equivalent or semi-equal
+                stringNormalizer = StringNormalizer()
+                if stringNormalizer.compareStrings(outerItem['name'], innerItem['name']):
+                    innerItem['name'] = outerItem['name']
+                    innerItem['publisher'] = outerItem['publisher']
+                    innerItem['genre'] = outerItem['genre']
+                pass
+        
+        # Divide novamente entre as 3 coleções individuais
+        self.steamCollection = totalCollection[0:steamCollectionSize]
+        self.epicCollection = totalCollection[steamCollectionSize:epicCollectionSize]
+        self.playstationCollection = totalCollection[steamCollectionSize:epicCollectionSize]
+        return
