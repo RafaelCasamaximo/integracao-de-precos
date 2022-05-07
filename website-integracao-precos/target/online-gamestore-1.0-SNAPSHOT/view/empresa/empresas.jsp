@@ -24,9 +24,9 @@
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Descrição Curta</th>
+<%--                    <th>Descrição Curta</th>--%>
                     <th>Número de Jogos</th>
-                    <th>Website</th>
+<%--                    <th>Website</th>--%>
                 </tr>
                 </thead>
                 <tbody>
@@ -38,17 +38,17 @@
                         <td>
                             <span><c:out value="${empresa.nome}"/></span>
                         </td>
-                        <td>
-                                <%--                    <span><c:out value="${empresa.descricao_curta}"/></span>--%>
-                            <span>Indisponível</span>
-                        </td>
+<%--                        <td>--%>
+<%--                                &lt;%&ndash;                    <span><c:out value="${empresa.descricao_curta}"/></span>&ndash;%&gt;--%>
+<%--                            <span>Indisponível</span>--%>
+<%--                        </td>--%>
                         <td>
                             <span><c:out value="${empresa.numero_jogos}"/></span>
                         </td>
-                        <td>
-                                <%--                    <span><c:out value="${empresa.website}"/></span>--%>
-                            <span>Indisponível</span>
-                        </td>
+<%--                        <td>--%>
+<%--                                &lt;%&ndash;                    <span><c:out value="${empresa.website}"/></span>&ndash;%&gt;--%>
+<%--                            <span>Indisponível</span>--%>
+<%--                        </td>--%>
                     </tr>
                 </c:forEach>
                 </tbody>

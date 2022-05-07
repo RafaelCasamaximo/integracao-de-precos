@@ -19,6 +19,9 @@
                 <a class="nav-link" href="${pageContext.servletContext.contextPath}/Empresas">Empresas</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="${pageContext.servletContext.contextPath}/Pesquisa">Pesquisar</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="${pageContext.servletContext.contextPath}/Dados">Dados</a>
             </li>
         </ul>

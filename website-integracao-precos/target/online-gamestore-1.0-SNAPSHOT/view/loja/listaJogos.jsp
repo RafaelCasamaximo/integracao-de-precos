@@ -96,11 +96,11 @@
                                     <h5 class="card-title">Detalhes</h5>
                                     <p class="p_genero"></p>
                                     <p class="p_linguagens"></p>
-                                    <p class="p_suporte"></p>
+<%--                                    <p class="p_suporte"></p>--%>
                                     <p class="p_gratuito"></p>
-                                    <p class="p_idade"></p>
-                                    <p class="p_descricaoCurta"></p>
-                                    <p class="p_descricaoLonga"></p>
+<%--                                    <p class="p_idade"></p>--%>
+<%--                                    <p class="p_descricaoCurta"></p>--%>
+<%--                                    <p class="p_descricaoLonga"></p>--%>
                                 </div>
                             </div>
                         </div>
