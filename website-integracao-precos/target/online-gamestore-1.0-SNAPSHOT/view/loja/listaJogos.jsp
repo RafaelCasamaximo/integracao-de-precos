@@ -24,6 +24,7 @@
                 <thead>
                 <tr>
                     <th>Nome</th>
+                    <th>Data do Crawling</th>
                     <th>Loja</th>
                     <th>Preço</th>
                     <th>Detalhes</th>
@@ -36,11 +37,15 @@
                             <span><c:out value="${jogo.left.nome}"/></span>
                         </td>
                         <td>
+                            <span><c:out value="${jogo.right.data_crawl}"/></span>
+                        </td>
+                        <td>
                             <span><c:out value="${jogo.right.loja_crawl}" /></span>
                         </td>
                         <td>
                             <span>R$<c:out value="${(jogo.right.preco_jogo / 100)}" /></span>
                         </td>
+
                         <td>
                             <!-- Button trigger modal -->
                             <a
@@ -88,6 +93,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Loja</h5>
                                     <p class="p_lojaCrawl"></p>
+                                    <p class="p_dataCrawl"> </p>
                                     <p class="p_preco"></p>
                                 </div>
                             </div>

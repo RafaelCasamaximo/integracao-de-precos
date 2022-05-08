@@ -290,9 +290,11 @@ public class CrawlingController extends HttpServlet {
 
                 try {
                     LojaJogos ultimoRegistroLojaJogo = lojaJogosDAO.readByStoreIDGameIDAndDate(lojaJogos.getId_loja(), lojaJogos.getId_jogo(), lojaJogos.getData_crawl());
+                    System.out.println("Já existe um registro com esse ID de loja, jogo e data de crawling: " + ultimoRegistroLojaJogo.getId_jogo() + ultimoRegistroLojaJogo.getId_loja() + ultimoRegistroLojaJogo.getData_crawl() + ultimoRegistroLojaJogo.getPreco_jogo());
                 }catch (Exception ex){
                     try {
                         lojaJogosDAO.create(lojaJogos);
+                        System.out.println("Criando uma nova lojaJogo porque algum dado nao coincide");
                     } catch (SQLException e) {
                     }
                 }
@@ -487,18 +489,6 @@ public class CrawlingController extends HttpServlet {
         } catch (java.text.ParseException e) {
             e.printStackTrace();
         }
-
-
-
-
-
-        /*
-         * Percorrer todos os jogos de X loja
-         * - Caso o jogo não exista, insere novo item
-         * -- Caso o jogo já exista, insere novo item lojaTabela ou atualiza
-         *
-         * */
-
     }
 
 

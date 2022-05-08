@@ -1,7 +1,7 @@
 {
       "steamCollection": {
             "time": "14:41:22",
-            "date": "07/05/2022",
+            "date": "08/05/2022",
             "games": [
                   {
                         "id": "1918300",
@@ -47,8 +47,8 @@
                         "publisher": "PlayWay S.A.",
                         "isFree": false,
                         "originalPrice": 3699,
-                        "dicountPrice": 1035,
-                        "dicount": 2664,
+                        "dicountPrice": 3698,
+                        "dicount": 1,
                         "currency": "BRL"
                   },
                   {
@@ -2035,7 +2035,7 @@
       },
       "playstationCollection": {
             "time": "14:41:22",
-            "date": "07/05/2022",
+            "date": "08/05/2022",
             "games": [
                   {
                         "id": "10002538",
@@ -3201,7 +3201,7 @@
       },
       "epicCollection": {
             "time": "14:41:22",
-            "date": "07/05/2022",
+            "date": "08/05/2022",
             "games": [
                   {
                         "id": "ac5e43ecfe424d1eb79d12dd25c31a67",

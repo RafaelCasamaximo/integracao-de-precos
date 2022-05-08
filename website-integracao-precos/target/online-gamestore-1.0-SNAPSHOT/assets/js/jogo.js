@@ -17,6 +17,7 @@ function readUser(e) {
         $modal.find('.p_descricaoLonga').html('<strong>Descrição Longa: </strong>' + (jogo.left.descricao_longa.replace(/ /g,'') == '' ? 'Indisponível' : jogo.left.descricao_longa));
         $modal.find('.p_idEmpresa').html('<strong>ID Empresa: </strong>' + jogo.left.id_empresa);
         $modal.find('.p_lojaCrawl').html('<strong>Loja: </strong>' + jogo.right.loja_crawl);
+        $modal.find('.p_dataCrawl').html('<strong>Data do Crawl: </strong>' + jogo.left.data_crawl.toLocaleString());
         $modal.find('.p_preco').html('<strong>Preço: </strong>' + (jogo.right.preco_jogo / 100).toLocaleString("pt-BR", {style:"currency", currency:"BRL"}));
     });
 }
