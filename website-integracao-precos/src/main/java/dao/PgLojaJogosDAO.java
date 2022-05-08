@@ -25,6 +25,10 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "FROM lojajogos " +
                     "WHERE id=?;";
 
+    private static final String READ_BY_STORE_ID_GAME_ID_AND_DATE_QUERY =
+            "SELECT * " +
+                    "FROM lojajogos " +
+                    "WHERE id_loja=? AND id_jogo=? AND data_crawl=?;";
     private static final String UPDATE_QUERY =
             "UPDATE lojajogos " +
                     "SET id_loja=?, id_jogo=?, preco_jogo=?, loja_crawl=?, data_crawl=? " +
@@ -310,4 +314,36 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
 
         return resultado;
     }
+
+    public LojaJogos readByStoreIDGameIDAndDate(Integer storeId, Integer gameId, Date data_crawl) throws SQLException {
+        LojaJogos lojaJogos = new LojaJogos();
+
+        try (PreparedStatement statement = connection.prepareStatement(READ_BY_STORE_ID_GAME_ID_AND_DATE_QUERY)) {
+            statement.setInt(1, storeId);
+            statement.setInt(2, gameId);
+            statement.setDate(3, data_crawl);
+            try (ResultSet result = statement.executeQuery()) {
+                if (result.next()) {
+                    lojaJogos.setId_loja(result.getInt("id_loja"));
+                    lojaJogos.setId_jogo(result.getInt("id_jogo"));
+                    lojaJogos.setPreco_jogo(result.getFloat("preco_jogo"));
+                    lojaJogos.setLoja_crawl(result.getString("loja_crawl"));
+                    lojaJogos.setData_crawl(result.getDate("data_crawl"));
+                } else {
+                    throw new SQLException("Erro ao visualizar: tabela intermediária não encontrada.");
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+
+            if (ex.getMessage().equals("Erro ao visualizar: tabela intermediária não encontrada.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao visualizar tabela intermediária.");
+            }
+        }
+
+        return lojaJogos;
+    }
+
 }

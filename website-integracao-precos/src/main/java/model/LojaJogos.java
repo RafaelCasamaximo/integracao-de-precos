@@ -8,7 +8,6 @@ public class LojaJogos {
     private Float preco_jogo;
     private String loja_crawl;
     private Date data_crawl;
-
     public Integer getId_loja() {
         return id_loja;
     }
