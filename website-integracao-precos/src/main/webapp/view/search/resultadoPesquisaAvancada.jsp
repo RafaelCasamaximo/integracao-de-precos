@@ -24,16 +24,20 @@
                 <thead>
                 <tr>
                     <th>Nome</th>
+                    <th>Data do Crawling</th>
                     <th>Loja</th>
                     <th>Preço</th>
                     <th>Detalhes</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="jogo" items="${requestScope.lista_jogo}">
+                <c:forEach var="jogo" items="${requestScope.lista_lojaJogos}">
                     <tr>
                         <td>
                             <span><c:out value="${jogo.left.nome}"/></span>
+                        </td>
+                        <td>
+                            <span><c:out value="${jogo.right.data_crawl}"/></span>
                         </td>
                         <td>
                             <span><c:out value="${jogo.right.loja_crawl}" /></span>
@@ -41,6 +45,7 @@
                         <td>
                             <span>R$<c:out value="${(jogo.right.preco_jogo / 100)}" /></span>
                         </td>
+
                         <td>
                             <!-- Button trigger modal -->
                             <a
