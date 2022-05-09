@@ -46,7 +46,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
-                    "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
                     "WHERE id_loja=? AND data_crawl=? AND id_jogo=? " +
@@ -56,7 +69,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
-                    "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
                     "WHERE id_loja=? AND data_crawl=? " +
@@ -66,7 +92,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
-                    "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
                     "WHERE id_loja=? " +
@@ -76,7 +115,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
-                    "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
                     "ORDER BY t2.nome ASC;";
@@ -85,7 +137,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
             "SELECT t1.id_loja, t1.id_jogo, t1.preco_jogo, t1.loja_crawl, t1.data_crawl, t2.id, t2.nome, t2.genero, t2.linguagens_suportadas, t2.suporte_a_controle, " +
                     "t2.nome_empresa, t2.gratuito, t2.idade_requerida, t2.descricao_curta, t2.descricao_longa, " +
                     "t2.id_empresa " +
-                    "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
                     "INNER JOIN jogo AS t2 " +
                     "ON t1.id_jogo = t2.id " +
                     "WHERE id_loja=? AND id_jogo=? " +
@@ -109,7 +174,20 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                 "t2.descricao_curta, " +
                 "t2.descricao_longa, " +
                 "t2.id_empresa " +
-            "FROM lojajogos AS t1 " +
+                    "FROM ( " +
+                    "SELECT lojajogos.id_loja, " +
+                    "lojajogos.id_jogo, " +
+                    "lojajogos.preco_jogo, " +
+                    "lojajogos.loja_crawl, " +
+                    "lojajogos.data_crawl " +
+                    "FROM lojajogos " +
+                    "INNER JOIN " +
+                    "(SELECT id_jogo, MAX(lojajogos.data_crawl) AS MaxDateTime " +
+                    "FROM lojajogos " +
+                    "GROUP BY id_jogo) groupedlojajogos " +
+                    "ON lojajogos.id_jogo = groupedlojajogos.id_jogo " +
+                    "AND lojajogos.data_crawl = groupedlojajogos.MaxDateTime" +
+                    ") AS t1 " +
             "INNER JOIN jogo AS t2 " +
             "ON t1.id_jogo = t2.id " +
             "WHERE 	UPPER(t2.nome) LIKE UPPER(?) AND " +
