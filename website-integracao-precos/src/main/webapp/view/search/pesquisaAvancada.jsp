@@ -66,22 +66,10 @@
                         <small id="inputMaximumPriceHelp" class="form-text text-muted">O campo será ignorado caso o valor seja 0.</small>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="col">
-                        <label for="inputMinimumDiscount">Desconto Mínimo</label>
-                        <input name="gameMinDiscount" type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="inputMinimumDiscount" placeholder="Insira o desconto mínimo do jogo em reais.">
-                        <small id="inputMinimumDiscountHelp" class="form-text text-muted">O campo será ignorado caso o valor seja 0.</small>
-                    </div>
-                    <div class="col">
-                        <label for="inputMaximumDiscount">Desconto Máximo</label>
-                        <input name="gameMaxDiscount" type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="inputMaximumDiscount" placeholder="Insira o desconto máximo do jogo em reais.">
-                        <small id="inputMaximumDiscountHelp" class="form-text text-muted">O campo será ignorado caso o valor seja 0.</small>
-                    </div>
-                </div>
                 <br>
                 <div class="form-group">
                     <div class="form-check">
-                        <input name="gameIsFree" class="form-check-input" type="checkbox" value="" id="inputIsFree">
+                        <input name="gameIsFree" class="form-check-input" type="checkbox" value="true" id="inputIsFree">
                         <label class="form-check-label" for="inputIsFree">
                             Gratuíto
                         </label>
