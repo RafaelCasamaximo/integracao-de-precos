@@ -127,14 +127,11 @@ public class CrawlingController extends HttpServlet {
         * transformando todo o conteudo em objetos java para serem processados
         * */
 
-        String dirPath = "/home/iury/IdeaProjects/integracao-de-precos/website-integracao-precos/src/main/resources/";
-        System.out.println("===== MOOOR ==== " + dirPath);
+        String dirPath = "/home/iury/IdeaProjects/Integracao-precos/integracao-de-precos/website-integracao-precos/src/main/resources/";
         File dir = new File(dirPath);
         File files[] = dir.listFiles();
 
         for(File file: files) {
-            System.out.println("===== MOOOR ==== " + file.getName());
-
             if(!file.isFile()) continue;
 
             InputStream is = getClass().getClassLoader().getResourceAsStream(file.getName());
