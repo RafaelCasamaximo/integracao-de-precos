@@ -1,10 +1,11 @@
+var myChart = new Chart(document.getElementById('grafico'), {type: 'line', data: {}, options: {}})
 
 function readUser(e) {
     e.preventDefault();
     $.get($(this).data('href'), function (data) {
-        var jogo = JSON.parse(JSON.stringify(data));
+        var json = JSON.parse(JSON.stringify(data));
+        var jogo = json[0];
         var $modal = $('.modal-visualizar-jogo');
-        var $grafico = $('.aaa');
 
         $modal.find('.p_id').html('<strong>ID: </strong>' + jogo.left.id);
         $modal.find('.p_nome').html('<strong>Nome: </strong>' + jogo.left.nome);
@@ -19,32 +20,26 @@ function readUser(e) {
         $modal.find('.p_idEmpresa').html('<strong>ID Empresa: </strong>' + jogo.left.id_empresa);
         $modal.find('.p_lojaCrawl').html('<strong>Loja: </strong>' + jogo.right.loja_crawl);
 
-        var ctx = document.getElementById('grafico');
-        var labels = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-        ];
+        var dates  = [];
+        var prices = [];
+        var preco_por_data = json[1];
+        preco_por_data.forEach( ppj => {
+            dates.push(ppj.left)
+            prices.push(ppj.right / 100)
+        });
+
         var data = {
-            labels: labels,
+            labels: dates,
             datasets: [{
                 label: 'My First dataset',
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
-                data: [0, 10, 5, 2, 20, 30, 45],
+                data: prices,
             }]
         };
-        var myChart = new Chart(
-            ctx,
-            {
-                type: 'line',
-                data,
-                options: {}
-            }
-        );
+        var ctx = document.getElementById('grafico')
+        myChart.data = data
+        myChart.update()
 
     });
 }

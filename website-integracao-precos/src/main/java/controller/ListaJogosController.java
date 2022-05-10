@@ -12,6 +12,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.sql.Array;
 import java.sql.SQLException;
 import java.sql.Date;
 import java.util.*;
@@ -108,7 +109,7 @@ public class ListaJogosController extends HttpServlet {
                 int id_jogo = Integer.parseInt(request.getParameter("id_jogo"));
                 int id_loja = Integer.parseInt(request.getParameter("id_loja"));
                 ImmutablePair<Jogo, LojaJogos> jogoDetail = new ImmutablePair<>(new Jogo(), new LojaJogos());
-                List<ImmutablePair<Date, Float>> preco_por_data;
+                List<ImmutablePair<Date, Float>> preco_por_data = null;
 
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
                     lojaJogosDAO = daoFactory.getLojaJogosDAO();
@@ -116,13 +117,14 @@ public class ListaJogosController extends HttpServlet {
                     jogoDetail     = lojaJogosDAO.getCrawlEntry(id_loja, id_jogo, null).get(0);
                     preco_por_data = lojaJogosDAO.getDatePrices(id_loja, id_jogo);
 
-
                 } catch (ClassNotFoundException | IOException | SQLException ex) {
                     request.getSession().setAttribute("error", ex.getMessage());
                 }
 
 
-                String json = new Gson().toJson(jogoDetail);
+//                String json = new Gson().toJson(jogoDetail, preco_por_data);
+                Object[] params = { jogoDetail, preco_por_data };
+                String json = new Gson().toJson(params);
 
                 response.setContentType("application/json");
                 response.setCharacterEncoding("UTF-8");
