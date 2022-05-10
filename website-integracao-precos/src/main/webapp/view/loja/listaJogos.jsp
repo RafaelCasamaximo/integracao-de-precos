@@ -17,7 +17,12 @@
 <body class="bg-light">
 <%@include file="/view/include/navbar.jsp" %>
 <br><br>
+
+<div class="aaa">
+    <canvas id="test"></canvas>
+</div>
 <div class="container">
+
     <div class="card mt-5 mb-5">
         <div class="card-body">
             <table class="table">
@@ -100,13 +105,15 @@
                             <div class="card mt-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Detalhes</h5>
-                                    <p class="p_genero"></p>
+                                    <p id="p_genero"></p>
                                     <p class="p_linguagens"></p>
-<%--                                    <p class="p_suporte"></p>--%>
                                     <p class="p_gratuito"></p>
-<%--                                    <p class="p_idade"></p>--%>
-<%--                                    <p class="p_descricaoCurta"></p>--%>
-<%--                                    <p class="p_descricaoLonga"></p>--%>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Evolução de preços</h5>
+                                    <canvas id="grafico"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +127,9 @@
     </div>
 </div>
 
-
 <%@include file="/view/include/scripts.jsp"%>
 <script src="${pageContext.servletContext.contextPath}/assets/js/jogo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>

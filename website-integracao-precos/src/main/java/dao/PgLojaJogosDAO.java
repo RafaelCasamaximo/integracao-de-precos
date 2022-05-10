@@ -197,6 +197,17 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                     "t1.preco_jogo BETWEEN ? AND ? AND " +
                     "t2.gratuito = ? " +
             "ORDER BY t2.nome ASC; ";
+
+    private static final String DATE_PRICES =
+            "SELECT " +
+            "    data_crawl AS data, " +
+            "    preco_jogo AS preco " +
+            "FROM lojajogos " +
+            "WHERE " +
+            "        id_jogo=? " +
+            "    AND id_loja=? " +
+            "ORDER BY data ASC;";
+
     @Override
     public void create(LojaJogos lojaJogos) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY)) {
@@ -372,6 +383,34 @@ public class PgLojaJogosDAO implements LojaJogosDAO {
                 throw ex;
             } else {
                 throw new SQLException("Erro ao visualizar tabela intermediária.");
+            }
+        }
+
+        return resultado;
+    }
+    @Override
+    public List<ImmutablePair<Date, Float>> getDatePrices(Integer id_loja, Integer id_jogo) throws SQLException {
+        List<ImmutablePair<Date, Float>> resultado = new ArrayList();
+
+        try(PreparedStatement statement = connection.prepareStatement(DATE_PRICES)){
+
+            statement.setInt(1, id_jogo);
+            statement.setInt(2, id_loja);
+
+            try (ResultSet result = statement.executeQuery()) {
+                while(result.next()){
+                    Date  data  = result.getDate("data");
+                    Float preco = result.getFloat("preco");
+                    resultado.add(new ImmutablePair<>(data, preco));
+                }
+            }
+
+        } catch(SQLException ex){
+            Logger.getLogger(PgJogoDAO.class.getName()).log(Level.SEVERE, "DAO", ex);
+            if (ex.getMessage().equals("Erro ao visualizar: data e precos não encontrados.")) {
+                throw ex;
+            } else {
+                throw new SQLException("Erro ao buscar data e preco.");
             }
         }
 

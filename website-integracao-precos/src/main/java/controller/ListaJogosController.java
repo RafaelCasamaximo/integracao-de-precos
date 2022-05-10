@@ -2,6 +2,7 @@ package controller;
 
 import com.google.gson.Gson;
 import dao.*;
+//import jdk.nashorn.internal.ir.annotations.Immutable;
 import model.Jogo;
 import model.Loja;
 import model.LojaJogos;
@@ -107,11 +108,13 @@ public class ListaJogosController extends HttpServlet {
                 int id_jogo = Integer.parseInt(request.getParameter("id_jogo"));
                 int id_loja = Integer.parseInt(request.getParameter("id_loja"));
                 ImmutablePair<Jogo, LojaJogos> jogoDetail = new ImmutablePair<>(new Jogo(), new LojaJogos());
+                List<ImmutablePair<Date, Float>> preco_por_data;
 
                 try (DAOFactory daoFactory = DAOFactory.getInstance()){
                     lojaJogosDAO = daoFactory.getLojaJogosDAO();
 
-                    jogoDetail = lojaJogosDAO.getCrawlEntry(id_loja, id_jogo, null).get(0);
+                    jogoDetail     = lojaJogosDAO.getCrawlEntry(id_loja, id_jogo, null).get(0);
+                    preco_por_data = lojaJogosDAO.getDatePrices(id_loja, id_jogo);
 
 
                 } catch (ClassNotFoundException | IOException | SQLException ex) {
