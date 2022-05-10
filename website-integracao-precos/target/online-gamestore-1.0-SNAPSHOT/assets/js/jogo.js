@@ -31,7 +31,7 @@ function readUser(e) {
         var data = {
             labels: dates,
             datasets: [{
-                label: 'My First dataset',
+                label: 'preço',
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
                 data: prices,

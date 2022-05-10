@@ -17,10 +17,6 @@
 <body class="bg-light">
 <%@include file="/view/include/navbar.jsp" %>
 <br><br>
-
-<div class="aaa">
-    <canvas id="test"></canvas>
-</div>
 <div class="container">
 
     <div class="card mt-5 mb-5">

@@ -104,6 +104,12 @@
                                     <p class="p_gratuito"></p>
                                 </div>
                             </div>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Evolução de preços</h5>
+                                    <canvas id="grafico"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,5 +124,6 @@
 
 <%@include file="/view/include/scripts.jsp"%>
 <script src="${pageContext.servletContext.contextPath}/assets/js/jogo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

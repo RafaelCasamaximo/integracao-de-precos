@@ -1,0 +1,2765 @@
+{
+      "steamCollection": {
+            "time": "23:58:46",
+            "date": "10/05/2022",
+            "games": [
+                  {
+                        "id": "1519350",
+                        "name": "Madden NFL 22",
+                        "genre": "Casual, Simulation, Sports, Strategy",
+                        "languages": "English",
+                        "publisher": "Electronic Arts",
+                        "isFree": false,
+                        "originalPrice": 24900,
+                        "dicountPrice": 4400,
+                        "dicount": 20500,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1732480",
+                        "name": "Takkoman -Kouzatsu World-",
+                        "genre": "Action",
+                        "languages": "English, Japanese",
+                        "publisher": "PLAYISM",
+                        "isFree": false,
+                        "originalPrice": 2069,
+                        "dicountPrice": 2069,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "242760",
+                        "name": "The Forest",
+                        "genre": "Action, Adventure, Indie, Simulation",
+                        "languages": "English, French, German, Czech, Finnish, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Swedish, Traditional Chinese, Turkish, Italian, Spanish - Spain",
+                        "publisher": "Endnight Games Ltd",
+                        "isFree": false,
+                        "originalPrice": 2050000,
+                        "dicountPrice": 2050000,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "736590",
+                        "name": "Operation: Harsh Doorstop",
+                        "genre": "Action, Casual, Free to Play, Indie, Simulation, Strategy, Early Access",
+                        "languages": "English",
+                        "publisher": "Drakeling Labs, MicroProse Software",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "1677740",
+                        "name": "Stumble Guys",
+                        "genre": "Action, Casual, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Portuguese, Portuguese - Brazil, Russian, Japanese, Korean",
+                        "publisher": "Kitka Games",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "646910",
+                        "name": "The Crew 2",
+                        "genre": "Action, Massively Multiplayer, Racing",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Dutch, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese",
+                        "publisher": "Ubisoft",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1217060",
+                        "name": "Gunfire Reborn",
+                        "genre": "Action, Adventure, Indie, RPG",
+                        "languages": "English, Simplified Chinese, Traditional Chinese, Spanish - Latin America, Spanish - Spain, German, Russian, Japanese, Portuguese, Portuguese - Brazil, Thai, Vietnamese, Korean, French, Italian, Turkish, Polish",
+                        "publisher": "Duoyi Games",
+                        "isFree": false,
+                        "originalPrice": 4799,
+                        "dicountPrice": 3599,
+                        "dicount": 1200,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "289070",
+                        "name": "Sid Meier\u2019s Civilization VI",
+                        "genre": "Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese",
+                        "publisher": "2K, Aspyr (Mac), Aspyr (Linux)",
+                        "isFree": false,
+                        "originalPrice": 12900,
+                        "dicountPrice": 1935,
+                        "dicount": 10965,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1504570",
+                        "name": "Cultivation Tales",
+                        "genre": "Action, Adventure, Indie, RPG, Strategy, Early Access",
+                        "languages": "English, Simplified Chinese",
+                        "publisher": "Ac Games",
+                        "isFree": false,
+                        "originalPrice": 3990,
+                        "dicountPrice": 3990,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1222670",
+                        "name": "The Sims 4",
+                        "genre": "Casual, Simulation",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Danish, Dutch, Japanese, Norwegian, Polish, Portuguese - Brazil, Russian, Swedish, Finnish, Traditional Chinese, Simplified Chinese, Korean",
+                        "publisher": "Electronic Arts",
+                        "isFree": false,
+                        "originalPrice": 8900,
+                        "dicountPrice": 2225,
+                        "dicount": 6675,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "356190",
+                        "name": "Middle-earth: Shadow of War",
+                        "genre": "Action, Adventure, RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Polish, Portuguese - Brazil, Russian, Arabic, Korean, Simplified Chinese, Traditional Chinese",
+                        "publisher": "WB Games",
+                        "isFree": false,
+                        "originalPrice": 11999,
+                        "dicountPrice": 1799,
+                        "dicount": 10200,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "255710",
+                        "name": "Cities: Skylines",
+                        "genre": "Simulation, Strategy",
+                        "languages": "English, French, German, Spanish - Spain, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Korean",
+                        "publisher": "Paradox Interactive",
+                        "isFree": false,
+                        "originalPrice": 3200000,
+                        "dicountPrice": 3200000,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1135230",
+                        "name": "Ember Knights",
+                        "genre": "Action, Adventure, RPG, Early Access",
+                        "languages": "English",
+                        "publisher": "Asmodee Digital",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "771530",
+                        "name": "Take That",
+                        "genre": "Action, Adventure, Casual, Indie",
+                        "languages": "Simplified Chinese, English, Spanish - Spain, Traditional Chinese, Russian, Portuguese - Brazil, French, Italian, German",
+                        "publisher": "S.Y. GAMES",
+                        "isFree": false,
+                        "originalPrice": 869,
+                        "dicountPrice": 217,
+                        "dicount": 652,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1506830",
+                        "name": "FIFA 22",
+                        "genre": "Simulation, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Czech, Danish, Dutch, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Swedish, Traditional Chinese, Turkish",
+                        "publisher": "Electronic Arts",
+                        "isFree": false,
+                        "originalPrice": 24900,
+                        "dicountPrice": 24900,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "881100",
+                        "name": "Noita",
+                        "genre": "Action, Adventure, Indie, RPG, Simulation",
+                        "languages": "English, French, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Italian, Polish",
+                        "publisher": "Nolla Games",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 1899,
+                        "dicount": 1900,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "594570",
+                        "name": "Total War: WARHAMMER II",
+                        "genre": "Action, Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Korean, Polish, Portuguese - Brazil, Russian, Turkish, Simplified Chinese, Traditional Chinese",
+                        "publisher": "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)",
+                        "isFree": false,
+                        "originalPrice": 25200,
+                        "dicountPrice": 25200,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "374320",
+                        "name": "DARK SOULS III",
+                        "genre": "Action",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Russian, Portuguese - Brazil, Simplified Chinese, Traditional Chinese, Japanese, Korean",
+                        "publisher": "FromSoftware, Inc., BANDAI NAMCO Entertainment",
+                        "isFree": false,
+                        "originalPrice": 109999,
+                        "dicountPrice": 109999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "301760",
+                        "name": "Disney\u2022Pixar Cars 2: The Video Game",
+                        "genre": "Action, Adventure, Racing",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Dutch, Polish, Portuguese - Brazil, Russian, Danish, Finnish, Norwegian, Swedish",
+                        "publisher": "Disney",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 1139,
+                        "dicount": 2660,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "698780",
+                        "name": "Doki Doki Literature Club!",
+                        "genre": "Casual, Free to Play, Indie",
+                        "languages": "English",
+                        "publisher": "Team Salvato",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "250900",
+                        "name": "The Binding of Isaac: Rebirth",
+                        "genre": "Action",
+                        "languages": "English",
+                        "publisher": "Nicalis, Inc.",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1174180",
+                        "name": "Red Dead Redemption 2",
+                        "genre": "Action, Adventure",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese, Russian, Simplified Chinese, Spanish - Latin America, Traditional Chinese",
+                        "publisher": "Rockstar Games",
+                        "isFree": false,
+                        "originalPrice": 23900,
+                        "dicountPrice": 11950,
+                        "dicount": 11950,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1553880",
+                        "name": "Greats of the Gridiron",
+                        "genre": "Simulation, Sports, Strategy",
+                        "languages": "English",
+                        "publisher": "Critical Density Studios",
+                        "isFree": false,
+                        "originalPrice": 4749,
+                        "dicountPrice": 4749,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "22380",
+                        "name": "Fallout: New Vegas",
+                        "genre": "Action, RPG",
+                        "languages": "English, French, German, Italian, Spanish - Spain",
+                        "publisher": "Bethesda Softworks",
+                        "isFree": false,
+                        "originalPrice": 1999,
+                        "dicountPrice": 1999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233860",
+                        "name": "Kenshi",
+                        "genre": "Action, Indie, RPG, Simulation, Strategy",
+                        "languages": "English, Spanish - Spain, Portuguese - Brazil, Japanese, German, Russian, French, Simplified Chinese, Korean",
+                        "publisher": "Lo-Fi Games",
+                        "isFree": false,
+                        "originalPrice": 5799,
+                        "dicountPrice": 5799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1677740",
+                        "name": "Stumble Guys",
+                        "genre": "Action, Casual, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Portuguese, Portuguese - Brazil, Russian, Japanese, Korean",
+                        "publisher": "Kitka Games",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "771530",
+                        "name": "Take That",
+                        "genre": "Action, Adventure, Casual, Indie",
+                        "languages": "Simplified Chinese, English, Spanish - Spain, Traditional Chinese, Russian, Portuguese - Brazil, French, Italian, German",
+                        "publisher": "S.Y. GAMES",
+                        "isFree": false,
+                        "originalPrice": 869,
+                        "dicountPrice": 217,
+                        "dicount": 652,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1231880",
+                        "name": "Haiku, the Robot",
+                        "genre": "Action, Adventure, Indie",
+                        "languages": "English, Portuguese - Brazil, Spanish - Latin America",
+                        "publisher": "Mister Morris Games",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3229,
+                        "dicount": 570,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "601510",
+                        "name": "Yu-Gi-Oh! Duel Links",
+                        "genre": "Free to Play, Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese, Korean, Japanese",
+                        "publisher": "Konami Digital Entertainment",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "1218210",
+                        "name": "Coromon",
+                        "genre": "Adventure, Indie, RPG, Strategy",
+                        "languages": "English, French, German, Portuguese - Brazil, Spanish - Spain, Italian, Russian, Japanese, Korean, Simplified Chinese",
+                        "publisher": "Freedom Games",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3039,
+                        "dicount": 760,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1607890",
+                        "name": "Risk of Rain 2: Survivors of the Void",
+                        "genre": "Action, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
+                        "publisher": "Gearbox Publishing",
+                        "isFree": false,
+                        "originalPrice": 1199,
+                        "dicountPrice": 1199,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1147560",
+                        "name": "Skul: The Hero Slayer",
+                        "genre": "Action, Indie",
+                        "languages": "English, Japanese, Korean, Simplified Chinese, German, French, Spanish - Spain, Russian, Traditional Chinese, Portuguese - Brazil, Polish",
+                        "publisher": "NEOWIZ",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 2659,
+                        "dicount": 1140,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "294100",
+                        "name": "RimWorld",
+                        "genre": "Indie, Simulation, Strategy",
+                        "languages": "English, French, German, Polish, Russian, Italian, Spanish - Spain, Czech, Danish, Dutch, Hungarian, Japanese, Norwegian, Portuguese, Portuguese - Brazil, Simplified Chinese, Swedish, Traditional Chinese, Turkish, Ukrainian, Finnish, Korean, Romanian, Spanish - Latin America",
+                        "publisher": "Ludeon Studios",
+                        "isFree": false,
+                        "originalPrice": 61900,
+                        "dicountPrice": 61900,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1885670",
+                        "name": "SAOMI",
+                        "genre": "Action, Adventure, Indie",
+                        "languages": "English, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Russian, German, Korean",
+                        "publisher": "Naoka Games",
+                        "isFree": false,
+                        "originalPrice": 649,
+                        "dicountPrice": 519,
+                        "dicount": 130,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "212680",
+                        "name": "FTL: Faster Than Light",
+                        "genre": "Indie, Simulation, Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Japanese",
+                        "publisher": "Subset Games",
+                        "isFree": false,
+                        "originalPrice": 1699,
+                        "dicountPrice": 424,
+                        "dicount": 1275,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "560130",
+                        "name": "Pillars of Eternity II: Deadfire",
+                        "genre": "RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Russian, Simplified Chinese, Portuguese - Brazil",
+                        "publisher": "Versus Evil, Obsidian Entertainment",
+                        "isFree": false,
+                        "originalPrice": 7400,
+                        "dicountPrice": 7400,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "381210",
+                        "name": "Dead by Daylight",
+                        "genre": "Action",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Russian, Simplified Chinese, Portuguese - Brazil, Thai, Traditional Chinese, Japanese, Korean, Polish, Spanish - Latin America, Turkish",
+                        "publisher": "Behaviour Interactive Inc.",
+                        "isFree": false,
+                        "originalPrice": 1999,
+                        "dicountPrice": 999,
+                        "dicount": 50,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "1189630",
+                        "name": "Path Of Wuxia",
+                        "genre": "Indie, RPG, Early Access",
+                        "languages": "English, Not supported, Simplified Chinese, Traditional Chinese",
+                        "publisher": "\u9999\u6e2f\u5546\u6cb3\u6d1b\u4e92\u52d5\u5a1b\u6a02\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+                        "isFree": false,
+                        "originalPrice": 12616,
+                        "dicountPrice": 12616,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1309610",
+                        "name": "Line War",
+                        "genre": "Strategy",
+                        "languages": "English",
+                        "publisher": "Studio Centurion",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 2849,
+                        "dicount": 950,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "252490",
+                        "name": "Rust",
+                        "genre": "Action, Adventure, Indie, Massively Multiplayer, RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Russian, Simplified Chinese, Ukrainian, Polish, Portuguese, Turkish, Arabic, Czech, Danish, Dutch, Finnish, Greek, Norwegian, Portuguese - Brazil, Spanish - Latin America, Swedish, Traditional Chinese, Vietnamese",
+                        "publisher": "Facepunch Studios",
+                        "isFree": false,
+                        "originalPrice": 4600000,
+                        "dicountPrice": 4600000,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "761030",
+                        "name": "EARTHLOCK",
+                        "genre": "Adventure, Indie, RPG, Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Norwegian, Polish, Portuguese - Brazil, Russian, Japanese",
+                        "publisher": "Snowcastle Games",
+                        "isFree": false,
+                        "originalPrice": 5799,
+                        "dicountPrice": 1043,
+                        "dicount": 4756,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "635260",
+                        "name": "CarX Drift Racing Online",
+                        "genre": "Massively Multiplayer, Racing, Simulation, Sports",
+                        "languages": "English, Russian, French, Italian, Korean, Japanese, German, Spanish - Spain, Traditional Chinese, Simplified Chinese, Polish, Portuguese",
+                        "publisher": "CarX Technologies, LLC",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1245620",
+                        "name": "ELDEN RING",
+                        "genre": "Action, RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Thai, Traditional Chinese",
+                        "publisher": "FromSoftware Inc., BANDAI NAMCO Entertainment",
+                        "isFree": false,
+                        "originalPrice": 24990,
+                        "dicountPrice": 24990,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1882580",
+                        "name": "FALL GIRLS",
+                        "genre": "Action, Adventure, Casual, Indie, Simulation, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Spanish - Latin America, Swedish, Thai, Traditional Chinese, Turkish, Ukrainian, Vietnamese",
+                        "publisher": "BanzaiProject",
+                        "isFree": false,
+                        "originalPrice": 1449,
+                        "dicountPrice": 1014,
+                        "dicount": 435,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "468920",
+                        "name": "Ultimate Fishing Simulator",
+                        "genre": "Casual, Simulation, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Russian, Turkish, Portuguese, Simplified Chinese, Korean, Japanese",
+                        "publisher": "Ultimate Games S.A.",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 924,
+                        "dicount": 2775,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1303010",
+                        "name": "Vincemus - Air Combat",
+                        "genre": "Action, Indie, Simulation, Early Access",
+                        "languages": "English",
+                        "publisher": "Virtual Convict",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "489520",
+                        "name": "Minion Masters",
+                        "genre": "Action, Adventure, Free to Play, Indie, RPG, Strategy",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese",
+                        "publisher": "BetaDwarf",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "632470",
+                        "name": "Disco Elysium - The Final Cut",
+                        "genre": "RPG",
+                        "languages": "English, Simplified Chinese, Spanish - Spain, Korean, Portuguese - Brazil, French, German, Traditional Chinese, Russian, Polish",
+                        "publisher": "ZA/UM",
+                        "isFree": false,
+                        "originalPrice": 7549,
+                        "dicountPrice": 2642,
+                        "dicount": 4907,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "582010",
+                        "name": "Monster Hunter: World",
+                        "genre": "Action",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Arabic, Portuguese - Brazil, Polish, Traditional Chinese, Japanese, Korean, Russian, Simplified Chinese",
+                        "publisher": "CAPCOM Co., Ltd.",
+                        "isFree": false,
+                        "originalPrice": 6999,
+                        "dicountPrice": 3499,
+                        "dicount": 3500,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "268910",
+                        "name": "Cuphead",
+                        "genre": "Action, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America",
+                        "publisher": "Studio MDHR Entertainment Inc.",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "294100",
+                        "name": "RimWorld",
+                        "genre": "Indie, Simulation, Strategy",
+                        "languages": "English, French, German, Polish, Russian, Italian, Spanish - Spain, Czech, Danish, Dutch, Hungarian, Japanese, Norwegian, Portuguese, Portuguese - Brazil, Simplified Chinese, Swedish, Traditional Chinese, Turkish, Ukrainian, Finnish, Korean, Romanian, Spanish - Latin America",
+                        "publisher": "Ludeon Studios",
+                        "isFree": false,
+                        "originalPrice": 6599,
+                        "dicountPrice": 6599,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "367520",
+                        "name": "Hollow Knight",
+                        "genre": "Action, Adventure, Indie",
+                        "languages": "English, French, German, Spanish - Spain, Korean, Simplified Chinese, Italian, Portuguese - Brazil, Russian, Japanese",
+                        "publisher": "Team Cherry",
+                        "isFree": false,
+                        "originalPrice": 2799,
+                        "dicountPrice": 1119,
+                        "dicount": 1680,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "262060",
+                        "name": "Darkest Dungeon",
+                        "genre": "Indie, RPG, Strategy",
+                        "languages": "English, French, German, Spanish - Spain, Czech, Polish, Portuguese - Brazil, Russian, Italian, Simplified Chinese, Korean, Japanese",
+                        "publisher": "Red Hook Studios",
+                        "isFree": false,
+                        "originalPrice": 4599,
+                        "dicountPrice": 4599,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "730",
+                        "name": "Counter-Strike: Global Offensive",
+                        "genre": "Action, Free to Play",
+                        "languages": "English, Czech, Danish, Dutch, Finnish, French, German, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Spanish - Spain, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Ukrainian, Greek, Spanish - Latin America, Vietnamese",
+                        "publisher": "Valve",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "261550",
+                        "name": "Mount & Blade II: Bannerlord",
+                        "genre": "Action, RPG, Simulation, Strategy, Early Access",
+                        "languages": "English, Simplified Chinese, Turkish, Traditional Chinese, French, Italian, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Spanish - Latin America",
+                        "publisher": "TaleWorlds Entertainment",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1172380",
+                        "name": "STAR WARS Jedi: Fallen Order",
+                        "genre": "Action, Adventure",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Traditional Chinese",
+                        "publisher": "Electronic Arts",
+                        "isFree": false,
+                        "originalPrice": 19900,
+                        "dicountPrice": 4975,
+                        "dicount": 14925,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1174180",
+                        "name": "Red Dead Redemption 2",
+                        "genre": "Action, Adventure",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese, Russian, Simplified Chinese, Spanish - Latin America, Traditional Chinese",
+                        "publisher": "Rockstar Games",
+                        "isFree": false,
+                        "originalPrice": 23900,
+                        "dicountPrice": 11950,
+                        "dicount": 11950,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "570",
+                        "name": "Dota 2",
+                        "genre": "Action, Free to Play, Strategy",
+                        "languages": "English, Bulgarian, Czech, Danish, Dutch, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Spanish - Spain, Swedish, Thai, Traditional Chinese, Turkish, Ukrainian, Spanish - Latin America, Vietnamese",
+                        "publisher": "Valve",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "291550",
+                        "name": "Brawlhalla",
+                        "genre": "Action, Free to Play, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese",
+                        "publisher": "Ubisoft",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "1150690",
+                        "name": "OMORI",
+                        "genre": "Adventure, Indie, RPG",
+                        "languages": "English, Japanese",
+                        "publisher": "OMOCAT, LLC",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "552440",
+                        "name": "The Talos Principle VR",
+                        "genre": "Action, Adventure, Indie",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese",
+                        "publisher": "Devolver Digital, Croteam Publishing",
+                        "isFree": false,
+                        "originalPrice": 7299,
+                        "dicountPrice": 2189,
+                        "dicount": 5110,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "394360",
+                        "name": "Hearts of Iron IV",
+                        "genre": "Simulation, Strategy",
+                        "languages": "English, French, German, Polish, Portuguese - Brazil, Russian, Spanish - Spain",
+                        "publisher": "Paradox Interactive",
+                        "isFree": false,
+                        "originalPrice": 7299,
+                        "dicountPrice": 7299,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "218620",
+                        "name": "PAYDAY 2",
+                        "genre": "Action, RPG",
+                        "languages": "English, German, French, Italian, Spanish - Spain, Dutch, Russian, Japanese, Simplified Chinese, Spanish - Latin America, Korean",
+                        "publisher": "Starbreeze Publishing AB",
+                        "isFree": false,
+                        "originalPrice": 29900,
+                        "dicountPrice": 29900,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "431960",
+                        "name": "Wallpaper Engine",
+                        "genre": "Casual, Indie, Animation & Modeling, Design & Illustration, Photo Editing, Utilities",
+                        "languages": "English, German, Simplified Chinese, Polish, Portuguese - Brazil, French, Italian, Spanish - Spain, Finnish, Japanese, Korean, Swedish, Thai, Traditional Chinese, Turkish, Portuguese, Russian, Danish, Czech",
+                        "publisher": "Wallpaper Engine Team",
+                        "isFree": false,
+                        "originalPrice": 999,
+                        "dicountPrice": 999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "678960",
+                        "name": "CODE VEIN",
+                        "genre": "Action, RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Spanish - Latin America, Traditional Chinese",
+                        "publisher": "BANDAI NAMCO Entertainment",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "253710",
+                        "name": "theHunter Classic",
+                        "genre": "Action, Adventure, Free to Play, Simulation, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Danish, Dutch, Finnish, Hungarian, Norwegian, Polish, Portuguese, Portuguese - Brazil, Russian, Swedish, Turkish",
+                        "publisher": "Expansive Worlds, Avalanche Studios",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "399820",
+                        "name": "Kopanito All-Stars Soccer",
+                        "genre": "Action, Indie, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Polish, Russian, Simplified Chinese, Turkish",
+                        "publisher": "Merixgames",
+                        "isFree": false,
+                        "originalPrice": 1239,
+                        "dicountPrice": 1239,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "787860",
+                        "name": "Farming Simulator 19",
+                        "genre": "Simulation",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Czech, Dutch, Hungarian, Japanese, Korean, Polish, Portuguese, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Traditional Chinese, Turkish",
+                        "publisher": "Focus Home Interactive",
+                        "isFree": false,
+                        "originalPrice": 6990,
+                        "dicountPrice": 6990,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1134570",
+                        "name": "F1 2021",
+                        "genre": "Racing, Simulation, Sports",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Dutch, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Japanese",
+                        "publisher": "Electronic Arts",
+                        "isFree": false,
+                        "originalPrice": 24900,
+                        "dicountPrice": 24900,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1173820",
+                        "name": "FINAL FANTASY VI",
+                        "genre": "RPG",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Thai, Traditional Chinese",
+                        "publisher": "Square Enix",
+                        "isFree": false,
+                        "originalPrice": 7000,
+                        "dicountPrice": 7000,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "386360",
+                        "name": "SMITE",
+                        "genre": "Action, Free to Play",
+                        "languages": "English, French, German, Spanish - Spain, Polish, Russian, Portuguese - Brazil, Turkish, Simplified Chinese, Japanese",
+                        "publisher": "Hi-Rez Studios",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  },
+                  {
+                        "id": "1739010",
+                        "name": "Out of the Park Baseball 23",
+                        "genre": "Indie, Simulation, Sports, Strategy",
+                        "languages": "English, Korean",
+                        "publisher": "Out of the Park Developments",
+                        "isFree": false,
+                        "originalPrice": 7549,
+                        "dicountPrice": 7549,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "648800",
+                        "name": "Raft",
+                        "genre": "Adventure, Indie, Simulation, Early Access",
+                        "languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Swedish",
+                        "publisher": "Axolot Games",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "214950",
+                        "name": "Total War: ROME II - Emperor Edition",
+                        "genre": "Strategy",
+                        "languages": "English, German, French, Italian, Spanish - Spain, Russian, Polish, Czech, Turkish",
+                        "publisher": "SEGA",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1289310",
+                        "name": "Helltaker",
+                        "genre": "Adventure, Free to Play, Indie",
+                        "languages": "English",
+                        "publisher": "vanripper",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "USD"
+                  }
+            ]
+      },
+      "playstationCollection": {
+            "time": "23:58:46",
+            "date": "10/05/2022",
+            "games": [
+                  {
+                        "id": "10002538",
+                        "name": "FIFA 22 para PS5\u2122",
+                        "genre": "Esporte",
+                        "languages": "Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "33890",
+                        "dicountPrice": "33890",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000648",
+                        "name": "Tribes of Midgard PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o, Aventura",
+                        "languages": "Afric\u00e2ner, Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Holand\u00eas, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo, Sueco, Tailand\u00eas, Turco, Ucraniano",
+                        "publisher": "GEARBOX",
+                        "isFree": false,
+                        "originalPrice": "9950",
+                        "dicountPrice": "9950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000563",
+                        "name": "Curse of the Dead Gods",
+                        "genre": "A\u00e7\u00e3o, Aventura, Original",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Focus Home Interactive",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233372",
+                        "name": "Bob Esponja Cal\u00e7a Quadrada",
+                        "genre": "A\u00e7\u00e3o, Aventura, Fam\u00edlia",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), H\u00edndi, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "THQ Nordic",
+                        "isFree": false,
+                        "originalPrice": "12490",
+                        "dicountPrice": "12490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10003354",
+                        "name": "Fall Guys: Ultimate Knockout",
+                        "genre": "Fam\u00edlia",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "EPIC GAMES",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000293",
+                        "name": "Hood: Outlaws & Legends",
+                        "genre": "Estrat\u00e9gia, Aventura, A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Focus Home Interactive",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000649",
+                        "name": "Marvel's Spider-Man: Miles Morales PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "24950",
+                        "dicountPrice": "24950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "235039",
+                        "name": "Planet Coaster: Edi\u00e7\u00e3o de Console",
+                        "genre": "Simula\u00e7\u00e3o, Estrat\u00e9gia",
+                        "languages": "Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "FRONTIER DEVELOPMENTS PLC",
+                        "isFree": false,
+                        "originalPrice": "24950",
+                        "dicountPrice": "24950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "230079",
+                        "name": "The Last of Us Part II",
+                        "genre": "A\u00e7\u00e3o, Aventura",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "19950",
+                        "dicountPrice": "19950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "202943",
+                        "name": "Mortal Kombat X",
+                        "genre": "Luta, Luta",
+                        "languages": "Alem\u00e3o, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Warner Bros. Interactive",
+                        "isFree": false,
+                        "originalPrice": "7150",
+                        "dicountPrice": "7150",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000333",
+                        "name": "ELDEN RING PS4 & PS5",
+                        "genre": "RPG",
+                        "languages": "Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "BANDAI NAMCO Entertainment America Inc.",
+                        "isFree": false,
+                        "originalPrice": "29990",
+                        "dicountPrice": "29990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000886",
+                        "name": "Horizon Forbidden West\u2122",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Dinamarqu\u00eas, Espanhol, Espanhol (M\u00e9xico), Finland\u00eas, Franc\u00eas (Fran\u00e7a), Grego, Holand\u00eas, H\u00fangaro, Ingl\u00eas, Italiano, Japon\u00eas, Noruegu\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Portugu\u00eas (Portugal), Russo, Sueco, Tailand\u00eas, Tcheco, Turco, \u00c1rabe",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "34990",
+                        "dicountPrice": "34990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233449",
+                        "name": "Deep Rock Galactic",
+                        "genre": "A\u00e7\u00e3o, Tiro, A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Eslovaco, Espanhol, Finland\u00eas, Franc\u00eas (Fran\u00e7a), Holand\u00eas, H\u00fangaro, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Turco, \u00c1rabe",
+                        "publisher": "COFFEE STAIN PUBLISHING AB",
+                        "isFree": false,
+                        "originalPrice": "15990",
+                        "dicountPrice": "15990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "220037",
+                        "name": "RESIDENT EVIL 7 biohazard",
+                        "genre": "A\u00e7\u00e3o, Aventura, Terror",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo, \u00c1rabe",
+                        "publisher": "Capcom U.S.A., Inc.",
+                        "isFree": false,
+                        "originalPrice": "9950",
+                        "dicountPrice": "9950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "231756",
+                        "name": "Mortal Kombat\u00a011",
+                        "genre": "Luta",
+                        "languages": "Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Warner Bros. Interactive",
+                        "isFree": false,
+                        "originalPrice": "19990",
+                        "dicountPrice": "19990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000237",
+                        "name": "Assassin's Creed\u00ae Valhalla",
+                        "genre": "RPG",
+                        "languages": "Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": "27990",
+                        "dicountPrice": "27990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "234567",
+                        "name": "Cyberpunk 2077",
+                        "genre": "Original",
+                        "languages": "Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Polon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "CD PROJEKT SA",
+                        "isFree": false,
+                        "originalPrice": "24950",
+                        "dicountPrice": "24950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10002168",
+                        "name": "Hunter's Arena: Legends",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Mantisco Co.,Ltd",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "232345",
+                        "name": "STAR WARS Jedi: Fallen Order\u2122",
+                        "genre": "A\u00e7\u00e3o, Aventura, Original",
+                        "languages": "Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Japon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "23890",
+                        "dicountPrice": "5972",
+                        "dicount": "17918",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233476",
+                        "name": "Slay the Spire",
+                        "genre": "Estrat\u00e9gia, Estrat\u00e9gia",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Franc\u00eas (Fran\u00e7a), Holand\u00eas, Ingl\u00eas, Italiano, Japon\u00eas, Noruegu\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo, Turco",
+                        "publisher": "Humble Games",
+                        "isFree": false,
+                        "originalPrice": "10390",
+                        "dicountPrice": "10390",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "234401",
+                        "name": "DIRT 5 PS4 & PS5",
+                        "genre": "Original",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "ELECTRONIC ARTS",
+                        "isFree": false,
+                        "originalPrice": "29990",
+                        "dicountPrice": "29990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000278",
+                        "name": "FIFA 21 Edi\u00e7\u00e3o Standard PS4\u2122 & PS5\u2122",
+                        "genre": "Esporte",
+                        "languages": "Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "29890",
+                        "dicountPrice": "29890",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233030",
+                        "name": "UFC\u00ae 4",
+                        "genre": "Original",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "29890",
+                        "dicountPrice": "29890",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10002089",
+                        "name": "First Class Trouble",
+                        "genre": "Em grupo",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Japon\u00eas, Portugu\u00eas (Brasil), Russo, Tailand\u00eas, \u00c1rabe",
+                        "publisher": "VERSUS EVIL, LLC.",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "228785",
+                        "name": "MONSTER HUNTER: WORLD\u2122",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Capcom U.S.A., Inc.",
+                        "isFree": false,
+                        "originalPrice": "8350",
+                        "dicountPrice": "8350",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10002174",
+                        "name": "F1\u00ae 2021 PS4 & PS5",
+                        "genre": "Dire\u00e7\u00e3o/corrida",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Holand\u00eas, Ingl\u00eas, Italiano, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "29899",
+                        "dicountPrice": "29899",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000368",
+                        "name": "Demon\u2019s Souls",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "34990",
+                        "dicountPrice": "34990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "235235",
+                        "name": "Resident Evil Village PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o, Terror",
+                        "languages": "Alem\u00e3o, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil), Russo, \u00c1rabe",
+                        "publisher": "Capcom U.S.A., Inc.",
+                        "isFree": false,
+                        "originalPrice": "24900",
+                        "dicountPrice": "24900",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "233407",
+                        "name": "Call of Duty\u00ae: Black Ops Cold War - Pacote Multi-gera\u00e7\u00e3o PS4\u2122 & PS5\u2122",
+                        "genre": "Tiro",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Activision",
+                        "isFree": false,
+                        "originalPrice": "31990",
+                        "dicountPrice": "31990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "227326",
+                        "name": "Battlefield\u2122 V",
+                        "genre": "Tiro, Tiro",
+                        "languages": "Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Japon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "19899",
+                        "dicountPrice": "19899",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "234734",
+                        "name": "WWE 2K Battlegrounds",
+                        "genre": "Esporte",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, \u00c1rabe",
+                        "publisher": "2K",
+                        "isFree": false,
+                        "originalPrice": "22290",
+                        "dicountPrice": "22290",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10002860",
+                        "name": "NBA 2K22 para PS5\u2122",
+                        "genre": "Esporte",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas",
+                        "publisher": "2K",
+                        "isFree": false,
+                        "originalPrice": "34990",
+                        "dicountPrice": "8747",
+                        "dicount": "26243",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000669",
+                        "name": "Ratchet & Clank: Em Uma Outra Dimens\u00e3o",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "34990",
+                        "dicountPrice": "34990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "234658",
+                        "name": "Plants vs. Zombies\u2122: Batalha por Neighborville",
+                        "genre": "Tiro, Tiro",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Holand\u00eas, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo, \u00c1rabe",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "14890",
+                        "dicountPrice": "3722",
+                        "dicount": "11168",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000899",
+                        "name": "Overcooked! All You Can Eat",
+                        "genre": "Fam\u00edlia, Simula\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Russo, Tailand\u00eas",
+                        "publisher": "Team17 Digital Ltd.",
+                        "isFree": false,
+                        "originalPrice": "19950",
+                        "dicountPrice": "19950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "205354",
+                        "name": "UNCHARTED: Cole\u00e7\u00e3o Legado dos Ladr\u00f5es",
+                        "genre": "A\u00e7\u00e3o, Aventura",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "24950",
+                        "dicountPrice": "24950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "201511",
+                        "name": "Fallout 4",
+                        "genre": "RPG",
+                        "languages": "Espanhol, Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Bethesda Softworks",
+                        "isFree": false,
+                        "originalPrice": "9950",
+                        "dicountPrice": "9950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000758",
+                        "name": "Battlefield\u2122 2042 (PS4\u2122 e PS5\u2122)",
+                        "genre": "Tiro",
+                        "languages": "Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Japon\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "33890",
+                        "dicountPrice": "33890",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "228857",
+                        "name": "The Sims\u2122 4",
+                        "genre": "A\u00e7\u00e3o, Simula\u00e7\u00e3o",
+                        "languages": "Chin\u00eas (tradicional), Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "9899",
+                        "dicountPrice": "9899",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000178",
+                        "name": "Destruction AllStars",
+                        "genre": "Dire\u00e7\u00e3o/corrida",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "9950",
+                        "dicountPrice": "9950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "221692",
+                        "name": "FAR CRY 5",
+                        "genre": "A\u00e7\u00e3o, Tiro, A\u00e7\u00e3o",
+                        "languages": "Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": "19890",
+                        "dicountPrice": "4972",
+                        "dicount": "14918",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "216395",
+                        "name": "Sniper Elite 4",
+                        "genre": "Aventura, Aventura, Tiro",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Rebellion",
+                        "isFree": false,
+                        "originalPrice": "31990",
+                        "dicountPrice": "4798",
+                        "dicount": "27192",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "229500",
+                        "name": "RESIDENT EVIL 2",
+                        "genre": "A\u00e7\u00e3o, Terror",
+                        "languages": "Alem\u00e3o, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo",
+                        "publisher": "Capcom U.S.A., Inc.",
+                        "isFree": false,
+                        "originalPrice": "19950",
+                        "dicountPrice": "7980",
+                        "dicount": "11970",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "229438",
+                        "name": "STAR WARS\u2122 Battlefront\u2122 II",
+                        "genre": "A\u00e7\u00e3o, Aventura, Tiro",
+                        "languages": "Chin\u00eas (simplificado), Chin\u00eas (tradicional), Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "8350",
+                        "dicountPrice": "2087",
+                        "dicount": "6263",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "227319",
+                        "name": "Dead by Daylight PS4\u2122 & PS5\u2122",
+                        "genre": "Terror, A\u00e7\u00e3o, Terror",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Portugu\u00eas (Brasil), Sueco",
+                        "publisher": "Starbreeze Publishing AB",
+                        "isFree": false,
+                        "originalPrice": "14950",
+                        "dicountPrice": "14950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10001413",
+                        "name": "Maquette",
+                        "genre": "Quebra-cabe\u00e7a",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Franc\u00eas (Fran\u00e7a), Holand\u00eas, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Portugu\u00eas (Portugal), Russo, Turco, \u00c1rabe",
+                        "publisher": "Annapurna Interactive",
+                        "isFree": false,
+                        "originalPrice": "10490",
+                        "dicountPrice": "10490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "231037",
+                        "name": "A Plague Tale: Innocence",
+                        "genre": "A\u00e7\u00e3o, Aventura",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Polon\u00eas, Portugu\u00eas (Brasil), Russo, Tcheco",
+                        "publisher": "Focus Home Interactive",
+                        "isFree": false,
+                        "originalPrice": "19950",
+                        "dicountPrice": "19950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "234423",
+                        "name": "Immortals Fenyx Rising\u2122 PS4 & PS5",
+                        "genre": "Aventura, RPG",
+                        "languages": "Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": "27990",
+                        "dicountPrice": "8397",
+                        "dicount": "19593",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "232847",
+                        "name": "LEGO\u00ae Star Wars\u2122 A Saga Skywalker PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Warner Bros. Interactive",
+                        "isFree": false,
+                        "originalPrice": "22999",
+                        "dicountPrice": "22999",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "231769",
+                        "name": "Metro Exodus",
+                        "genre": "A\u00e7\u00e3o, Aventura, Tiro",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Polon\u00eas, Portugu\u00eas (Brasil), Russo, Tcheco",
+                        "publisher": "Deep Silver",
+                        "isFree": false,
+                        "originalPrice": "14950",
+                        "dicountPrice": "14950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "232581",
+                        "name": "Watch Dogs\u00ae: Legion PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o, Aventura, Original",
+                        "languages": "Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": "27990",
+                        "dicountPrice": "27990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "232883",
+                        "name": "Subnautica",
+                        "genre": "Aventura",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Coreano, Eslovaco, Espanhol, Espanhol (M\u00e9xico), Finland\u00eas, Franc\u00eas (Fran\u00e7a), H\u00fangaro, Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Portugu\u00eas (Portugal), Russo, Sueco, Tcheco, Turco",
+                        "publisher": "UNKNOWN WORLDS ENTERTAINMNT, INC.",
+                        "isFree": false,
+                        "originalPrice": "16190",
+                        "dicountPrice": "16190",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "232374",
+                        "name": "Dying Light 2 Stay Human PS4&PS5",
+                        "genre": "Original",
+                        "languages": "Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Espanhol (M\u00e9xico), Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "TECHLAND PUBLISHING",
+                        "isFree": false,
+                        "originalPrice": "26490",
+                        "dicountPrice": "21192",
+                        "dicount": "5298",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10001996",
+                        "name": "Hell Let Loose",
+                        "genre": "Tiro",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Japon\u00eas, Polon\u00eas, Russo",
+                        "publisher": "Team17 Digital Ltd.",
+                        "isFree": false,
+                        "originalPrice": "19950",
+                        "dicountPrice": "19950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "231819",
+                        "name": "Control Ultimate Edition",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Alem\u00e3o, Chin\u00eas (simplificado), Chin\u00eas (tradicional), Coreano, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas, Polon\u00eas, Portugu\u00eas (Brasil), Russo, \u00c1rabe",
+                        "publisher": "505 Games",
+                        "isFree": false,
+                        "originalPrice": "21490",
+                        "dicountPrice": "21490",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000653",
+                        "name": "Lost in Random\u2122 PS4\u2122 & PS5\u2122",
+                        "genre": "Aventura",
+                        "languages": "Alem\u00e3o, Espanhol, Franc\u00eas (Fran\u00e7a), Ingl\u00eas, Italiano, Japon\u00eas",
+                        "publisher": "Electronic Arts Inc",
+                        "isFree": false,
+                        "originalPrice": "14950",
+                        "dicountPrice": "14950",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "10000177",
+                        "name": "Sackboy: Uma Grande Aventura PS4 & PS5",
+                        "genre": "A\u00e7\u00e3o",
+                        "languages": "Espanhol (M\u00e9xico), Franc\u00eas (Canad\u00e1), Ingl\u00eas, Portugu\u00eas (Brasil)",
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": "29990",
+                        "dicountPrice": "29990",
+                        "dicount": "0",
+                        "currency": "BRL"
+                  }
+            ]
+      },
+      "epicCollection": {
+            "time": "23:58:46",
+            "date": "10/05/2022",
+            "games": [
+                  {
+                        "id": "ac5e43ecfe424d1eb79d12dd25c31a67",
+                        "name": "Among Trees",
+                        "genre": [
+                              "SURVIVAL",
+                              "INDIE",
+                              "EXPLORATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "FJRD Interactive",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "fb557dcb1bfe4a5791b3a11a83f52e90",
+                        "name": "Flower",
+                        "genre": [
+                              "ADVENTURE",
+                              "EXPLORATION",
+                              "CASUAL"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), \u00e1rabe, holand\u00eas, japon\u00eas, polon\u00eas, portugu\u00eas (Brasil), russo, chin\u00eas simplificado, espanhol (Am\u00e9rica Latina), sueco, tailand\u00eas, chin\u00eas tradicional, turco"
+                        ],
+                        "publisher": "Annapurna Interactive",
+                        "isFree": false,
+                        "originalPrice": 1449,
+                        "dicountPrice": 1449,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "ffeb0b8577a642deb377c0603cad40d7",
+                        "name": "Rainbow Six Siege",
+                        "genre": [
+                              "SHOOTER"
+                        ],
+                        "languages": [
+                              "Dublagem: ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), portugu\u00eas, russo",
+                              "Texto: polon\u00eas, \u00e1rabe, tcheco, holand\u00eas, turco"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 5999,
+                        "dicountPrice": 5999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "db50f262e26343c394c9a928ca725671",
+                        "name": "Battle Breakers",
+                        "genre": [
+                              "TURN_BASED",
+                              "ACTION",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "English",
+                              "French",
+                              "German",
+                              "Italian",
+                              "Japanese",
+                              "Korean",
+                              "Portuguese (Brazil)",
+                              "Russian",
+                              "Spanish (Spain)",
+                              "Simplified Chinese"
+                        ],
+                        "publisher": "Epic Games",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "d7874f1989e3463ca5dc0a5636da84e3",
+                        "name": "South Park: The Stick of Truth",
+                        "genre": [
+                              "RPG",
+                              "COMEDY",
+                              "TURN_BASED"
+                        ],
+                        "languages": [
+                              "Dublagem: ingl\u00eas",
+                              "Texto: franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), polon\u00eas, portugu\u00eas (Brasil), russo"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 8999,
+                        "dicountPrice": 8999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "d05e587765b94113bde00e6867133100",
+                        "name": "Arise: A Simple Story",
+                        "genre": [
+                              "CO_OP",
+                              "ADVENTURE",
+                              "PUZZLE"
+                        ],
+                        "languages": [
+                              "Audio: English",
+                              "Text: English, Italian, Spanish - Spain, French, German, Chinese - Simplified, Japanese, Portuguese, Korean, Portuguese - Brazil, Spanish - Latin America, Russian, Turkish, Polish"
+                        ],
+                        "publisher": "Techland",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "c5477bbba0934ec08ebe822c79a55544",
+                        "name": "WHAT THE GOLF?",
+                        "genre": [
+                              "COMEDY",
+                              "PHYSICS",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "\u00c1udio: ingl\u00eas",
+                              "Texto: ingl\u00eas, franc\u00eas, alem\u00e3o, coreano, russo, chin\u00eas simplificado, chin\u00eas tradicional, holand\u00eas, italiano, japon\u00eas, portugu\u00eas, portugu\u00eas (Brasil), espanhol (Espanha), turco"
+                        ],
+                        "publisher": "Triband",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "c46e7726fb6b465f8b1a749618edee64",
+                        "name": "Nuclear Throne",
+                        "genre": [
+                              "ACTION",
+                              "RPG",
+                              "ROGUE_LITE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "Vlambeer",
+                        "isFree": false,
+                        "originalPrice": 2489,
+                        "dicountPrice": 2489,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "bc68342b35624d5cbdf37ec529cadc43",
+                        "name": "Before We Leave",
+                        "genre": [
+                              "CITY_BUILDER",
+                              "INDIE",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas",
+                              "Italiano",
+                              "Espanhol",
+                              "Franc\u00eas",
+                              "Alem\u00e3o",
+                              "Russo",
+                              "Chin\u00eas simplificado",
+                              "Turco",
+                              "Portugu\u00eas (Brasil)"
+                        ],
+                        "publisher": "Balancing Monkey Games",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "acb1580495e9479bb7e92dffb2cab7ec",
+                        "name": "Far Cry 3 Blood Dragon",
+                        "genre": [
+                              "FPS",
+                              "OPEN_WORLD",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol, holand\u00eas, portugu\u00eas, russo"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 4499,
+                        "dicountPrice": 4499,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "6f535e05446742a8961d2f231e6e7410",
+                        "name": "Far Cry New Dawn",
+                        "genre": [
+                              "OPEN_WORLD",
+                              "FPS",
+                              "ACTION"
+                        ],
+                        "languages": [
+                              "Dublagem: ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), japon\u00eas, portugu\u00eas (Brasil), russo",
+                              "Texto: \u00e1rabe, tcheco, holand\u00eas, coreano, polon\u00eas, chin\u00eas simplificado, chin\u00eas tradicional"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 11999,
+                        "dicountPrice": 11999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "6afa79a2c6ed4df88eabe58f26cafbe2",
+                        "name": "Far Cry 3",
+                        "genre": [
+                              "ACTION",
+                              "FPS"
+                        ],
+                        "languages": [
+                              "\u00c1udio + Texto: ingl\u00eas, franc\u00eas, alem\u00e3o"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 5999,
+                        "dicountPrice": 5999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "52e1d1095dad49799b3e95cc591d29f6",
+                        "name": "SOMA",
+                        "genre": [
+                              "SINGLE_PLAYER",
+                              "HORROR",
+                              "NARRATION"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: Ingl\u00eas",
+                              "TEXTO: Franc\u00eas",
+                              "Holand\u00eas",
+                              "Italiano",
+                              "Portugu\u00eas (Brasil)",
+                              "Espanhol (Espanha)",
+                              "Russo"
+                        ],
+                        "publisher": "Frictional Games",
+                        "isFree": false,
+                        "originalPrice": 5699,
+                        "dicountPrice": 5699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "4e4d6984f3ba4a2e9ca517453291dd00",
+                        "name": "A Knights Quest",
+                        "genre": [
+                              "ACTION",
+                              "PLATFORMER",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, espanhol, chin\u00eas simplificado"
+                        ],
+                        "publisher": "Curve Digital",
+                        "isFree": false,
+                        "originalPrice": 4799,
+                        "dicountPrice": 4799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "4dfe723e347f43a68084b77e5f747e81",
+                        "name": "Falcon Age",
+                        "genre": [
+                              "ACTION",
+                              "FIRST_PERSON",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, espanhol, alem\u00e3o, franc\u00eas"
+                        ],
+                        "publisher": "Outerloop Games LLC",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "4db76762e1364e4b8025584541b7dd1b",
+                        "name": "South Park: The Fractured But Whole",
+                        "genre": [
+                              "RPG",
+                              "COMEDY",
+                              "TURN_BASED"
+                        ],
+                        "languages": [
+                              "Dublagem: ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), espanhol (Am\u00e9rica Latina), portugu\u00eas (Brasil)",
+                              "Texto: polon\u00eas, portugu\u00eas (Portugal), russo"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 14999,
+                        "dicountPrice": 14999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "417e1534b94047f585aa36f887c51eb1",
+                        "name": "Auto Chess",
+                        "genre": [
+                              "STRATEGY",
+                              "MULTIPLAYER"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: ingl\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, franc\u00eas, alem\u00e3o, japon\u00eas, coreano, portugu\u00eas, russo, espanhol (Espanha), tailand\u00eas, turco",
+                              "TEXTO: ingl\u00eas, chin\u00eas simplificado"
+                        ],
+                        "publisher": "Dragonest Game",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "2652971fb8884d4abb962257892b99ed",
+                        "name": "Manifold Garden",
+                        "genre": [
+                              "PUZZLE",
+                              "EXPLORATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas (Fran\u00e7a), franc\u00eas (Canad\u00e1), espanhol, alem\u00e3o, italiano, russo, japon\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, coreano, turco, \u00e1rabe, portugu\u00eas (Brasil), holand\u00eas"
+                        ],
+                        "publisher": "William Chyr Studio",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "22b0e16f382549c7961d43c67202fbd0",
+                        "name": "Phantom Brigade",
+                        "genre": [
+                              "RPG",
+                              "STRATEGY",
+                              "TURN_BASED"
+                        ],
+                        "languages": [
+                              "[\u00c1UDIO]: ingl\u00eas",
+                              "[LEGENDAS]: ingl\u00eas"
+                        ],
+                        "publisher": "Brace Yourself Games",
+                        "isFree": false,
+                        "originalPrice": 5699,
+                        "dicountPrice": 5699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "513fe4b9afb54c18bc88b1b6dd6ca8d8",
+                        "name": "Inside",
+                        "genre": [
+                              "PUZZLE",
+                              "INDIE",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), japon\u00eas, coreano, polon\u00eas, portugu\u00eas, portugu\u00eas (Brasil), russo, chin\u00eas simplificado, chin\u00eas tradicional, turco"
+                        ],
+                        "publisher": "Playdead",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "c2f85843620d428f9bdd491f5833c6fd",
+                        "name": "Foregone",
+                        "genre": [
+                              "PLATFORMER",
+                              "RPG",
+                              "ACTION"
+                        ],
+                        "languages": [
+                              "AUDIO: English",
+                              "TEXT: English, Chinese - Simplified, Chinese - Traditional, French, German, Italian, Portuguese - Brazil, Russian, Spanish - Spain, Korean"
+                        ],
+                        "publisher": "Big Blue Bubble, Inc.",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "8f237c17ea5941aba9692a544db845c1",
+                        "name": "The Red Lantern",
+                        "genre": [
+                              "ADVENTURE",
+                              "INDIE",
+                              "NARRATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "Timberline Studio",
+                        "isFree": false,
+                        "originalPrice": 4799,
+                        "dicountPrice": 4799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "196831040b8e49a7a1dee50b125fdc5d",
+                        "name": "ABZU",
+                        "genre": [
+                              "EXPLORATION",
+                              "ADVENTURE",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), portugu\u00eas (Brasil), russo, chin\u00eas simplificado"
+                        ],
+                        "publisher": "505 Games",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "295c4c70e3914d4691b15821071d8d4c",
+                        "name": "Magic The Gathering Arena",
+                        "genre": [
+                              "CARD_GAME",
+                              "STRATEGY",
+                              "CO_OP"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, russo, espanhol, italiano, portugu\u00eas (Brasil), japon\u00eas"
+                        ],
+                        "publisher": "Wizards of the Coast",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "8ac0c449dda64ac2b098a5d9c6397472",
+                        "name": "ReadySet Heroes",
+                        "genre": [
+                              "ACTION",
+                              "MULTIPLAYER",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol, espanhol (Am\u00e9rica Latina), holand\u00eas, polon\u00eas, portugu\u00eas, portugu\u00eas (Brasil), russo, \u00e1rabe, sueco, noruegu\u00eas, dinamarqu\u00eas, romeno, h\u00fangaro, grego, tcheco, chin\u00eas, coreano, japon\u00eas"
+                        ],
+                        "publisher": "Sony Interactive Entertainment",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "48436374d8f34a6da982b8aad4334534",
+                        "name": "Wattam",
+                        "genre": [
+                              "CASUAL",
+                              "INDIE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas",
+                              "Texto:  Franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), espanhol (Am\u00e9rica Latina), japon\u00eas, coreano, polon\u00eas, portugu\u00eas (Brasil), russo, chin\u00eas simplificado"
+                        ],
+                        "publisher": "Annapurna Interactive",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "f5620c67c34c429b95fb5e1ce5aee82b",
+                        "name": "Alan Wake's American Nightmare",
+                        "genre": [
+                              "HORROR",
+                              "ACTION",
+                              "SHOOTER"
+                        ],
+                        "languages": [
+                              "\u00c1udio: Ingl\u00eas",
+                              "Texto: Alem\u00e3o, franc\u00eas, italiano, espanhol (Espanha), japon\u00eas, tcheco, h\u00fangaro, polon\u00eas, russo"
+                        ],
+                        "publisher": "Remedy Entertainment",
+                        "isFree": false,
+                        "originalPrice": 1699,
+                        "dicountPrice": 1699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "eb081710a4b64e068c8881a138d9de3f",
+                        "name": "Surviving the Aftermath",
+                        "genre": [
+                              "STRATEGY",
+                              "CITY_BUILDER",
+                              "SIMULATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, russo, espanhol, portugu\u00eas (Brasil), chin\u00eas simplificado, polon\u00eas"
+                        ],
+                        "publisher": "Paradox Interactive",
+                        "isFree": false,
+                        "originalPrice": 4749,
+                        "dicountPrice": 4749,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "dbab9e3b14fa4c15af8c3d44cf5a63a0",
+                        "name": "Bloodroots",
+                        "genre": [
+                              "ACTION",
+                              "INDIE",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: ingl\u00eas",
+                              "TEXTO: Franc\u00eas, alem\u00e3o, espanhol (Espanha), japon\u00eas, coreano, portugu\u00eas (Brasil), chin\u00eas simplificado"
+                        ],
+                        "publisher": "Paper Cult",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "d073051af330409394d8fd7cc6793bb4",
+                        "name": "Airborne Kingdom",
+                        "genre": [
+                              "STRATEGY",
+                              "CITY_BUILDER",
+                              "EXPLORATION"
+                        ],
+                        "languages": [
+                              "AUDIO: English",
+                              "TEXT: English, Chinese (Simplified), French (France), German, Italian, Japanese, Korean, Spanish"
+                        ],
+                        "publisher": "The Wandering Band LLC",
+                        "isFree": false,
+                        "originalPrice": 4799,
+                        "dicountPrice": 4799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "ca25cd054b29435c8e6e3794a27acbb2",
+                        "name": "Everything",
+                        "genre": [
+                              "SIMULATION",
+                              "OPEN_WORLD",
+                              "CASUAL"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "David OReilly",
+                        "isFree": false,
+                        "originalPrice": 2799,
+                        "dicountPrice": 2799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "b50e2754792641ee89a1e9d26cebcd79",
+                        "name": "SuperMash",
+                        "genre": [
+                              "ARCADE",
+                              "INDIE",
+                              "SIMULATION"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: Ingl\u00eas",
+                              "TEXTO: Ingl\u00eas, franc\u00eas, alem\u00e3o, italiano, portugu\u00eas (Brasil), espanhol (Espanha)"
+                        ],
+                        "publisher": "Digital Continue",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "a9a4ab65b8cb405198e2332795b69be6",
+                        "name": "RUINER",
+                        "genre": [
+                              "ACTION",
+                              "SHOOTER",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: Ingl\u00eas",
+                              "TEXTO: Ingl\u00eas, franc\u00eas, alem\u00e3o, espanhol, japon\u00eas, russo, coreano, portugu\u00eas (Brasil), polon\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, tcheco, ucraniano, italiano, turco"
+                        ],
+                        "publisher": "Devolver Digital, Inc.",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "9714d370b31d44c68b80921b7fb994c8",
+                        "name": "Batman\u2122: Arkham Knight",
+                        "genre": [
+                              "ACTION",
+                              "FIGHTING",
+                              "OPEN_WORLD"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, italiano, polon\u00eas, coreano, portugu\u00eas (Brasil), russo, espanhol (Espanha)"
+                        ],
+                        "publisher": "Warner Bros.",
+                        "isFree": false,
+                        "originalPrice": 4999,
+                        "dicountPrice": 4999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "7b560e0a45514726bd6f3d1b08e38347",
+                        "name": "No Straight Roads",
+                        "genre": [
+                              "ACTION",
+                              "MULTIPLAYER",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "\u00c1udio: ingl\u00eas, franc\u00eas, japon\u00eas, espanhol (Am\u00e9rica Latina), espanhol (Espanha)",
+                              "Texto: ingl\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, franc\u00eas, alem\u00e3o, italiano, japon\u00eas, coreano, polon\u00eas, portugu\u00eas, portugu\u00eas (Brasil), russo, espanhol (Espanha)"
+                        ],
+                        "publisher": "Sold Out",
+                        "isFree": false,
+                        "originalPrice": 7499,
+                        "dicountPrice": 7499,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "7259c41b973b44d4af4f3236ba79e75b",
+                        "name": "Cardpocalypse",
+                        "genre": [
+                              "CARD_GAME",
+                              "INDIE",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol, chin\u00eas simplificado, chin\u00eas tradicional, coreano, russo, turco, \u00e1rabe, portugu\u00eas (Brasil), holand\u00eas"
+                        ],
+                        "publisher": "Versus Evil",
+                        "isFree": false,
+                        "originalPrice": 6699,
+                        "dicountPrice": 6699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "511a8c736f3b40159ecf0c5c1e1f5ba1",
+                        "name": "Bee Simulator",
+                        "genre": [
+                              "ADVENTURE",
+                              "EXPLORATION",
+                              "CASUAL"
+                        ],
+                        "languages": [
+                              "Dublagem e texto: Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), polon\u00eas, portugu\u00eas (Brasil), russo, holand\u00eas, japon\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, coreano"
+                        ],
+                        "publisher": "Bigben Interactive",
+                        "isFree": false,
+                        "originalPrice": 4799,
+                        "dicountPrice": 4799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "3164281e654744b0b1c5fa1ed46ec585",
+                        "name": "Superliminal",
+                        "genre": [
+                              "FIRST_PERSON",
+                              "PUZZLE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, espanhol, portugu\u00eas, russo, chin\u00eas simplificado, japon\u00eas, italiano, coreano"
+                        ],
+                        "publisher": "Pillow Castle",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "3018c3f67f9b4982b87905293a3f4447",
+                        "name": "Rogue Company",
+                        "genre": [
+                              "SHOOTER",
+                              "CO_OP",
+                              "MULTIPLAYER"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: ingl\u00eas",
+                              "TEXTO: ingl\u00eas, japon\u00eas, alem\u00e3o, franc\u00eas, espanhol (Am\u00e9rica Latina), russo, portugu\u00eas (Brasil), chin\u00eas simplificado"
+                        ],
+                        "publisher": "Hi-Rez Studios",
+                        "isFree": true,
+                        "originalPrice": 0,
+                        "dicountPrice": 0,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1694ca8a330f41e1965087728c02a43f",
+                        "name": "Yaga",
+                        "genre": [
+                              "ACTION",
+                              "RPG",
+                              "INDIE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol, chin\u00eas simplificado, chin\u00eas tradicional, coreano, russo, turco, \u00e1rabe, portugu\u00eas (Brasil), holand\u00eas"
+                        ],
+                        "publisher": "Versus Evil",
+                        "isFree": false,
+                        "originalPrice": 6699,
+                        "dicountPrice": 6699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "124e1b42195949dda096a46a16061f27",
+                        "name": "The Messenger",
+                        "genre": [
+                              "ACTION",
+                              "PLATFORMER",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, espanhol (Espanha), chin\u00eas simplificado, chin\u00eas tradicional, japon\u00eas, coreano, portugu\u00eas (Brasil), russo"
+                        ],
+                        "publisher": "Devolver Digital, Inc.",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "ca4db4d9dfe3409191c65a5ab27f30e1",
+                        "name": "The Settlers",
+                        "genre": [
+                              "MULTIPLAYER",
+                              "STRATEGY"
+                        ],
+                        "languages": [
+                              "COMPLETO (\u00e1udio + menus + legendas): ingl\u00eas, franc\u00eas, alem\u00e3o",
+                              "PARCIAL (menu + legendas): italiano, espanhol, polon\u00eas, russo, portugu\u00eas (Brasil), japon\u00eas, coreano, chin\u00eas tradicional, chin\u00eas simplificado"
+                        ],
+                        "publisher": "Epic Dev Test Account",
+                        "isFree": false,
+                        "originalPrice": 19999,
+                        "dicountPrice": 19999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "75804ef64d96446fb250a691fbd6654d",
+                        "name": "GNOG",
+                        "genre": [
+                              "CASUAL",
+                              "INDIE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol - Espanha, \u00e1rabe, dinamarqu\u00eas, holand\u00eas, finland\u00eas, japon\u00eas, noruegu\u00eas, polon\u00eas, portugu\u00eas, portugu\u00eas - Brasil, russo, sueco, turco"
+                        ],
+                        "publisher": "KO_OP",
+                        "isFree": false,
+                        "originalPrice": 1899,
+                        "dicountPrice": 1899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "174e0d86d9e24880b0bf0e1721afa325",
+                        "name": "Tetris\u00ae Effect",
+                        "genre": [
+                              "PUZZLE",
+                              "MULTIPLAYER",
+                              "COMPETITIVE"
+                        ],
+                        "languages": [
+                              "\u00c1udio: ingl\u00eas",
+                              "Texto: ingl\u00eas, japon\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), chin\u00eas simplificado, chin\u00eas tradicional, coreano, tailand\u00eas"
+                        ],
+                        "publisher": "Enhance, Inc.",
+                        "isFree": false,
+                        "originalPrice": 7599,
+                        "dicountPrice": 7599,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "8682f88d596749f1b1902f9f764638c5",
+                        "name": "Moonlighter",
+                        "genre": [
+                              "ROGUE_LIKE",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas",
+                              "Franc\u00eas",
+                              "Alem\u00e3o",
+                              "Japon\u00eas",
+                              "Espanhol",
+                              "Portugu\u00eas (brasileiro)",
+                              "Russo",
+                              "Coreano",
+                              "Chin\u00eas simplificado",
+                              "Polon\u00eas"
+                        ],
+                        "publisher": "11 Bit Studios",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "589cbda0e6074cb2ae29df601f0407e3",
+                        "name": "This War of Mine",
+                        "genre": [
+                              "SURVIVAL",
+                              "HORROR",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, polon\u00eas, russo, italiano, portugu\u00eas - Brasil, espanhol - Espanha, japon\u00eas, coreano, turco, chin\u00eas simplificado"
+                        ],
+                        "publisher": "11 Bit Studios",
+                        "isFree": false,
+                        "originalPrice": 3699,
+                        "dicountPrice": 3699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "8e1c914755f44623be389ae027813f8c",
+                        "name": "Alan Wake",
+                        "genre": [
+                              "ACTION",
+                              "HORROR",
+                              "SHOOTER"
+                        ],
+                        "languages": [
+                              "Dublagem: Ingl\u00eas, alem\u00e3o, franc\u00eas, italiano, espanhol (Espanha), espanhol (Am\u00e9rica Latina), japon\u00eas",
+                              "Apenas texto: coreano, russo, polon\u00eas, chin\u00eas tradicional"
+                        ],
+                        "publisher": "Remedy Entertainment",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1ebfdccc11bd46dabdfc0fbb1490d13a",
+                        "name": "Torchlight",
+                        "genre": [
+                              "ACTION",
+                              "RPG",
+                              "DUNGEON_CRAWLER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "Perfect World",
+                        "isFree": false,
+                        "originalPrice": 2499,
+                        "dicountPrice": 2499,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "4e4e06fa7b1548249f87002dfcb462ae",
+                        "name": "Untitled Goose Game",
+                        "genre": [
+                              "COMEDY",
+                              "STEALTH",
+                              "PUZZLE"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: ingl\u00eas",
+                              "TEXTO: ingl\u00eas, franc\u00eas, alem\u00e3o, italiano, espanhol (Espanha), chin\u00eas simplificado, japon\u00eas, russo, coreano, portugu\u00eas (Brasil), polon\u00eas"
+                        ],
+                        "publisher": "Panic",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "b6e9a5ee4b5f40cdbd066c9333dcf163",
+                        "name": "The Eternal Cylinder",
+                        "genre": [
+                              "SURVIVAL",
+                              "ADVENTURE",
+                              "EXPLORATION"
+                        ],
+                        "languages": [
+                              "\u00c1udio: ingl\u00eas",
+                              "Texto: ingl\u00eas, franc\u00eas, alem\u00e3o, italiano, russo, espanhol (Am\u00e9rica Latina), portugu\u00eas (Brasil)"
+                        ],
+                        "publisher": "Good Shepherd Entertainment",
+                        "isFree": false,
+                        "originalPrice": 5699,
+                        "dicountPrice": 5699,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "d2aee293beac4aa09d34affec5e9dc1b",
+                        "name": "Griftlands",
+                        "genre": [
+                              "CARD_GAME",
+                              "ROGUE_LITE",
+                              "TURN_BASED"
+                        ],
+                        "languages": [
+                              "Audio: English",
+                              "Text: English, Chinese - Simplified, Chinese - Traditional, French, German, Japanese, Korean, Polish, Portuguese - Brazil, Russian"
+                        ],
+                        "publisher": "Klei Entertainment",
+                        "isFree": false,
+                        "originalPrice": 3799,
+                        "dicountPrice": 3799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "da878e491ab7473cbef4a72eae64b3a3",
+                        "name": "Atomicrops",
+                        "genre": [
+                              "ACTION",
+                              "ROGUE_LITE",
+                              "SIMULATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), \u00e1rabe, tcheco, coreano, polon\u00eas, portugu\u00eas, portugu\u00eas (Brasil), russo, chin\u00eas simplificado, espanhol (Am\u00e9rica Latina), chin\u00eas tradicional, turco, ucraniano"
+                        ],
+                        "publisher": "Raw Fury",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "c98c8c591fdb472e97dc3169b097218a",
+                        "name": "Kingdom New Lands",
+                        "genre": [
+                              "STRATEGY",
+                              "SURVIVAL",
+                              "SIMULATION"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol, portugu\u00eas, portugu\u00eas brasileiro, russo, dinamarqu\u00eas, japon\u00eas, noruegu\u00eas, chin\u00eas simplificado, sueco, finland\u00eas",
+                              "Coreano"
+                        ],
+                        "publisher": "Raw Fury",
+                        "isFree": false,
+                        "originalPrice": 2799,
+                        "dicountPrice": 2799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "f77ae52ec98e4c218ca7a0da76c1eb93",
+                        "name": "The End is Nigh",
+                        "genre": [
+                              "ACTION",
+                              "PLATFORMER",
+                              "INDIE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "Edmund McMillen, Tyler Glaiel",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "ba4b7ba700b6432690f78c5cf27f6d4e",
+                        "name": "Tom Clancy's Ghost Recon Breakpoint",
+                        "genre": [
+                              "SHOOTER",
+                              "OPEN_WORLD",
+                              "CO_OP"
+                        ],
+                        "languages": [
+                              "Dublagem:  ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), espanhol (Am\u00e9rica Latina), russo, portugu\u00eas (Brasil), japon\u00eas",
+                              "Texto:  holand\u00eas, tcheco, polon\u00eas, chin\u00eas simplificado, chin\u00eas tradicional, \u00e1rabe, coreano, tailand\u00eas"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 17900,
+                        "dicountPrice": 17900,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "41bc6f9760b544a6a4907ba001ab41b3",
+                        "name": "Rayman Legends",
+                        "genre": [
+                              "PLATFORMER",
+                              "ACTION",
+                              "ADVENTURE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), dinamarqu\u00eas, holand\u00eas, finland\u00eas, noruegu\u00eas, polon\u00eas, portugu\u00eas (Brasil), russo, sueco"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 8999,
+                        "dicountPrice": 8999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "c20b77583f68422e9940a0ba1bf66686",
+                        "name": "The Division 2",
+                        "genre": [
+                              "MULTIPLAYER",
+                              "ACTION",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "\u00c1udio: ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), espanhol (Am\u00e9rica Latina), russo, portugu\u00eas (Brasil), japon\u00eas",
+                              "Somente menus + legendas: holand\u00eas, polon\u00eas, tcheco, h\u00fangaro, coreano, chin\u00eas tradicional, chin\u00eas simplificado",
+                              "Somente legendas: sueco, dinamarqu\u00eas, noruegu\u00eas, finland\u00eas"
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 8999,
+                        "dicountPrice": 8999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "b79c0521c5d147598b20f78b8f4918a1",
+                        "name": "Trials Rising",
+                        "genre": [
+                              "MULTIPLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas..."
+                        ],
+                        "publisher": "Ubisoft Entertainment",
+                        "isFree": false,
+                        "originalPrice": 5999,
+                        "dicountPrice": 5999,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "456b1db2807544d596c6b8b4d415d538",
+                        "name": "Costume Quest",
+                        "genre": [
+                              "ADVENTURE",
+                              "RPG"
+                        ],
+                        "languages": [
+                              "\u00c1UDIO: Ingl\u00eas",
+                              "TEXTO: Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol"
+                        ],
+                        "publisher": "Double Fine",
+                        "isFree": false,
+                        "originalPrice": 1899,
+                        "dicountPrice": 1899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "1a3d31d61b02483e9a53349f6e52681e",
+                        "name": "Ape Out",
+                        "genre": [
+                              "ACTION",
+                              "INDIE"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, alem\u00e3o, espanhol (Espanha), japon\u00eas, coreano, portugu\u00eas, russo, chin\u00eas simplificado"
+                        ],
+                        "publisher": "Devolver Digital, Inc.",
+                        "isFree": false,
+                        "originalPrice": 2799,
+                        "dicountPrice": 2799,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "33aaf380683a465ea91de7407faa7072",
+                        "name": "The Escapists",
+                        "genre": [
+                              "ACTION",
+                              "STRATEGY"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas, franc\u00eas, italiano, alem\u00e3o, espanhol (Espanha), russo, polon\u00eas"
+                        ],
+                        "publisher": "Team17 Digital Ltd",
+                        "isFree": false,
+                        "originalPrice": 4749,
+                        "dicountPrice": 4749,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  },
+                  {
+                        "id": "a5240293bb904531b66abdcc9819dab9",
+                        "name": "The Wolf Among Us",
+                        "genre": [
+                              "ADVENTURE",
+                              "ACTION",
+                              "SINGLE_PLAYER"
+                        ],
+                        "languages": [
+                              "Ingl\u00eas"
+                        ],
+                        "publisher": "Athlon Games",
+                        "isFree": false,
+                        "originalPrice": 2899,
+                        "dicountPrice": 2899,
+                        "dicount": 0,
+                        "currency": "BRL"
+                  }
+            ]
+      }
+}
